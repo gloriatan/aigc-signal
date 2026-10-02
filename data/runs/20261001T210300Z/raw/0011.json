@@ -1,0 +1,10 @@
+{
+ "url": "https://api.github.com/repos/apimart-api-ai-Aggregator/seedance-2.5-api/releases?per_page=20",
+ "fetched_at": "2026-10-01T21:03:59Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "40",
+  "reset": "1790889424"
+ },
+ "body": []
+}

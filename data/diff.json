@@ -1,0 +1,35 @@
+{
+  "from_run": "20261001T210300Z",
+  "to_run": "20261002T022921Z",
+  "has_previous": true,
+  "projects": {
+    "harry0703/moneyprinterturbo": {
+      "status": "same"
+    },
+    "debpalash/voicestudio": {
+      "status": "same"
+    },
+    "op7418/guizang-yingzao-skill": {
+      "status": "same"
+    },
+    "mudler/localai": {
+      "status": "same"
+    },
+    "unslothai/unsloth": {
+      "status": "same"
+    }
+  },
+  "removed": [],
+  "pending_new": [
+    "jajmangold/not_human",
+    "leemysw/yovoice",
+    "Rylaispirit/cinematic-video-prompt-skill"
+  ],
+  "summary": {
+    "new": 0,
+    "version": 0,
+    "removed": 0,
+    "pending_new": 3,
+    "changed": 0
+  }
+}

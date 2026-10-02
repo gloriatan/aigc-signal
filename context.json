@@ -1,0 +1,57 @@
+{
+  "_说明": "商业背景资料。可以早于30天窗口，只用于判断与目标团队的关系，不作为开源事件。accessed_at 为本次查阅日期；supports 只写页面当时能支持的表述。",
+  "audience": "同花顺 AI创新／出海产品团队的产品、算法与增长人员",
+  "background": [
+    {
+      "id": "b_job",
+      "title": "同花顺官方校园招聘：AI Native出海产品经理（AI创新集群，杭州）",
+      "url": "https://campus.10jqka.com.cn/mobile/job/detail?id=2198",
+      "entry_url": "https://campus.10jqka.com.cn/mobile/job/list?applyAttribute=1",
+      "publisher": "同花顺（官方）",
+      "type": "official",
+      "accessed_at": "2026-10-02",
+      "supports": "岗位面向全球创作者，写明快速做MVP并在Reddit/Discord验证、关注生成等待（“用户等不了那0.8秒”）、完成率与留存。",
+      "limits": "招聘要求说明团队关注点，不能证明产品当前存在某个问题；列表页需在浏览器中加载，岗位详情页可直接阅读。"
+    },
+    {
+      "id": "b_avatar",
+      "title": "DreamFace 头像视频（Avatar Video）产品页",
+      "url": "https://www.dreamfaceapp.com/ai-tools/avatar-video",
+      "publisher": "DreamFace（官方）",
+      "type": "official",
+      "accessed_at": "2026-10-02",
+      "supports": "产品把照片、脚本或音频转成口播头像视频，提供网页、iOS、Android 入口，页面列出多种语言。",
+      "limits": "作为相关产品参照，不认定该岗位负责其全部业务；未披露内部流程、失败率或成本。"
+    },
+    {
+      "id": "b_api",
+      "title": "DreamAPI（DreamFace API）页面",
+      "url": "https://www.dreamfaceapp.com/tools/dreamface-api",
+      "publisher": "DreamFace（官方）",
+      "type": "official",
+      "accessed_at": "2026-10-02",
+      "supports": "已提供 Lip Sync、DreamAct、AI Voice 等 API，按任务复杂度消耗 Credits。",
+      "limits": "说明产品已有API和积分计费，因此“推出API”不是新建议；未披露调用量或收入。"
+    },
+    {
+      "id": "b_policy",
+      "title": "DreamFace 订阅与积分政策",
+      "url": "https://dreamfaceapp.com/subscriptionPolicy.html",
+      "publisher": "New Port LLC（页面署名，DreamFace 运营方）",
+      "type": "official",
+      "accessed_at": "2026-10-02",
+      "supports": "积分包用于AI生成功能，已使用的积分不退；生成、处理、导出等操作会消耗平台资源。",
+      "limits": "政策不说明生成失败时是否返还积分，本作品不对此作推断。"
+    },
+    {
+      "id": "b_nowcoder",
+      "title": "牛客网：同花顺 Java 开发实习（已关闭）",
+      "url": "https://www.nowcoder.com/jobs/detail/390262",
+      "publisher": "第三方招聘平台",
+      "type": "third_party",
+      "accessed_at": "2026-10-02",
+      "supports": "第三方页面把同花顺岗位与 Dreamface 的稳定性优化、架构工作联系在一起，只作为同花顺与 DreamFace 关联的辅助线索。",
+      "limits": "第三方转载、岗位已关闭；页面中的规模描述不作为事实引用，也不据此推断技术栈。"
+    }
+  ]
+}

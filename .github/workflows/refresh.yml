@@ -1,0 +1,55 @@
+name: refresh-data
+
+# 每周二、周五 01:00 UTC（北京时间 09:00）自动抓取；看板上的「一键更新」通过 workflow_dispatch 手动触发。
+on:
+  schedule:
+    - cron: "0 1 * * 2,5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tests (no network)
+        run: python -m unittest discover -s tests
+
+      - name: Fetch GitHub API and rebuild outputs
+        id: refresh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          python collect.py --refresh
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          # 0 = new period published, 1 = partial (kept for review, current period unchanged), >=2 = failed
+          if [ "$code" -ge 2 ]; then exit "$code"; fi
+          exit 0
+
+      - name: Commit new period
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data report.md site
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          run_id=$(python -c "import json; print(json.load(open('data/current.json'))['run_id'])")
+          git commit -m "data: refresh ${run_id} (exit ${{ steps.refresh.outputs.exit_code }})"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

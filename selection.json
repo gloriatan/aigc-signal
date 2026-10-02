@@ -1,0 +1,157 @@
+{
+  "_说明": "编辑核查记录。按“仓库+事件ID+来源哈希”绑定，不按期次绑定：同一事件在新一期仍在窗口内时沿用；事件或来源变化后自动失效，回到待核查区。select 需三项核查全为 true 且有理由；exclude 的 scope=event 只对该事件生效，scope=repo 在仓库简介哈希不变时生效。没有记录的有事件项目一律进入待核查，不会自动进入正式精选。",
+  "_能力标签说明": "capabilities 是编辑按本次版本变化标注的实际能力，与检索分类（topic 命中）不同",
+  "decisions": [
+    {
+      "decision": "select",
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "event_id": "387890481",
+      "tag": "v1.3.7",
+      "source_sha256": "091f101f158b7c10b01a5a5dbaa2cdf41e5c9ffc4a8c3370cf71e29508e21008",
+      "reason": "短视频一键生成工具，本版改动落在配音停顿、逐词字幕和生成出错时的处理上，最贴近创作者成片流程",
+      "checks": {
+        "aigc_relevant": true,
+        "substantive_change": true,
+        "source_ok": true,
+        "note": "版本说明列出逐词字幕、Kokoro/VoxCPM配音、无效语音中止生成、Shengsuan Cloud报价确认等变化"
+      },
+      "capabilities": [
+        "video",
+        "speech"
+      ],
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z"
+    },
+    {
+      "decision": "select",
+      "repo": "debpalash/VoiceStudio",
+      "event_id": "394436097",
+      "tag": "v0.5.6",
+      "source_sha256": "b6524a08a07d1f5eb5200f078b5383bf64a7cb129853bf18e0b9a809e0b19315",
+      "reason": "本地语音克隆与有声书工具，本版修复长任务超时并保留断电前进度，同时开放Agent接入，可对照岗位关注的完成率",
+      "checks": {
+        "aigc_relevant": true,
+        "substantive_change": true,
+        "source_ok": true,
+        "note": "版本说明称8GB显卡长章节不再超时、断电后保留已渲染章节，新增Claude Code/Cursor/Codex等接入"
+      },
+      "capabilities": [
+        "speech"
+      ],
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z"
+    },
+    {
+      "decision": "select",
+      "repo": "op7418/guizang-yingzao-skill",
+      "event_id": "created:1354705170",
+      "tag": null,
+      "source_sha256": "0ee527bb263ec541c21a60905818f5f5e04212b1db3b083bd409f6214c3f063e",
+      "reason": "窗口内新建的图像生成工作流，把照片转为带中文排版的编辑海报，代表“能力封装成Agent技能”的新形态",
+      "checks": {
+        "aigc_relevant": true,
+        "substantive_change": true,
+        "source_ok": true,
+        "note": "仓库描述说明它是Claude Code/Codex技能、使用GPT Image；README给出安装方式、工作流与示例；仓库未声明许可"
+      },
+      "capabilities": [
+        "image"
+      ],
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z"
+    },
+    {
+      "decision": "select",
+      "repo": "mudler/LocalAI",
+      "event_id": "391012857",
+      "tag": "v4.10.0",
+      "source_sha256": "eeab41d8662c9d25675977eb8f5226e59531c004a7a636236a69a5c1cf063591",
+      "reason": "本地多模态推理引擎，本版为视频引擎加载LoRA、提供延迟与吞吐测量，关系到自部署生成服务的门槛",
+      "checks": {
+        "aigc_relevant": true,
+        "substantive_change": true,
+        "source_ok": true,
+        "note": "版本说明列出vllm-cpp视频引擎LoRA融合（LTX2.5、MiniMax-H3）与local-ai benchmark命令"
+      },
+      "capabilities": [
+        "video"
+      ],
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z"
+    },
+    {
+      "decision": "select",
+      "repo": "unslothai/unsloth",
+      "event_id": "401027235",
+      "tag": "v0.1.902-beta",
+      "source_sha256": "f657a9d4ce59908913a1ea0728ab9d920bb078a0bbb63fd26644a2a534ab9cdf",
+      "reason": "本地训练与运行界面，本版给出图像生成提速与LoRA训练降显存两类数据，适合说明“速度与资源要分开看”",
+      "checks": {
+        "aigc_relevant": true,
+        "substantive_change": true,
+        "source_ok": true,
+        "note": "版本说明“Image + video”一节给出Z-Image 2.3秒对38.4秒、Qwen-Image-2.1最高快3.6倍；另有LoRA峰值显存降45%"
+      },
+      "capabilities": [
+        "image"
+      ],
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z"
+    },
+    {
+      "decision": "exclude",
+      "scope": "repo",
+      "repo": "apimart-api-ai-Aggregator/seedance-2.5-api",
+      "reason_code": "api_resale_no_open_impl",
+      "reason": "未通过“来源可查/开源实现”核查：与已人工排除的seedance-2.0-api同为商业API转售示例页，含推广链接",
+      "evidence_url": "https://github.com/apimart-api-ai-Aggregator/seedance-2.5-api",
+      "fingerprint": {
+        "description_sha256": "f9a87152d0076703a92b590733324df5361c703e33eb4ceb73538125ede3717b"
+      },
+      "recheck_when": "仓库简介变化时失效，回到待核查",
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z"
+    },
+    {
+      "decision": "exclude",
+      "scope": "event",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "event_id": "397208183",
+      "tag": "web",
+      "source_sha256": "611d51597d275016d6e98f5fcc25418f5d3cedc5b4d99c4eb0522a6eace4efdd",
+      "reason_code": "no_substantive_change",
+      "reason": "未通过“实质变化”核查：窗口内发布为自动滚动发布，说明只有一句；仓库主体是风格提示词与示例片合集",
+      "evidence_url": "https://github.com/lemomo-ai/lemo-opuscar/releases",
+      "recheck_when": "出现新的发布事件或说明变化时回到待核查",
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z"
+    },
+    {
+      "decision": "exclude",
+      "scope": "event",
+      "repo": "yikang329-droid/kaipai-talking-head-skill",
+      "event_id": "created:1366104346",
+      "source_sha256": "ea6d78b856631c04370397c342e3e01e69f51e0c6569592eab21038ec4fceee6",
+      "reason_code": "weak_aigc_relevance",
+      "reason": "AIGC相关性弱：主要是真人口播素材的剪辑与字幕流程，README较短，未见生成能力的实质说明",
+      "evidence_url": "https://github.com/yikang329-droid/kaipai-talking-head-skill",
+      "recheck_when": "README变化时回到待核查",
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z"
+    },
+    {
+      "decision": "exclude",
+      "scope": "repo",
+      "repo": "apimart-API-Gateway/grok-image-api",
+      "reason_code": "api_resale_no_open_impl",
+      "reason": "未通过“来源可查/开源实现”核查：README是商业API聚合方的按图计价与调用示例（含推广短链），与已排除的seedance系列同一模式，没有可核查的开源实现",
+      "evidence_url": "https://github.com/apimart-API-Gateway/grok-image-api",
+      "fingerprint": {
+        "description_sha256": "9b833a6db6d97de6110f8d8308c9a0467192cdb3d310f8abe44453bc52b2b59a"
+      },
+      "recheck_when": "仓库简介变化时失效，回到待核查",
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261002T022921Z"
+    }
+  ]
+}
