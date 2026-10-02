@@ -14,25 +14,18 @@
     },
     "mudler/localai": {
       "status": "same"
+    },
+    "unslothai/unsloth": {
+      "status": "same"
     }
   },
-  "removed": [
-    {
-      "id": "unslothai/unsloth",
-      "name": "unslothai/unsloth",
-      "tag": "v0.1.902-beta",
-      "published_at": "2026-10-01T14:06:23Z",
-      "reason": "本期未通过精选条件"
-    }
-  ],
-  "pending_new": [
-    "unslothai/unsloth"
-  ],
+  "removed": [],
+  "pending_new": [],
   "summary": {
     "new": 0,
     "version": 0,
-    "removed": 1,
-    "pending_new": 1,
-    "changed": 1
+    "removed": 0,
+    "pending_new": 0,
+    "changed": 0
   }
 }

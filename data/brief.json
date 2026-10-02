@@ -5,8 +5,8 @@
     "as_of": "2026-10-02T08:52:20Z",
     "window_start": "2026-09-02T08:52:20Z",
     "window_end": "2026-10-02T08:52:20Z",
-    "generated_at": "2026-10-02T08:52:46Z",
-    "mode": "refresh",
+    "generated_at": "2026-10-02T09:04:38Z",
+    "mode": "offline",
     "run_status": "complete",
     "config_version": "3",
     "request_count": 32,
@@ -4272,17 +4272,22 @@
         "experiment": "同一台 GPU、同一 LocalAI v4.10.0、同一 LTX2.5 基础模型、同一组20条提示词和随机种子：A组不加载 LoRA，B组在加载时融合同一个 LoRA。记录模型加载耗时、5秒视频生成耗时、失败率，并由3名评审盲评风格一致性。不与手动搭建脚本比较，否则部署方式和推理实现都会变。",
         "limitations": "新增 benchmark 只覆盖文本模型，不能直接得到视频生成速度或首帧等待；LoRA 对画质和速度的影响未说明；自部署能否降低成本没有验证。"
       }
-    }
-  ],
-  "pending": [
+    },
     {
       "id": "unslothai/unsloth",
       "name": "unslothai/unsloth",
       "repo_url": "https://github.com/unslothai/unsloth",
       "category": "image",
+      "also_in": [
+        "speech"
+      ],
       "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
       "stars_snapshot": 77130,
-      "review_flag": [],
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
       "event": {
         "event_id": "401027235",
         "type": "release",
@@ -4292,12 +4297,307 @@
         "prerelease": false,
         "source_sha256": "8d1d0d4db8958ef2f7a1ff74e9c63513fb228b960e906767394ef23876165b76",
         "excerpt": "This release brings faster navigation, shareable run settings, and clearer errors to Unsloth Desktop. It also 4x speeds up Laya decisions, expands hosted Decision API support, and keeps NVFP4, INT4, and MXFP4 checkpoints in 4-bit during LoRA training.\n\n## Highlights\n\n- **Command palette** on Cmd/Ctrl+P. Also, you can now share your GGUF model's run settings\n- **Laya decisions up to 4.1x faster**, plus connections to TypeSafe and other hosted providers\n- **Clearer errors** that explain failed loads and generations, with a View logs button\n- **NVFP4 LoRA with 45% lower peak memory** on Qwen3.8-2",
-        "short_notes": false
+        "short_notes": false,
+        "raw_file": "data/runs/20261002T085220Z/raw/0015.json"
       },
-      "reasons": [
-        "v0.1.902-beta 的来源说明已变化，原核查不再适用"
-      ]
-    },
+      "other_events": [
+        {
+          "event_id": "398210867",
+          "type": "release",
+          "tag": "v0.1.900-beta",
+          "published_at": "2026-09-28T14:33:35Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.900-beta",
+          "prerelease": false,
+          "source_sha256": "33b7fdef1fca616720db8e37ed20f8dcc3ea98c8e54d0d04bfa7ff5a5049265c",
+          "excerpt": "We're adding support for decision models, a unified Library for docs and media, document viewer, many Apple Silicon improvements, creation of Skills, and ~4.5× faster image and video generation.\n* Run and serve **Decision Models** like Laya (open-source Jev) locally\n* **Skills Editor** to create, edit, and delete Skills directly in Desktop\n* **ModelScope** model downloading is now here for users who can't use HF\n* **Library + Document Viewer** for PDF, Word, Excel, PowerPoint, and chats.\n* You can now attach files before loading a model\n* **Apple Silicon Improvements** including batched servin",
+          "short_notes": false
+        },
+        {
+          "event_id": "397481781",
+          "type": "release",
+          "tag": "prebuilt-wheels-cu13",
+          "published_at": "2026-09-27T03:16:14Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/prebuilt-wheels-cu13",
+          "prerelease": false,
+          "source_sha256": "2d1d2454299e3f43a9a66859d5483f2a21d2aab246a0df1b8534731e0012a976",
+          "excerpt": "Prebuilt Linux x86_64 CUDA 13 wheels for flash-attn 2.8.4, causal-conv1d 1.7.0 and mamba-ssm 2.3.2.post1, built for PyTorch 2.13 and 2.14 on Python 3.13.",
+          "short_notes": false
+        },
+        {
+          "event_id": "394741334",
+          "type": "release",
+          "tag": "v0.1.815-beta",
+          "published_at": "2026-09-23T14:51:56Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.815-beta",
+          "prerelease": false,
+          "source_sha256": "ede60a516cb09ab1ed75735eab277da0e7175fc5e0249ffe9f042ea517aec5c9",
+          "excerpt": "You can now run Qwen-Image-2.1 locally with Unsloth! This release also includes custom Agent Skills, and easier chat/project management. It also brings 2x faster reasoning blocks (60 FPS vs 30 FPS), more reliable training, and improved Linux installs and updates. Qwen Image 2.1 Guide\n\n## Highlights\n* Fast FP8 Qwen-Image-2.1 + diffusers update + GGUF fixes\n* Qwen-Image-2.1 works for **image editing** and image gen!\n* Add custom Agent Skills to guide models through specific tasks.\n* Chats are now draggable/customizable in sidebar.\n* 2x faster long reasoning blocks (60 FPS vs 30 FPS before). Thin",
+          "short_notes": false
+        },
+        {
+          "event_id": "394155804",
+          "type": "release",
+          "tag": "v0.1.814-beta",
+          "published_at": "2026-09-22T23:18:24Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.814-beta",
+          "prerelease": false,
+          "source_sha256": "505188a49a2b735baf2c4cee31f658e8bfc7733ff6292a0979fbc86eb04c5786",
+          "excerpt": "You can now run Qwen-Image-2.1 locally with Unsloth! This release also includes custom Agent Skills, and easier chat/project management. It also brings 2x faster reasoning blocks (60 FPS vs 30 FPS), more reliable training, and improved Linux installs and updates. Qwen Image 2.1 Guide\n\n## Highlights\n* Qwen-Image-2.1 fixes - diffusers update + GGUF fix\n* Qwen-Image-2.1 works for **image editing** and image gen!\n* Add custom Agent Skills to guide models through specific tasks.\n* Chats are now draggable/customizable in sidebar.\n* 2x faster long reasoning blocks (60 FPS vs 30 FPS before). Thinking ",
+          "short_notes": false
+        },
+        {
+          "event_id": "393951653",
+          "type": "release",
+          "tag": "v0.1.813-beta",
+          "published_at": "2026-09-22T17:46:50Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.813-beta",
+          "prerelease": false,
+          "source_sha256": "372e57cdfadf46ba6c43068499223e7a1b4e1a760c66de2eba9f87f2f916b43e",
+          "excerpt": "You can now run Qwen-Image-2.1 locally with Unsloth! This release also includes custom Agent Skills, and easier chat/project management. It also brings 2x faster reasoning blocks (60 FPS vs 30 FPS), more reliable training, and improved Linux installs and updates. Qwen Image 2.1 Guide\n\n## Highlights\n* Qwen-Image-2.1 support for image gen + more (**Another update** coming today for fixes!)\n* Add custom Agent Skills to guide models through specific tasks.\n* 2x faster long reasoning blocks (60 FPS vs 30 FPS before). Thinking UI/UX reworked.\n* Chats are now draggable/customizable in sidebar.\n* In-a",
+          "short_notes": false
+        },
+        {
+          "event_id": "393759085",
+          "type": "release",
+          "tag": "v0.1.812-beta",
+          "published_at": "2026-09-22T15:46:04Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.812-beta",
+          "prerelease": false,
+          "source_sha256": "3c21e186c03e6303084ccd8f29acda3cb7833e1109a250e668337127ab72a6c7",
+          "excerpt": "We're releasing support for Qwen-Image-2.1, custom Agent Skills, and easier chat/project management. It also brings 2x faster reasoning blocks (60 FPS vs 30 FPS), more reliable training, and improved Linux installs and updates. Qwen Image 2.1 Guide\n\n## Highlights\n* Qwen-Image-2.1 support for image generation and more\n* Add custom skills to guide models through specific tasks.\n* 2x faster long reasoning blocks (60 FPS vs 30 FPS before)\n* In-app Debian updates and an Ubuntu 24.04+ installer for ARM64.\n* Chats are now fully draggable in sidebar (web UI + Linux desktop app for now, full support co",
+          "short_notes": false
+        },
+        {
+          "event_id": "391606897",
+          "type": "release",
+          "tag": "v0.1.811-beta",
+          "published_at": "2026-09-18T16:11:15Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.811-beta",
+          "prerelease": false,
+          "source_sha256": "eee566d3bc0f32005da8ad95bf1101d76df57b75bef3564ec9ec079e8277ef2e",
+          "excerpt": "We're releasing our new updated Docker image along with multi-user accounts, RDNA1+2, FP8/INT8 diffusion support, ARM64 CUDA Windows support and many training, GRPO and inference improvements. Also a Qwen3.8-Flash-Next 2x faster MTP hotfix.\n\n## Highlights:\n* Qwen3.8-Flash-Next MTP hotfix (2x faster) from v0.1.810-beta\n* New Docker with NVIDIA & AMD support: Guide\n* Multi user accounts with isolation **Settings > Accounts**\n* INT8/FP8 Image Diffusion inference - 2x faster\n* ARM64 Windows CUDA support for training, inference\n* GRPO improvements - Qwen3.5 support + lastest TRL, vLLM support\n* RDN",
+          "short_notes": false
+        },
+        {
+          "event_id": "390799311",
+          "type": "release",
+          "tag": "v0.1.810-beta",
+          "published_at": "2026-09-17T14:37:04Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.810-beta",
+          "prerelease": false,
+          "source_sha256": "bee8d9a4b98fae049bda628c7dbf743cc83dcd7b0543e5e163945d2040710f4c",
+          "excerpt": "We're releasing our new updated Docker image along with multi-user accounts, RDNA1+2, FP8/INT8 diffusion support, ARM64 CUDA Windows support and many training, GRPO and inference improvements\n\n## Highlights:\n* New Docker with NVIDIA & AMD support: Guide\n* Multi user accounts with isolation **Settings > Accounts**\n* INT8/FP8 Image Diffusion inference - 2x faster\n* ARM64 Windows CUDA support for training, inference\n* GRPO improvements - Qwen3.5 support + lastest TRL, vLLM support\n* RDNA1, RDNA2 support for AMD\n* Better Windows NVIDIA GPU detection and recovery\n\n## Updated Docker image\n\n* Updated",
+          "short_notes": false
+        },
+        {
+          "event_id": "389862460",
+          "type": "release",
+          "tag": "Windows-ARM64",
+          "published_at": "2026-09-16T11:26:07Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/Windows-ARM64",
+          "prerelease": false,
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "excerpt": "",
+          "short_notes": true
+        },
+        {
+          "event_id": "385630866",
+          "type": "release",
+          "tag": "v0.1.808-beta",
+          "published_at": "2026-09-09T15:18:29Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.808-beta",
+          "prerelease": false,
+          "source_sha256": "780f23bdac54403b6fa05f642aeed470af947183eacfde77adffe50f2f6e0dd7",
+          "excerpt": "This is a large performance and reliability + bug fix release for Unsloth\n\n## Highlights\n* 1.2-1.7x faster diffusion. AMD 20% perf boost vs ROCM via Vulkan\n* 2x faster updating, remove SAC + AV false positives for Windows\n* Blender MCP, detect Hermes, AMD gibberish fixed (reported to AMD)\n* Over 250+ bug fixes, 60% smaller binaries and performance improvements\n* Strix iGPU BIOS popup - 3x faster inference if more VRAM for iGPU\n* Updated PyTorch to 2.11 from 2.10 - 2.14 will be soon. MLX improvements\n* Default to gpt-6-astra for Codex logins and improve OpenAI API processing\n* MLX fixed when se",
+          "short_notes": false
+        },
+        {
+          "event_id": "384797056",
+          "type": "release",
+          "tag": "v0.1.807-beta",
+          "published_at": "2026-09-08T14:21:12Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.807-beta",
+          "prerelease": false,
+          "source_sha256": "fe48de2d2e658ae1a2b07f94403bc26c7545c6fe7bfb4aac17f71ae3f9c8918e",
+          "excerpt": "This is a large performance and reliability + bug fix release for Unsloth\n\n## Highlights\n* AMD uses Vulkan by default - 20% perf boost for prefill, decoding vs ROCM\n* Windows llama-server.exe is now signed, reducing false positives for SAC\n* AMD gibberish issues in Strix, iGPUs fixed in (upstream - reported to AMD)\n* Over 200+ bug fixes, 50% smaller binaries and performance improvements\n* Updated PyTorch to 2.11 from 2.10 - 2.14 will be soon. MLX improvements\n* Default to gpt-6-astra for Codex logins and improve OpenAI API processing\n* MLX fixed when self healing / updating, causing slowdowns ",
+          "short_notes": false
+        },
+        {
+          "event_id": "381253153",
+          "type": "release",
+          "tag": "v0.1.806-beta",
+          "published_at": "2026-09-02T12:49:18Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.806-beta",
+          "prerelease": false,
+          "source_sha256": "729f34455dc22ea43e61d2fe740e1a74642b12ce2610ec5a83495e561be4b247",
+          "excerpt": "Run Qwen3.8-Flash-Next and GLM-5.3-Flash up to 2x faster with MTP. MTP is enabled by default, you can still disable it.\nAlso our new release includes 170+ training, chat, hardware, and performance improvements.\n\n## Highlights\n* **Smoother model loading** (less errors) across local servers and connected providers.\n* Faster and less laggy UI with follow-up turns much faster for all chats.\n* **Safer chat edits** that preserve tool cards, reply details, and conversation branches.\n* **New local media APIs** for video, audio, and MLX-served models.\n* New audio support with new models, progress track",
+          "short_notes": false
+        },
+        {
+          "event_id": "381204959",
+          "type": "release",
+          "tag": "v0.1.805-beta",
+          "published_at": "2026-09-02T11:41:10Z",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.805-beta",
+          "prerelease": false,
+          "source_sha256": "2cd6cd391a43f8b84b05d8cec8e23247b7ff44eabcfad55add4a323e994a2025",
+          "excerpt": "Run Qwen3.8-Flash-Next and GLM-5.3-Flash up to 2x faster with MTP. MTP is enabled by default, you can still disable it.\nAlso our new release includes 170+ training, chat, hardware, and performance improvements.\n\n## Highlights\n* **Smoother model loading** (less errors) across local servers and connected providers.\n* **Safer chat edits** that preserve tool cards, reply details, and conversation branches.\n* **New local media APIs** for video, audio, and MLX-served models.\n* New audio support with new models, progress tracking including: MiniMax-Music3, Higgs, MOSS and more!\n* Improved multi-GPU p",
+          "short_notes": false
+        }
+      ],
+      "newer_unreviewed": [],
+      "releases_truncated": false,
+      "selection_reason": "本地训练与运行界面，本版给出图像生成提速与LoRA训练降显存两类数据，适合说明“速度与资源要分开看”",
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z",
+      "checks": {
+        "aigc_relevant": true,
+        "substantive_change": true,
+        "source_ok": true,
+        "note": "版本说明“Image + video”一节给出Z-Image 2.3秒对38.4秒、Qwen-Image-2.1最高快3.6倍；另有LoRA峰值显存降45%"
+      },
+      "capabilities": [
+        "image"
+      ],
+      "annotation": {
+        "status": "valid",
+        "review_status": "ai_draft",
+        "reviewed_at": null,
+        "evidence": [
+          {
+            "id": "u1",
+            "quote": "Image models keep INT8 or FP8 when offloading. On a 10 GiB-capped B200, Z-Image takes 2.3 s, not 38.4 s.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta",
+            "raw_file": "data/runs/20261002T085220Z/raw/0015.json",
+            "before": "…ng inputs run at about the same speed. - Laya loads in about 9 s instead of 17 s and needs about half the peak host RAM. ## Image + video - ",
+            "after": " - Qwen-Image-2.1 renders 1536x1536 images up to 3.6x faster on a Radeon 8060S. ## Training + models - Fine-tune T5, T5Gemma, BART, Marian a…"
+          },
+          {
+            "id": "u2",
+            "quote": "Qwen-Image-2.1 renders 1536x1536 images up to 3.6x faster on a Radeon 8060S.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta",
+            "raw_file": "data/runs/20261002T085220Z/raw/0015.json",
+            "before": "…eak host RAM. ## Image + video - Image models keep INT8 or FP8 when offloading. On a 10 GiB-capped B200, Z-Image takes 2.3 s, not 38.4 s. - ",
+            "after": " ## Training + models - Fine-tune T5, T5Gemma, BART, Marian and other text encoder-decoders with `FastModel`. - The new `unsloth eval` comma…"
+          },
+          {
+            "id": "u3",
+            "quote": "peaks at 40.2 GB instead of 72.9 GB on one RTX PRO 6000, with 11% shorter steps.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta",
+            "raw_file": "data/runs/20261002T085220Z/raw/0015.json",
+            "before": "… a loaded model needs about as much memory as its 4-bit checkpoint. - [Qwen3.8-27B-NVFP4](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4) ",
+            "after": " - Dense compressed-tensors INT4 checkpoints train as published on NVIDIA GPUs. Qwen3-8B w4a16 peaks at 8.5 GB, not 18.8 GB, on a B200. - Ki…"
+          },
+          {
+            "id": "u4",
+            "quote": "NVFP4 LoRA with 45% lower peak memory",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta",
+            "raw_file": "data/runs/20261002T085220Z/raw/0015.json",
+            "before": "…nections to TypeSafe and other hosted providers - **Clearer errors** that explain failed loads and generations, with a View logs button - **",
+            "after": "** on Qwen3.8-27B-NVFP4 - **INT4 + MXFP4 checkpoints stay packed** during LoRA, including Kimi-K2.7-Code and gpt-oss ## Desktop + chat - **C…"
+          },
+          {
+            "id": "u5",
+            "quote": "that explain failed loads and generations, with a View logs button",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta",
+            "raw_file": "data/runs/20261002T085220Z/raw/0015.json",
+            "before": "…F model's run settings - **Laya decisions up to 4.1x faster**, plus connections to TypeSafe and other hosted providers - **Clearer errors** ",
+            "after": " - **NVFP4 LoRA with 45% lower peak memory** on Qwen3.8-27B-NVFP4 - **INT4 + MXFP4 checkpoints stay packed** during LoRA, including Kimi-K2.…"
+          }
+        ],
+        "purpose": "本地运行与训练语言模型和扩散模型的桌面界面与工具库。",
+        "scene": "本地生图与训练",
+        "update_title": "本地生图：最高快 3.6 倍（项目方指定显卡）",
+        "key_change": "项目方报告：Qwen-Image-2.1 在 Radeon 8060S 上生成 1536×1536 图像最高快 3.6 倍（依据 u2）；同版本新增解释加载与生成失败原因的错误提示和“查看日志”按钮（依据 u5）。",
+        "useful_for": "在本地显卡跑图像生成、关心出图等待的技术人员，以及做本地生图功能的产品——这些数字可作为复测线索，不建议直接据此选型。",
+        "key_limits": [
+          {
+            "label": "指定硬件",
+            "text": "3.6 倍来自 Qwen-Image-2.1 ＋ Radeon 8060S ＋ 1536×1536 的项目方测试，未实测（u2）"
+          },
+          {
+            "label": "不同测试",
+            "text": "45% 显存下降来自语言模型 LoRA 训练（Qwen3.8-27B-NVFP4、单张 RTX PRO 6000，72.9→40.2GB），不是图像推理（u4、u3）"
+          },
+          {
+            "label": "范围",
+            "text": "图像提速不能外推到视频；版本名含 beta，但 API 字段标记为非预发布"
+          }
+        ],
+        "facts": [
+          {
+            "text": "图像模型在内存调配（offloading）时保持 INT8/FP8：限制 10GiB 显存的 B200 上，Z-Image 用时 2.3 秒（原为 38.4 秒）。",
+            "evidence": [
+              "u1"
+            ]
+          },
+          {
+            "text": "Qwen-Image-2.1 在 Radeon 8060S 上生成 1536×1536 图像最高快 3.6 倍。",
+            "evidence": [
+              "u2"
+            ]
+          },
+          {
+            "text": "NVFP4 LoRA 训练峰值显存降低 45%：Qwen3.8-27B-NVFP4 在单张 RTX PRO 6000 上从 72.9GB 降到 40.2GB，每步耗时缩短 11%。",
+            "evidence": [
+              "u4",
+              "u3"
+            ]
+          },
+          {
+            "text": "新增解释加载与生成失败原因的错误提示和查看日志按钮。",
+            "evidence": [
+              "u5"
+            ]
+          }
+        ],
+        "change_type": [
+          "speed",
+          "memory",
+          "control"
+        ],
+        "change": "版本说明称：图像模型进行内存调配（offloading）时保持INT8/FP8，Z-Image在限制10GiB显存的B200上用时2.3秒（原为38.4秒）；Qwen-Image-2.1在Radeon 8060S上生成1536×1536图像最高快3.6倍；NVFP4 LoRA训练峰值显存降低45%（Qwen3.8-27B-NVFP4在单张RTX PRO 6000上从72.9GB降到40.2GB），每个训练步骤耗时缩短11%；新增解释加载与生成失败原因的错误提示和查看日志按钮。",
+        "target_task": "在本地显卡上跑图像生成、或用 LoRA 做微调的团队，关心出图等待、显存够不够，以及失败后能不能看懂原因。",
+        "hypothesis": "这里其实有三类收益：图像生成提速是少等，训练显存下降是降低硬件门槛，错误提示是失败后更容易继续。它们不能互相替代，也不能把项目方机器上的结果直接套到自己的电脑上。",
+        "team_value": {
+          "mode": "暂作参考，不据此选型",
+          "step": "出图等待与训练硬件门槛。",
+          "metric": "单张出图耗时；训练峰值显存。",
+          "facts": [
+            {
+              "text": "提速和降显存数字分别来自指定硬件上的图像生成与语言模型训练。",
+              "evidence": [
+                "u2",
+                "u4"
+              ]
+            },
+            {
+              "text": "岗位关注生成等待。",
+              "background": [
+                "b_job"
+              ]
+            }
+          ],
+          "inference": "如果团队在同类硬件上本地生图，可以把这些数字当作复测线索。",
+          "unverified": "图像生成提速不能外推为视频提速；语言模型训练降显存不能写成图像推理降成本；未在本作品中实测。"
+        },
+        "tech": "Apache-2.0。版本名含 beta，但保存的 API 字段标记为非预发布。性能数字均来自项目方指定的模型、精度与显卡。",
+        "experiment": "图像生成单独测：固定同一显卡、模型、提示词、随机种子、尺寸和步数，比较升级前后各生成50张1536×1536图的单张耗时与失败率。LoRA训练另测：固定模型、精度、序列长度、批量和硬件，比较升级前后能否跑通、峰值显存和每步耗时。",
+        "limitations": "3.6倍来自 Qwen-Image-2.1 与 Radeon 8060S；45%显存来自 Qwen3.8-27B-NVFP4 与单张 RTX PRO 6000，属于语言模型训练。版本名称含 beta，但保存的 API 字段标记为非预发布。所有性能数字均来自项目方指定条件，未在本作品中实测。"
+      }
+    }
+  ],
+  "pending": [
     {
       "id": "jajmangold/not_human",
       "name": "jajmangold/not_human",
@@ -4473,14 +4773,7 @@
   "dropped_decisions": [],
   "changes_since_previous": {
     "previous_run_id": "20261002T022921Z",
-    "removed": [
-      {
-        "id": "unslothai/unsloth",
-        "name": "unslothai/unsloth",
-        "tag": "v0.1.902-beta",
-        "reason": "本期未通过精选条件（见待核查、排除或不再适用的核查记录）"
-      }
-    ],
+    "removed": [],
     "added": []
   },
   "observations": [
@@ -4502,8 +4795,9 @@
         ]
       ],
       "background": [],
-      "status": "needs_review",
-      "review_status": null,
+      "status": "valid",
+      "review_status": "ai_draft",
+      "body": "本期三个项目处理的是三种不同的失败：VoiceStudio 尽量保住已经渲染好的章节，MoneyPrinterTurbo 遇到坏音频直接停下，Unsloth 把加载和生成失败的原因讲得更清楚。它们都在减少失败后的损失，但不是同一种“恢复”。验证时也应分开看：需要重做多少、残缺成片有多少、看懂错误后能不能继续。",
       "scope": "跨项目信号"
     },
     {
@@ -4543,8 +4837,9 @@
         ]
       ],
       "background": [],
-      "status": "needs_review",
-      "review_status": null,
+      "status": "valid",
+      "review_status": "ai_draft",
+      "body": "Unsloth 的3.6倍是图像生成速度，45%是语言模型 LoRA 训练的峰值显存；VoiceStudio 处理的是长章节超时；LocalAI 新增的是文本模型测速工具。选型时要把等待时间、硬件占用和稳定性分开比较，并确认数字来自什么模型、硬件和测试条件。",
       "scope": "跨项目信号"
     }
   ],
@@ -4685,8 +4980,9 @@
       ]
     ],
     "background": [],
-    "status": "needs_review",
-    "review_status": null
+    "status": "valid",
+    "review_status": "ai_draft",
+    "text": "本期 5 项更新里，3 项在做同一件事：生成出错后少返工。"
   },
   "team_plan": {
     "priority": [
@@ -4788,8 +5084,9 @@
           ]
         ],
         "background": [],
-        "status": "needs_review",
-        "review_status": null
+        "status": "valid",
+        "review_status": "ai_draft",
+        "reason": "Unsloth 的 3.6 倍是指定显卡上的图像生成，45% 是语言模型训练显存；LocalAI 新测速只覆盖文本模型。这些都不能外推到视频生成速度或推理成本。"
       },
       {
         "title": "直接接入 VoiceStudio 做声音克隆",
@@ -4835,26 +5132,19 @@
       },
       "mudler/localai": {
         "status": "same"
+      },
+      "unslothai/unsloth": {
+        "status": "same"
       }
     },
-    "removed": [
-      {
-        "id": "unslothai/unsloth",
-        "name": "unslothai/unsloth",
-        "tag": "v0.1.902-beta",
-        "published_at": "2026-10-01T14:06:23Z",
-        "reason": "本期未通过精选条件"
-      }
-    ],
-    "pending_new": [
-      "unslothai/unsloth"
-    ],
+    "removed": [],
+    "pending_new": [],
     "summary": {
       "new": 0,
       "version": 0,
-      "removed": 1,
-      "pending_new": 1,
-      "changed": 1
+      "removed": 0,
+      "pending_new": 0,
+      "changed": 0
     }
   }
 }

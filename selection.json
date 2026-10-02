@@ -84,7 +84,7 @@
       "repo": "unslothai/unsloth",
       "event_id": "401027235",
       "tag": "v0.1.902-beta",
-      "source_sha256": "f657a9d4ce59908913a1ea0728ab9d920bb078a0bbb63fd26644a2a534ab9cdf",
+      "source_sha256": "8d1d0d4db8958ef2f7a1ff74e9c63513fb228b960e906767394ef23876165b76",
       "reason": "本地训练与运行界面，本版给出图像生成提速与LoRA训练降显存两类数据，适合说明“速度与资源要分开看”",
       "checks": {
         "aigc_relevant": true,
@@ -96,7 +96,9 @@
         "image"
       ],
       "decided_by": "AI（Claude）核查起草，待本人确认",
-      "decided_in_run": "20261001T210300Z"
+      "decided_in_run": "20261001T210300Z",
+      "previous_source_sha256": "f657a9d4ce59908913a1ea0728ab9d920bb078a0bbb63fd26644a2a534ab9cdf",
+      "rebound_note": "2026-10-02 复核（期次 20261002T085220Z）：项目方修改了版本说明，只删除了末尾的下载链接表；本条引用的 5 段原文逐字仍在，事实与结论不变，重新绑定新的原文哈希。"
     },
     {
       "decision": "exclude",

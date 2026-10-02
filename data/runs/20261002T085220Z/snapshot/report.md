@@ -1,11 +1,11 @@
 # 近 30 天 AIGC 开源更新看板
 
-> 本期判断待复核：其依据的项目解读已变化或不在本期。
+> **本期判断**：本期 5 项更新里，3 项在做同一件事：生成出错后少返工。
 
 - 事件窗口：2026-09-02T08:52:20Z 至 2026-10-02T08:52:20Z（UTC，含起点不含尾）
-- 精选事件日期：2026-09-02 至 2026-09-23
+- 精选事件日期：2026-09-02 至 2026-10-01
 - 数据抓取时间：2026-10-02T08:52:20Z（期次 20261002T085220Z，状态 complete）
-- 报告生成时间：2026-10-02T08:52:46Z（联网刷新）
+- 报告生成时间：2026-10-02T09:04:38Z（离线重建）
 - 商业背景资料查阅日期：2026-10-02（可早于30天窗口，不属于开源事件）
 
 ## 本期更新目录
@@ -18,8 +18,9 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 | 2 | 长篇有声书：中断或断电后，已渲染章节不用重做 | debpalash/VoiceStudio | 正式发布 v0.5.6，2026-09-23 | 语音 |
 | 3 | 照片转海报：新技能把出图流程写成固定四步 | op7418/guizang-yingzao-skill | 窗口内新建仓库，2026-09-02 | 图像 |
 | 4 | 自部署视频模型：加载时可融合 LoRA 风格插件 | mudler/LocalAI | 正式发布 v4.10.0，2026-09-17 | 视频 |
+| 5 | 本地生图：最高快 3.6 倍（项目方指定显卡） | unslothai/unsloth | 正式发布 v0.1.902-beta，2026-10-01 | 图像 |
 
-另有 4 个有事件的项目在“待核查”，未计入精选。
+另有 3 个有事件的项目在“待核查”，未计入精选。
 
 ## 项目更新
 
@@ -305,13 +306,83 @@ v4.10.0 起，vllm-cpp 视频引擎在模型加载时即可把 LoRA 融合进权
 
 选择理由：本地多模态推理引擎，本版为视频引擎加载LoRA、提供延迟与吞吐测量，关系到自部署生成服务的门槛（AI（Claude）核查起草，待本人确认，核查于期次 20261001T210300Z）。解读审阅状态：AI草稿，未经本人审阅。
 
+### 5. 本地生图：最高快 3.6 倍（项目方指定显卡）
+
+- 项目：[unslothai/unsloth](https://github.com/unslothai/unsloth) — 本地运行与训练语言模型和扩散模型的桌面界面与工具库。
+- 事件：正式发布 v0.1.902-beta，2026-10-01，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta)
+- 能力标签：图像
+
+**本次变化**
+
+项目方报告：Qwen-Image-2.1 在 Radeon 8060S 上生成 1536×1536 图像最高快 3.6 倍（依据 u2）；同版本新增解释加载与生成失败原因的错误提示和“查看日志”按钮（依据 u5）。
+
+**谁值得关注**
+
+在本地显卡跑图像生成、关心出图等待的技术人员，以及做本地生图功能的产品——这些数字可作为复测线索，不建议直接据此选型。
+
+**关键边界**
+
+- 指定硬件：3.6 倍来自 Qwen-Image-2.1 ＋ Radeon 8060S ＋ 1536×1536 的项目方测试，未实测（u2）
+- 不同测试：45% 显存下降来自语言模型 LoRA 训练（Qwen3.8-27B-NVFP4、单张 RTX PRO 6000，72.9→40.2GB），不是图像推理（u4、u3）
+- 范围：图像提速不能外推到视频；版本名含 beta，但 API 字段标记为非预发布
+<details>
+<summary>具体改动（4 项）</summary>
+
+- 图像模型在内存调配（offloading）时保持 INT8/FP8：限制 10GiB 显存的 B200 上，Z-Image 用时 2.3 秒（原为 38.4 秒）。（依据 u1）
+- Qwen-Image-2.1 在 Radeon 8060S 上生成 1536×1536 图像最高快 3.6 倍。（依据 u2）
+- NVFP4 LoRA 训练峰值显存降低 45%：Qwen3.8-27B-NVFP4 在单张 RTX PRO 6000 上从 72.9GB 降到 40.2GB，每步耗时缩短 11%。（依据 u4；依据 u3）
+- 新增解释加载与生成失败原因的错误提示和查看日志按钮。（依据 u5）
+
+</details>
+
+<details>
+<summary>技术与采用条件</summary>
+
+- Apache-2.0。版本名含 beta，但保存的 API 字段标记为非预发布。性能数字均来自项目方指定的模型、精度与显卡。
+- 许可：Apache-2.0。宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查
+- 限制与未知：3.6倍来自 Qwen-Image-2.1 与 Radeon 8060S；45%显存来自 Qwen3.8-27B-NVFP4 与单张 RTX PRO 6000，属于语言模型训练。版本名称含 beta，但保存的 API 字段标记为非预发布。所有性能数字均来自项目方指定条件，未在本作品中实测。
+- 窗口内其他事件：正式发布 v0.1.900-beta，2026-09-28、正式发布 prebuilt-wheels-cu13，2026-09-27、正式发布 v0.1.815-beta，2026-09-23、正式发布 v0.1.814-beta，2026-09-22、正式发布 v0.1.813-beta，2026-09-22、正式发布 v0.1.812-beta，2026-09-22、正式发布 v0.1.811-beta，2026-09-18、正式发布 v0.1.810-beta，2026-09-17、正式发布 Windows-ARM64，2026-09-16、正式发布 v0.1.808-beta，2026-09-09、正式发布 v0.1.807-beta，2026-09-08、正式发布 v0.1.806-beta，2026-09-02、正式发布 v0.1.805-beta，2026-09-02
+
+</details>
+
+<details>
+<summary>对团队的启发</summary>
+
+- 适合的用户任务：在本地显卡上跑图像生成、或用 LoRA 做微调的团队，关心出图等待、显存够不够，以及失败后能不能看懂原因。
+- 方式：暂作参考，不据此选型
+- 改善哪个步骤：出图等待与训练硬件门槛。
+- 可能影响的指标：单张出图耗时；训练峰值显存。
+- 公开事实：提速和降显存数字分别来自指定硬件上的图像生成与语言模型训练。（依据 u2；依据 u4）
+- 公开事实：岗位关注生成等待。（背景：同花顺官方校园招聘：AI Native出海产品经理（AI创新集群，杭州））
+- 分析推断：如果团队在同类硬件上本地生图，可以把这些数字当作复测线索。
+- 待验证：图像生成提速不能外推为视频提速；语言模型训练降显存不能写成图像推理降成本；未在本作品中实测。
+- 产品假设：这里其实有三类收益：图像生成提速是少等，训练显存下降是降低硬件门槛，错误提示是失败后更容易继续。它们不能互相替代，也不能把项目方机器上的结果直接套到自己的电脑上。
+- 最小验证建议（拟议，未执行）：图像生成单独测：固定同一显卡、模型、提示词、随机种子、尺寸和步数，比较升级前后各生成50张1536×1536图的单张耗时与失败率。LoRA训练另测：固定模型、精度、序列长度、批量和硬件，比较升级前后能否跑通、峰值显存和每步耗时。
+
+</details>
+
+<details>
+<summary>原始依据（5 条）</summary>
+
+- [u1] “Image models keep INT8 or FP8 when offloading. On a 10 GiB-capped B200, Z-Image takes 2.3 s, not 38.4 s.” — 版本说明，[原文](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta)，原始响应 `data/runs/20261002T085220Z/raw/0015.json`
+- [u2] “Qwen-Image-2.1 renders 1536x1536 images up to 3.6x faster on a Radeon 8060S.” — 版本说明，[原文](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta)，原始响应 `data/runs/20261002T085220Z/raw/0015.json`
+- [u3] “peaks at 40.2 GB instead of 72.9 GB on one RTX PRO 6000, with 11% shorter steps.” — 版本说明，[原文](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta)，原始响应 `data/runs/20261002T085220Z/raw/0015.json`
+- [u4] “NVFP4 LoRA with 45% lower peak memory” — 版本说明，[原文](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta)，原始响应 `data/runs/20261002T085220Z/raw/0015.json`
+- [u5] “that explain failed loads and generations, with a View logs button” — 版本说明，[原文](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta)，原始响应 `data/runs/20261002T085220Z/raw/0015.json`
+
+</details>
+
+选择理由：本地训练与运行界面，本版给出图像生成提速与LoRA训练降显存两类数据，适合说明“速度与资源要分开看”（AI（Claude）核查起草，待本人确认，核查于期次 20261001T210300Z）。解读审阅状态：AI草稿，未经本人审阅。
+
 ## 跨项目信号
 
 以下信号只说明本期少量项目里的共同点，不外推为行业趋势。
 
-### 出错后，别让前面的工作白做
+### 出错后，别让前面的工作白做（跨项目信号 · 基于 3 个项目）
 
-该信号依赖的证据已变化或不在本期，待复核。
+本期三个项目处理的是三种不同的失败：VoiceStudio 尽量保住已经渲染好的章节，MoneyPrinterTurbo 遇到坏音频直接停下，Unsloth 把加载和生成失败的原因讲得更清楚。它们都在减少失败后的损失，但不是同一种“恢复”。验证时也应分开看：需要重做多少、残缺成片有多少、看懂错误后能不能继续。
+
+依据项目：debpalash/VoiceStudio、harry0703/MoneyPrinterTurbo、unslothai/unsloth
 
 ### 创作能力，开始能被 AI 助手直接调用（跨项目信号 · 基于 2 个项目）
 
@@ -319,9 +390,11 @@ VoiceStudio 提供了 Claude Code、Cursor、Codex CLI 等接入配置；营造�
 
 依据项目：debpalash/VoiceStudio、op7418/guizang-yingzao-skill
 
-### 更快、更省显存、更稳定，不是一回事
+### 更快、更省显存、更稳定，不是一回事（跨项目信号 · 基于 3 个项目）
 
-该信号依赖的证据已变化或不在本期，待复核。
+Unsloth 的3.6倍是图像生成速度，45%是语言模型 LoRA 训练的峰值显存；VoiceStudio 处理的是长章节超时；LocalAI 新增的是文本模型测速工具。选型时要把等待时间、硬件占用和稳定性分开比较，并确认数字来自什么模型、硬件和测试条件。
+
+依据项目：unslothai/unsloth、debpalash/VoiceStudio、mudler/LocalAI
 
 ## 行动建议
 
@@ -380,9 +453,10 @@ VoiceStudio 提供了 Claude Code、Cursor、Codex CLI 等接入配置；营造�
 <details>
 <summary>暂缓清单（3 项）</summary>
 
-#### 按项目方测速数字做选型或成本判断
+#### 暂缓：按项目方测速数字做选型或成本判断
 
-依据已变化或不在本期，待复核。
+- 理由：Unsloth 的 3.6 倍是指定显卡上的图像生成，45% 是语言模型训练显存；LocalAI 新测速只覆盖文本模型。这些都不能外推到视频生成速度或推理成本。
+- 依据：unslothai/unsloth、mudler/LocalAI
 
 #### 暂缓：直接接入 VoiceStudio 做声音克隆
 
@@ -403,7 +477,6 @@ VoiceStudio 提供了 Claude Code、Cursor、Codex CLI 等接入配置；营造�
 
 窗口内有事件、但没有有效核查记录的项目。只列原文事实与来源，未做分析，也不计入精选。
 
-- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.902-beta，2026-10-01，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.902-beta)。原因：v0.1.902-beta 的来源说明已变化，原核查不再适用。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.
 - [jajmangold/not_human](https://github.com/jajmangold/not_human)：窗口内新建仓库，2026-09-24，[来源](https://github.com/jajmangold/not_human)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Experiments toward a real-time, controllable talking human: measurements, failures and working pieces (speech, lip sync, expression control, perception) on Volta-class GPUs
 - [leemysw/yovoice](https://github.com/leemysw/yovoice)：正式发布 v0.1.6，2026-10-01，[来源](https://github.com/leemysw/yovoice/releases/tag/v0.1.6)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Open-source voice creation for macOS and Windows. Local TTS, voice cloning, and emotion control — no cloud APIs or per-character fees.
 - [Rylaispirit/cinematic-video-prompt-skill](https://github.com/Rylaispirit/cinematic-video-prompt-skill)：窗口内新建仓库，2026-09-20，[来源](https://github.com/Rylaispirit/cinematic-video-prompt-skill)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：AI video prompt cheat sheet & Claude Skill: cinematic camera angles, camera movement, lighting, composition, color grading for Veo 3, Kling, Sora, Runway, Midjourney. 700+ terms with Vietnamese explanations.
@@ -411,7 +484,6 @@ VoiceStudio 提供了 Claude Code、Cursor、Codex CLI 等接入配置；营造�
 ## 移出与变化
 
 - 对比上一期快照 20261002T022921Z：新增 无。
-- 移出 unslothai/unsloth（v0.1.902-beta）：本期未通过精选条件（见待核查、排除或不再适用的核查记录）
 
 ## 排除记录
 
@@ -445,7 +517,7 @@ VoiceStudio 提供了 Claude Code、Cursor、Codex CLI 等接入配置；营造�
 | 语音 | 成功 | 27 | 4 | 0 | 0 | 23 | 0 |
 | 数字人 | 成功 | 27 | 2 | 2 | 0 | 23 | 0 |
 
-检索到的候选 109 个 → 窗口内有事件 12 个 → 正式精选 4 个、待核查 4 个、经核查排除 4 个。
+检索到的候选 109 个 → 窗口内有事件 12 个 → 正式精选 5 个、待核查 3 个、经核查排除 4 个。
 
 - 检索分类“视频”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，1个有事件但待核查，1个有事件但经核查排除，另有23个未检查。按能力标签，有2个精选项目涉及视频：harry0703/MoneyPrinterTurbo、mudler/LocalAI。
 - 检索分类“数字人”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，1个有事件但待核查，1个有事件但经核查排除，另有23个未检查。按能力标签，本期也没有精选项目涉及数字人。
@@ -458,6 +530,7 @@ VoiceStudio 提供了 Claude Code、Cursor、Codex CLI 等接入配置；营造�
 | debpalash/VoiceStudio | 51582 | AGPL-3.0 |
 | op7418/guizang-yingzao-skill | 479 | 未声明 |
 | mudler/LocalAI | 49369 | MIT |
+| unslothai/unsloth | 77130 | Apache-2.0 |
 
 ### 检索范围与截断
 
