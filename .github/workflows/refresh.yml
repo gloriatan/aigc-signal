@@ -1,4 +1,4 @@
-name: refresh-data
+name: refresh-data  # 一键更新与定时更新
 
 # 每周二、周五 01:00 UTC（北京时间 09:00）自动抓取；看板上的「一键更新」通过 workflow_dispatch 手动触发。
 on:

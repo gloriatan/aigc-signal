@@ -295,4 +295,5 @@ def assemble(manifest, config, cands, assessed, selection, annotations, mode, ge
         "changes_since_previous": changes_since(previous, projects, manifest["window_start"]),
         "observations": observations(annotations, projects, [b["id"] for b in bg]),
         "background": bg,
+        "appendix": context.get("appendix"),
     } | analysis(annotations, context, projects)

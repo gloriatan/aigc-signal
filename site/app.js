@@ -713,6 +713,25 @@
     }
   }
 
+  // ---------- appendix (collapsed by default) ----------
+  function renderAppendix(root) {
+    var ap = brief.appendix;
+    if (!ap || !ap.sections) return;
+    var kids = [el("summary", { text: ap.title }), ap.lead ? el("p", { class: "section-lead", text: ap.lead }) : null];
+    ap.sections.forEach(function (sec) {
+      kids.push(el("h3", { class: "appendix-h", text: sec.heading }));
+      if (sec.items) kids.push(el("ul", { class: "list" }, sec.items.map(function (t) { return el("li", { text: t }); })));
+      if (sec.pairs) {
+        kids.push(el("ul", { class: "list appendix-pairs" }, sec.pairs.map(function (x) {
+          return el("li", {}, [el("span", { class: "tagline tag-fact", text: "经历" }), x.from, el("br"),
+            el("span", { class: "tagline tag-infer", text: "在本作品中" }), x.here]);
+        })));
+      }
+    });
+    root.appendChild(el("section", { class: "section appendix", id: "s-appendix", "aria-label": ap.title },
+      [el("details", { class: "quiet-disclosure appendix-box" }, kids)]));
+  }
+
   // ---------- one-click update ----------
   // The page asks /api/refresh (Cloudflare Pages Function) to start the GitHub Actions workflow, then polls
   // /api/status until the run finishes and the redeployed site serves the new period.
@@ -819,6 +838,7 @@
     renderReview(app);
     renderBackground(app);
     renderMethod(app);
+    renderAppendix(app);
     app.appendChild(el("p", { class: "footer" }, ["同一数据源生成的 Markdown 简报：", el("a", { href: "../report.md", text: "report.md" }),
       "。每周二、五自动更新，也可点顶部「一键更新」手动更新。Signal 是作品工作名，与任何公司无隶属关系。"]));
     refreshList();
