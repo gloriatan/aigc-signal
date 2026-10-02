@@ -1,6 +1,6 @@
 {
-  "from_run": "20261001T210300Z",
-  "to_run": "20261002T022921Z",
+  "from_run": "20261002T022921Z",
+  "to_run": "20261002T085220Z",
   "has_previous": true,
   "projects": {
     "harry0703/moneyprinterturbo": {
@@ -14,22 +14,25 @@
     },
     "mudler/localai": {
       "status": "same"
-    },
-    "unslothai/unsloth": {
-      "status": "same"
     }
   },
-  "removed": [],
+  "removed": [
+    {
+      "id": "unslothai/unsloth",
+      "name": "unslothai/unsloth",
+      "tag": "v0.1.902-beta",
+      "published_at": "2026-10-01T14:06:23Z",
+      "reason": "本期未通过精选条件"
+    }
+  ],
   "pending_new": [
-    "jajmangold/not_human",
-    "leemysw/yovoice",
-    "Rylaispirit/cinematic-video-prompt-skill"
+    "unslothai/unsloth"
   ],
   "summary": {
     "new": 0,
     "version": 0,
-    "removed": 0,
-    "pending_new": 3,
-    "changed": 0
+    "removed": 1,
+    "pending_new": 1,
+    "changed": 1
   }
 }

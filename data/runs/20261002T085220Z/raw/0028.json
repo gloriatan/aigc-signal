@@ -1,0 +1,53 @@
+{
+ "url": "https://api.github.com/repos/Lynpoint/CyberVerse/releases?per_page=30",
+ "fetched_at": "2026-10-02T08:52:45Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4980",
+  "reset": "1790934758"
+ },
+ "body": [
+  {
+   "url": "https://api.github.com/repos/Lynpoint/CyberVerse/releases/323644292",
+   "assets_url": "https://api.github.com/repos/Lynpoint/CyberVerse/releases/323644292/assets",
+   "upload_url": "https://uploads.github.com/repos/Lynpoint/CyberVerse/releases/323644292/assets{?name,label}",
+   "html_url": "https://github.com/Lynpoint/CyberVerse/releases/tag/v0.1.0",
+   "id": 323644292,
+   "author": {
+    "login": "dsd2077",
+    "id": 60881537,
+    "node_id": "MDQ6VXNlcjYwODgxNTM3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/60881537?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dsd2077",
+    "html_url": "https://github.com/dsd2077",
+    "followers_url": "https://api.github.com/users/dsd2077/followers",
+    "following_url": "https://api.github.com/users/dsd2077/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dsd2077/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dsd2077/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dsd2077/subscriptions",
+    "organizations_url": "https://api.github.com/users/dsd2077/orgs",
+    "repos_url": "https://api.github.com/users/dsd2077/repos",
+    "events_url": "https://api.github.com/users/dsd2077/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dsd2077/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "node_id": "RE_kwDOSGKjGM4TSmuE",
+   "tag_name": "v0.1.0",
+   "target_commitish": "main",
+   "name": "CyberVerse v0.1.0",
+   "draft": false,
+   "immutable": false,
+   "prerelease": false,
+   "created_at": "2026-05-16T09:23:59Z",
+   "updated_at": "2026-05-16T09:24:17Z",
+   "published_at": "2026-05-16T09:24:17Z",
+   "assets": [],
+   "tarball_url": "https://api.github.com/repos/Lynpoint/CyberVerse/tarball/v0.1.0",
+   "zipball_url": "https://api.github.com/repos/Lynpoint/CyberVerse/zipball/v0.1.0",
+   "body": "**Full Changelog**: https://github.com/dsd2077/CyberVerse/commits/v0.1.0"
+  }
+ ]
+}

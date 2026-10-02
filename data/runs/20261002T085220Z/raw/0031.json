@@ -1,0 +1,10 @@
+{
+ "url": "https://api.github.com/repos/jajmangold/not_human/releases?per_page=30",
+ "fetched_at": "2026-10-02T08:52:46Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4977",
+  "reset": "1790934758"
+ },
+ "body": []
+}

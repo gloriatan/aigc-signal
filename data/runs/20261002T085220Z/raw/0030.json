@@ -1,0 +1,27 @@
+{
+ "url": "https://api.github.com/repos/yikang329-droid/kaipai-talking-head-skill/readme",
+ "fetched_at": "2026-10-02T08:52:45Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4978",
+  "reset": "1790934758"
+ },
+ "body": {
+  "name": "README.md",
+  "path": "README.md",
+  "sha": "33c8dbada6969df2b0ae93ee1cc5375ac9db260d",
+  "size": 1394,
+  "url": "https://api.github.com/repos/yikang329-droid/kaipai-talking-head-skill/contents/README.md?ref=main",
+  "html_url": "https://github.com/yikang329-droid/kaipai-talking-head-skill/blob/main/README.md",
+  "git_url": "https://api.github.com/repos/yikang329-droid/kaipai-talking-head-skill/git/blobs/33c8dbada6969df2b0ae93ee1cc5375ac9db260d",
+  "download_url": "https://raw.githubusercontent.com/yikang329-droid/kaipai-talking-head-skill/main/README.md",
+  "type": "file",
+  "content": "IyBLYWlwYWkgVGFsa2luZyBIZWFkIFNraWxsCgrkuIDkuKrnlKjkuo4gQ29k\nZXgg55qE56uW5bGP55yf5Lq65Y+j5pKt5Ymq6L6R5oqA6IO944CC5a6D5bCG\n5Y6f5aeL5Y+j5pKt5pW055CG5oiQ5byA5ouN6L2v5Lu26aOO5qC855qE55+t\n6KeG6aKR77ya5Lit6Iux5Y+M6K+t5a2X5bmV44CB6buY6K6kIDEuMSDlgI3p\ngJ/jgIHpobbpg6jpkqnlrZDjgIHljZXlvKDkv6Hmga/ljaHjgIHnu5PlsL4g\nQ1RB77yM5Lul5Y+K54us56uL5bCB6Z2i44CCCgpHaXRIdWLvvJo8aHR0cHM6\nLy9naXRodWIuY29tL3lpa2FuZzMyOS1kcm9pZC9rYWlwYWktdGFsa2luZy1o\nZWFkLXNraWxsPgoKIyMg5a6J6KOFCgrkvb/nlKggQ29kZXgg55qEIHNraWxs\nIGluc3RhbGxlciDlronoo4XmnKwgR2l0SHViIOS7k+W6k++8jOaIluWwhuS7\nk+W6k+ebruW9leaUvuWIsO+8mgoKYGBgdGV4dAokQ09ERVhfSE9NRS9za2ls\nbHMva2FpcGFpLXRhbGtpbmctaGVhZApgYGAKCldpbmRvd3Mg5omL5Yqo5a6J\n6KOF77yaCgpgYGBwb3dlcnNoZWxsCmdpdCBjbG9uZSBodHRwczovL2dpdGh1\nYi5jb20veWlrYW5nMzI5LWRyb2lkL2thaXBhaS10YWxraW5nLWhlYWQtc2tp\nbGwgIiRlbnY6VVNFUlBST0ZJTEVcLmNvZGV4XHNraWxsc1xrYWlwYWktdGFs\na2luZy1oZWFkIgpgYGAKCuWuieijheWQjuWPr+ebtOaOpeiwg+eUqO+8mgoK\nYGBgdGV4dArkvb/nlKggJGthaXBhaS10YWxraW5nLWhlYWQg5Ymq6L+Z5Liq\n5Y+j5pKt6KeG6aKR77yM5bm255Sf5oiQ5Lit6Iux5Y+M6K+t5oiQ54mH5ZKM\n5bCB6Z2i44CCCmBgYAoKIyMg5L6d6LWWCgotIEZGbXBlZyDkuI4gZmZwcm9i\nZQotIFB5dGhvbiAzLjEwKwotIE5vZGUuanMgMjIrIOS4jiBIeXBlckZyYW1l\nc++8iOS9v+eUqCBIVE1MIOinhumikeWQiOaIkOaXtu+8iQoK5a6J6KOFIFB5\ndGhvbiDkvp3otZblubbnoa7orqTlqpLkvZPlt6Xlhbflj6/nlKjvvJoKCmBg\nYHBvd2Vyc2hlbGwKcHl0aG9uIC1tIHBpcCBpbnN0YWxsIC1yIHJlcXVpcmVt\nZW50cy50eHQKZmZtcGVnIC12ZXJzaW9uCmZmcHJvYmUgLXZlcnNpb24KYGBg\nCgrlsIHpnaLohJrmnKzkvp3otZYgUGlsbG9377yb5pyq5a6J6KOF5pe25Lya\n55u05o6l57uZ5Ye65a6J6KOF5o+Q56S644CCCgrku5PlupPlhoXnva4gTm90\nbyBTYW5zIFNDIOWtl+S9k++8jOiuuOWPr+ingSBgYXNzZXRzL2ZvbnRzL09G\nTC50eHRg44CC5oqA6IO96buY6K6k5LiN5Lya5LiK5Lyg5Y6f6KeG6aKR44CB\n6L2s5YaZ44CB5a2X5bmV5oiW5oiQ54mH77yb5LuT5bqT55qEIGAuZ2l0aWdu\nb3JlYCDkuZ/kvJrlv73nlaXluLjop4HlqpLkvZPovpPlh7rjgIIKCuacrOmh\nueebruaYr+eLrOeri+eahOW3peS9nOa1geWwgeijhe+8jOS4juKAnOW8gOaL\njeKAnei9r+S7tuWumOaWueaXoOmatuWxnuaIluaOiOadg+WFs+ezu+OAggo=\n",
+  "encoding": "base64",
+  "_links": {
+   "self": "https://api.github.com/repos/yikang329-droid/kaipai-talking-head-skill/contents/README.md?ref=main",
+   "git": "https://api.github.com/repos/yikang329-droid/kaipai-talking-head-skill/git/blobs/33c8dbada6969df2b0ae93ee1cc5375ac9db260d",
+   "html": "https://github.com/yikang329-droid/kaipai-talking-head-skill/blob/main/README.md"
+  }
+ }
+}
