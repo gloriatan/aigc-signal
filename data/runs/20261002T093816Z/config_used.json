@@ -1,0 +1,72 @@
+{
+  "config_version": "3",
+  "window_days": 30,
+  "categories": [
+    {
+      "key": "video",
+      "label": "视频",
+      "topic": "text-to-video"
+    },
+    {
+      "key": "image",
+      "label": "图像",
+      "topic": "image-generation"
+    },
+    {
+      "key": "speech",
+      "label": "语音",
+      "topic": "text-to-speech"
+    },
+    {
+      "key": "avatar",
+      "label": "数字人",
+      "topic": "talking-head"
+    }
+  ],
+  "search": {
+    "s1_per_page": 20,
+    "s2_per_page": 10,
+    "interval_sec": 7,
+    "interval_sec_with_token": 2,
+    "releases_per_page": 30
+  },
+  "quota": {
+    "per_category": 4,
+    "s2_reserved": 2,
+    "recheck_per_category": 1,
+    "request_cap": 48,
+    "readme_cap": 8,
+    "retry_cap": 6
+  },
+  "http": {
+    "timeout_sec": 20,
+    "retry_wait_sec": 2
+  },
+  "thresholds": {
+    "short_notes_chars": 80,
+    "readme_min_chars": 300,
+    "excerpt_chars": 600,
+    "shortlist_max": 6,
+    "shortlist_min": 4
+  },
+  "review_keywords": [
+    "awesome",
+    "list",
+    "prompts",
+    "tutorial",
+    "course",
+    "paper"
+  ],
+  "manual_exclusions": [
+    {
+      "repo": "apimart-api-ai-Aggregator/seedance-2.0-api",
+      "scope": "repo",
+      "reason_code": "api_resale_no_open_impl",
+      "explanation": "仓库是商业API转售方的价格与调用示例页，正文含推广链接，没有可核查的开源实现",
+      "evidence_url": "https://github.com/apimart-api-ai-Aggregator/seedance-2.0-api",
+      "description_sha256": "26931f50bf73679a41ba948aeabd41082b8e3f18044f45e232d1f30466eea805",
+      "decided_in_run": "20261001T210057Z",
+      "recheck_when": "仓库简介变化时自动失效，重新进入检查"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+ "url": "https://api.github.com/repos/yikang329-droid/kaipai-talking-head-skill/releases?per_page=30",
+ "fetched_at": "2026-10-02T09:38:41Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4955",
+  "reset": "1790934758"
+ },
+ "body": []
+}
