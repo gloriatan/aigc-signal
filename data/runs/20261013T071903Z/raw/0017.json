@@ -1,0 +1,53 @@
+{
+ "url": "https://api.github.com/repos/Arekejoker/qwen21-nsfw-pose-skill/releases?per_page=30",
+ "fetched_at": "2026-10-13T07:19:30Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4991",
+  "reset": "1791879564"
+ },
+ "body": [
+  {
+   "url": "https://api.github.com/repos/Arekejoker/qwen21-nsfw-pose-skill/releases/411274830",
+   "assets_url": "https://api.github.com/repos/Arekejoker/qwen21-nsfw-pose-skill/releases/411274830/assets",
+   "upload_url": "https://uploads.github.com/repos/Arekejoker/qwen21-nsfw-pose-skill/releases/411274830/assets{?name,label}",
+   "html_url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill/releases/tag/v1.0.0",
+   "id": 411274830,
+   "author": {
+    "login": "Arekejoker",
+    "id": 131444687,
+    "node_id": "U_kgDOB9Wvzw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/131444687?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Arekejoker",
+    "html_url": "https://github.com/Arekejoker",
+    "followers_url": "https://api.github.com/users/Arekejoker/followers",
+    "following_url": "https://api.github.com/users/Arekejoker/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Arekejoker/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Arekejoker/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Arekejoker/subscriptions",
+    "organizations_url": "https://api.github.com/users/Arekejoker/orgs",
+    "repos_url": "https://api.github.com/users/Arekejoker/repos",
+    "events_url": "https://api.github.com/users/Arekejoker/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Arekejoker/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "node_id": "RE_kwDOVGxZXs4Yg45O",
+   "tag_name": "v1.0.0",
+   "target_commitish": "main",
+   "name": "v1.0.0 — Initial stable release",
+   "draft": false,
+   "immutable": false,
+   "prerelease": false,
+   "created_at": "2026-10-13T04:30:56Z",
+   "updated_at": "2026-10-13T04:32:02Z",
+   "published_at": "2026-10-13T04:31:38Z",
+   "assets": [],
+   "tarball_url": "https://api.github.com/repos/Arekejoker/qwen21-nsfw-pose-skill/tarball/v1.0.0",
+   "zipball_url": "https://api.github.com/repos/Arekejoker/qwen21-nsfw-pose-skill/zipball/v1.0.0",
+   "body": "## Highlights\n\n- Complete Qwen-Image 2.1 pose skill, author recipes, workflows, and 136-pose VNCCS setup.\n- Route-based installation guide with explicit paths and dependencies.\n- Offline package validator and GitHub Actions checks.\n- Custom GitHub social preview and repository topics.\n\nModel weights are not included; install them using `install/setup.md`."
+  }
+ ]
+}
