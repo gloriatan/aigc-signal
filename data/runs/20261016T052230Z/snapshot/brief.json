@@ -1,0 +1,4598 @@
+{
+  "meta": {
+    "schema_version": "1",
+    "run_id": "20261016T052230Z",
+    "as_of": "2026-10-16T05:22:30Z",
+    "window_start": "2026-09-16T05:22:30Z",
+    "window_end": "2026-10-16T05:22:30Z",
+    "generated_at": "2026-10-16T05:22:56Z",
+    "mode": "refresh",
+    "run_status": "complete",
+    "config_version": "3",
+    "request_count": 32,
+    "selection_status": "editorial",
+    "errors": [],
+    "background_accessed_at": [
+      "2026-10-02"
+    ],
+    "categories": [
+      {
+        "key": "video",
+        "label": "视频",
+        "topic": "text-to-video"
+      },
+      {
+        "key": "image",
+        "label": "图像",
+        "topic": "image-generation"
+      },
+      {
+        "key": "speech",
+        "label": "语音",
+        "topic": "text-to-speech"
+      },
+      {
+        "key": "avatar",
+        "label": "数字人",
+        "topic": "talking-head"
+      }
+    ],
+    "quota": {
+      "per_category": 4,
+      "s2_reserved": 2,
+      "recheck_per_category": 1,
+      "request_cap": 48,
+      "readme_cap": 8,
+      "retry_cap": 6
+    },
+    "thresholds": {
+      "short_notes_chars": 80,
+      "readme_min_chars": 300,
+      "excerpt_chars": 600,
+      "shortlist_max": 6,
+      "shortlist_min": 4
+    },
+    "search_config": {
+      "s1_per_page": 20,
+      "s2_per_page": 10,
+      "interval_sec": 7,
+      "interval_sec_with_token": 2,
+      "releases_per_page": 30
+    }
+  },
+  "coverage": [
+    {
+      "category": "video",
+      "label": "视频",
+      "search_status": {
+        "s1": "ok",
+        "s2": "ok"
+      },
+      "candidates": 30,
+      "qualified": 2,
+      "checked_no_event": 2,
+      "manually_excluded": 1,
+      "not_checked": 25,
+      "check_failed": 0,
+      "search_failed": false
+    },
+    {
+      "category": "image",
+      "label": "图像",
+      "search_status": {
+        "s1": "ok",
+        "s2": "ok"
+      },
+      "candidates": 28,
+      "qualified": 4,
+      "checked_no_event": 0,
+      "manually_excluded": 0,
+      "not_checked": 24,
+      "check_failed": 0,
+      "search_failed": false
+    },
+    {
+      "category": "speech",
+      "label": "语音",
+      "search_status": {
+        "s1": "ok",
+        "s2": "ok"
+      },
+      "candidates": 27,
+      "qualified": 4,
+      "checked_no_event": 0,
+      "manually_excluded": 0,
+      "not_checked": 23,
+      "check_failed": 0,
+      "search_failed": false
+    },
+    {
+      "category": "avatar",
+      "label": "数字人",
+      "search_status": {
+        "s1": "ok",
+        "s2": "ok"
+      },
+      "candidates": 27,
+      "qualified": 2,
+      "checked_no_event": 2,
+      "manually_excluded": 0,
+      "not_checked": 23,
+      "check_failed": 0,
+      "search_failed": false
+    }
+  ],
+  "scope": {
+    "searches": [
+      {
+        "category": "video",
+        "kind": "s1",
+        "query": "topic:text-to-video pushed:>=2026-09-16 archived:false fork:false",
+        "sort": "stars",
+        "outcome": "ok",
+        "total_count": 613,
+        "returned": 20,
+        "incomplete_results": false,
+        "raw_file": "raw/0001.json",
+        "truncated": true
+      },
+      {
+        "category": "video",
+        "kind": "s2",
+        "query": "topic:text-to-video created:>=2026-09-16 archived:false fork:false",
+        "sort": "stars",
+        "outcome": "ok",
+        "total_count": 284,
+        "returned": 10,
+        "incomplete_results": false,
+        "raw_file": "raw/0002.json",
+        "truncated": true
+      },
+      {
+        "category": "image",
+        "kind": "s1",
+        "query": "topic:image-generation pushed:>=2026-09-16 archived:false fork:false",
+        "sort": "stars",
+        "outcome": "ok",
+        "total_count": 2717,
+        "returned": 20,
+        "incomplete_results": false,
+        "raw_file": "raw/0003.json",
+        "truncated": true
+      },
+      {
+        "category": "image",
+        "kind": "s2",
+        "query": "topic:image-generation created:>=2026-09-16 archived:false fork:false",
+        "sort": "stars",
+        "outcome": "ok",
+        "total_count": 1548,
+        "returned": 10,
+        "incomplete_results": false,
+        "raw_file": "raw/0004.json",
+        "truncated": true
+      },
+      {
+        "category": "speech",
+        "kind": "s1",
+        "query": "topic:text-to-speech pushed:>=2026-09-16 archived:false fork:false",
+        "sort": "stars",
+        "outcome": "ok",
+        "total_count": 2871,
+        "returned": 20,
+        "incomplete_results": false,
+        "raw_file": "raw/0005.json",
+        "truncated": true
+      },
+      {
+        "category": "speech",
+        "kind": "s2",
+        "query": "topic:text-to-speech created:>=2026-09-16 archived:false fork:false",
+        "sort": "stars",
+        "outcome": "ok",
+        "total_count": 1228,
+        "returned": 10,
+        "incomplete_results": false,
+        "raw_file": "raw/0006.json",
+        "truncated": true
+      },
+      {
+        "category": "avatar",
+        "kind": "s1",
+        "query": "topic:talking-head pushed:>=2026-09-16 archived:false fork:false",
+        "sort": "stars",
+        "outcome": "ok",
+        "total_count": 77,
+        "returned": 20,
+        "incomplete_results": false,
+        "raw_file": "raw/0007.json",
+        "truncated": true
+      },
+      {
+        "category": "avatar",
+        "kind": "s2",
+        "query": "topic:talking-head created:>=2026-09-16 archived:false fork:false",
+        "sort": "stars",
+        "outcome": "ok",
+        "total_count": 38,
+        "returned": 10,
+        "incomplete_results": false,
+        "raw_file": "raw/0008.json",
+        "truncated": true
+      }
+    ],
+    "raw_dir": "data/runs/20261016T052230Z/raw"
+  },
+  "category_gaps": [
+    {
+      "category": "video",
+      "label": "视频",
+      "related": [
+        "mudler/LocalAI"
+      ],
+      "text": "检索分类“视频”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，1个有事件但待核查，1个有事件但经核查排除，另有25个未检查。按能力标签，有1个精选项目涉及视频：mudler/LocalAI。"
+    },
+    {
+      "category": "avatar",
+      "label": "数字人",
+      "related": [],
+      "text": "检索分类“数字人”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有23个未检查。按能力标签，本期也没有精选项目涉及数字人。"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "lipku/livetalking",
+      "name": "lipku/LiveTalking",
+      "repo_url": "https://github.com/lipku/LiveTalking",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 0,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "checked_no_event",
+      "note": "窗口内无正式发布、预发布或新建",
+      "stars_snapshot": 9909,
+      "created_at": "2023-12-19T01:32:46Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Real time interactive streaming digital human"
+    },
+    {
+      "id": "met4citizen/talkinghead",
+      "name": "met4citizen/TalkingHead",
+      "repo_url": "https://github.com/met4citizen/TalkingHead",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 1,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "checked_no_event",
+      "note": "窗口内无正式发布、预发布或新建",
+      "stars_snapshot": 1608,
+      "created_at": "2023-08-14T10:59:50Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Talking Head (3D): A JavaScript class for real-time lip-sync using full-body 3D avatars."
+    },
+    {
+      "id": "vincentwei1021/video-talkcraft",
+      "name": "Vincentwei1021/video-talkcraft",
+      "repo_url": "https://github.com/Vincentwei1021/video-talkcraft",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 2,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1602,
+      "created_at": "2026-08-22T17:11:05Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer videos — word-level voiceover sync, 109 motion recipe cards, an anti-slideshow camera system, Remotion rendering."
+    },
+    {
+      "id": "pireel/pireel",
+      "name": "pireel/pireel",
+      "repo_url": "https://github.com/pireel/pireel",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 4,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1297,
+      "created_at": "2026-07-20T09:34:24Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "description": "The open-source alternative to Capcut、ChatCut. Drivable by any AI agent over MCP."
+    },
+    {
+      "id": "punithvt/ai-avatar-system",
+      "name": "PunithVT/ai-avatar-system",
+      "repo_url": "https://github.com/PunithVT/ai-avatar-system",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 5,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 534,
+      "created_at": "2025-11-30T08:19:24Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "🎭 AI Avatar / digital human platform — upload a photo, clone a voice, talk to any face in real time with lip-sync video. Open-source, self-hosted. Claude · Whisper · Chatterbox · MuseTalk."
+    },
+    {
+      "id": "yeje-cpu/seecut",
+      "name": "YeJe-cpu/SeeCut",
+      "repo_url": "https://github.com/YeJe-cpu/SeeCut",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 6,
+          "raw_file": "raw/0007.json"
+        },
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 0,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 323,
+      "created_at": "2026-09-25T11:48:27Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "An AI editor that watches its own cut: talking-head / AI-avatar video → auto-edited short video. 网感口播精剪：数字人/真人口播 → AI 自动精剪成网感动效短视频 → 可选剪映分层草稿"
+    },
+    {
+      "id": "genesisinteractive/livetalk-unity",
+      "name": "genesisinteractive/LiveTalk-Unity",
+      "repo_url": "https://github.com/genesisinteractive/LiveTalk-Unity",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 8,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 53,
+      "created_at": "2025-06-12T17:56:49Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "LiveTalk is a unified, high-performance talking head generation system that combines the power of LivePortrait and MuseTalk open-source repositories. The PyTorch models from these projects have been ported to ONNX format and optimized for CoreML to enable efficient on-device inference in Unity."
+    },
+    {
+      "id": "animede/realtime_narration_video",
+      "name": "animede/Realtime_Narration_Video",
+      "repo_url": "https://github.com/animede/Realtime_Narration_Video",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 9,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 40,
+      "created_at": "2026-09-03T12:28:06Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Real-time talking character on a single RTX 5090 — LTX-2.5 22B + local LLM + TTS, fully local. First video ~2.6s after Enter."
+    },
+    {
+      "id": "marvtub/takes-public",
+      "name": "marvtub/takes-public",
+      "repo_url": "https://github.com/marvtub/takes-public",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 10,
+          "raw_file": "raw/0007.json"
+        },
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 1,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 29,
+      "created_at": "2026-10-04T19:04:07Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Takes for Mac (gettakes.app): a free, open-source Mac app for talking-head videos. A teleprompter that follows your voice, camera and screen recording, and your agent (Claude Code, Codex or pi) writes the script, cuts the edit and drafts the posts through the takes MCP server. Apple silicon, macOS 15+. Shared as is."
+    },
+    {
+      "id": "wpydcr/nanoavatar",
+      "name": "wpydcr/NanoAvatar",
+      "repo_url": "https://github.com/wpydcr/NanoAvatar",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 11,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 23,
+      "created_at": "2026-09-10T04:47:23Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Real-time, high-quality talking avatars, even on a old Android phone: 41 FPS with just 103 ms to the first frame."
+    },
+    {
+      "id": "andriidrok1/autobroll",
+      "name": "andriidrok1/autobroll",
+      "repo_url": "https://github.com/andriidrok1/autobroll",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 12,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 20,
+      "created_at": "2026-06-11T19:25:22Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "AI short-form video editor in the browser: auto-arrange takes, cut silence, human-looking captions, auto B-roll, keyframes — built on Remotion"
+    },
+    {
+      "id": "alndaly/mosael",
+      "name": "Alndaly/Mosael",
+      "repo_url": "https://github.com/Alndaly/Mosael",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 13,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 15,
+      "created_at": "2026-07-16T12:52:55Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Local-first desktop AI video studio for macOS & Windows: generate with your own API keys (Seedance, Kling, Veo, Wan) or ComfyUI, edit on a timeline, clone voices, dub & lip-sync, make talking-photo videos, automate product promos and shorts. 本地优先的 AI 视频创作软件。"
+    },
+    {
+      "id": "agentchengfeng/chengfeng-videocut",
+      "name": "Agentchengfeng/chengfeng-videocut",
+      "repo_url": "https://github.com/Agentchengfeng/chengfeng-videocut",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 14,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 14,
+      "created_at": "2026-07-16T02:34:54Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "本地优先的口播视频剪辑工作台与 CLI"
+    },
+    {
+      "id": "pireel/pireel-agent",
+      "name": "pireel/pireel-agent",
+      "repo_url": "https://github.com/pireel/pireel-agent",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 15,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 12,
+      "created_at": "2026-07-14T16:19:03Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "MCP server + skills that let your AI coding agent (Codex / Claude Code) drive Pireel Studio — cut by transcript, storyboard, caption and design videos right from chat."
+    },
+    {
+      "id": "maojiebc/majia-chatcut-koubo",
+      "name": "maojiebc/majia-chatcut-koubo",
+      "repo_url": "https://github.com/maojiebc/majia-chatcut-koubo",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 16,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 11,
+      "created_at": "2026-07-22T04:06:37Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "ChatCut口播 · 马甲实战版｜v1.7.0 环境适配、文字目标保护与可恢复稳剪"
+    },
+    {
+      "id": "yomage-ai/ai-video-director-skill",
+      "name": "yomage-ai/ai-video-director-skill",
+      "repo_url": "https://github.com/yomage-ai/ai-video-director-skill",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 17,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 9,
+      "created_at": "2026-08-18T06:52:36Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "开源 AI 口播视频剪辑导演 Skill | Bilingual AI video director for talking-head editing, B-roll, captions and delivery."
+    },
+    {
+      "id": "navodpeiris/gsplat-talkinghead",
+      "name": "NavodPeiris/gsplat-talkinghead",
+      "repo_url": "https://github.com/NavodPeiris/gsplat-talkinghead",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 18,
+          "raw_file": "raw/0007.json"
+        },
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 2,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 7,
+      "created_at": "2026-09-28T20:33:55Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "LAM Gaussian-Splat Avatars for AI voice agents. Realistic avatars for interview/support/sales agents. "
+    },
+    {
+      "id": "beatra-ai/beatra-skills",
+      "name": "beatra-ai/beatra-skills",
+      "repo_url": "https://github.com/beatra-ai/beatra-skills",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 19,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 6,
+      "created_at": "2026-08-19T03:59:27Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT-0",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Agent Skills for Claude Code, Codex & OpenClaw: AI image generation, text to speech, talking head video, AI music, and video generation skills that render on Beatra. 图片生成 · 配音 · 数字人 · AI 作曲"
+    },
+    {
+      "id": "beatra-ai/talking-avatar-video-skill",
+      "name": "beatra-ai/talking-avatar-video-skill",
+      "repo_url": "https://github.com/beatra-ai/talking-avatar-video-skill",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 3,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 5,
+      "created_at": "2026-09-16T15:29:41Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT-0",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Talking avatar video agent skill for Claude Code, Codex & OpenClaw: turn one portrait and a script or voice track into an AI presenter video for explainers, lessons, and product messages. 数字人口播视频 · 照片说话"
+    },
+    {
+      "id": "timoteoaltobrando/ai-video-skill",
+      "name": "TimoteoAltobrando/ai-video-skill",
+      "repo_url": "https://github.com/TimoteoAltobrando/ai-video-skill",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 4,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 4,
+      "created_at": "2026-10-05T15:58:51Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Make and edit videos with Claude Opus 5.5: a Claude Code skill for product films, ads, talking heads, explainers, montages and Reels/TikTok/Shorts, with Remotion, AI images and animation, ElevenLabs music and ffmpeg."
+    },
+    {
+      "id": "sipratt-p/ugc-factory-core",
+      "name": "sipratt-p/ugc-factory-core",
+      "repo_url": "https://github.com/sipratt-p/ugc-factory-core",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 5,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 2,
+      "created_at": "2026-09-16T16:04:56Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "LTX-2.3 talking-head UGC video pipeline with measurement gates: SyncNet lip-sync and WER gates, script lint, best-of-K seed banks, a scoring fleet (UTMOS, NISQA, ECAPA, ArcFace, RAFT, LPIPS) and the 22-experiment autoresearch leaderboard"
+    },
+    {
+      "id": "antoine-thomas/hermes-skills-showcase",
+      "name": "Antoine-Thomas/hermes-skills-showcase",
+      "repo_url": "https://github.com/Antoine-Thomas/hermes-skills-showcase",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 7,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 2,
+      "created_at": "2026-10-10T20:08:17Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Showcase of Hermes Agent skills for AI video automation, free-model routing and Windows optimization. Full version on Agensi.io."
+    },
+    {
+      "id": "mengyuyuan/video-pipeline-sdk",
+      "name": "mengyuyuan/video-pipeline-sdk",
+      "repo_url": "https://github.com/mengyuyuan/video-pipeline-sdk",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 8,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1,
+      "created_at": "2026-09-16T12:42:27Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "把 Remotion 口播视频制作流程化：九步 RUNBOOK + 七件可执行核验门 + 弹药仓 + ms 级音画同步核验（Windows/ffmpeg/whisper 实战坑位随包）"
+    },
+    {
+      "id": "hiroki-abe-58/comfyui-leaptalk",
+      "name": "hiroki-abe-58/ComfyUI-LeapTalk",
+      "repo_url": "https://github.com/hiroki-abe-58/ComfyUI-LeapTalk",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 9,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1,
+      "created_at": "2026-10-02T22:36:36Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Unofficial ComfyUI integration of LeapTalk: turn a portrait and speech into a talking video locally (official weights and 1-step recipe, separate runtime)"
+    },
+    {
+      "id": "kedreamix/awesome-talking-head-synthesis",
+      "name": "Kedreamix/Awesome-Talking-Head-Synthesis",
+      "repo_url": "https://github.com/Kedreamix/Awesome-Talking-Head-Synthesis",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 3,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [
+        "awesome"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1564,
+      "created_at": "2023-12-06T13:27:59Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "💬 An extensive collection of exceptional resources dedicated to the captivating world of talking face synthesis!   ⭐ If you find this repo useful, please give it a star! 🤩"
+    },
+    {
+      "id": "fangx-ai/cut-director",
+      "name": "Fangx-AI/cut-director",
+      "repo_url": "https://github.com/Fangx-AI/cut-director",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s1",
+          "rank": 7,
+          "raw_file": "raw/0007.json"
+        }
+      ],
+      "review_flag": [
+        "prompts"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 182,
+      "created_at": "2026-07-15T17:56:01Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "CutDirector: a ChatCut skill for talking-head editing, with reusable motion graphics prompts and real visual demos."
+    },
+    {
+      "id": "keemfinity/glass-edit",
+      "name": "keemfinity/glass-edit",
+      "repo_url": "https://github.com/keemfinity/glass-edit",
+      "category": "avatar",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "avatar",
+          "kind": "s2",
+          "rank": 6,
+          "raw_file": "raw/0008.json"
+        }
+      ],
+      "review_flag": [
+        "paper"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 2,
+      "created_at": "2026-10-10T15:50:23Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "A Claude skill that edits talking-head videos into polished vertical shorts: liquid-glass logo tiles, paper backgrounds, pop-out PiP, kinetic captions."
+    },
+    {
+      "id": "unslothai/unsloth",
+      "name": "unslothai/unsloth",
+      "repo_url": "https://github.com/unslothai/unsloth",
+      "category": "image",
+      "also_in": [
+        "speech"
+      ],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 0,
+          "raw_file": "raw/0003.json"
+        },
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 1,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 78091,
+      "created_at": "2023-11-29T16:50:09Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "id": "mudler/localai",
+      "name": "mudler/LocalAI",
+      "repo_url": "https://github.com/mudler/LocalAI",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 2,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 49564,
+      "created_at": "2023-03-18T22:58:02Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
+    },
+    {
+      "id": "huggingface/diffusers",
+      "name": "huggingface/diffusers",
+      "repo_url": "https://github.com/huggingface/diffusers",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 3,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 34728,
+      "created_at": "2022-05-30T16:04:02Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
+    },
+    {
+      "id": "invoke-ai/invokeai",
+      "name": "invoke-ai/InvokeAI",
+      "repo_url": "https://github.com/invoke-ai/InvokeAI",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 4,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 28670,
+      "created_at": "2022-08-17T01:04:27Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products."
+    },
+    {
+      "id": "vercel/satori",
+      "name": "vercel/satori",
+      "repo_url": "https://github.com/vercel/satori",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 6,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 14089,
+      "created_at": "2022-01-27T17:01:04Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MPL-2.0",
+        "class": "copyleft",
+        "adoption_note": "copyleft许可：可商用；分发衍生作品需按同许可开源（LGPL/MPL范围较窄）。模型权重与服务条款未核查"
+      },
+      "description": "Enlightened library to convert HTML and CSS to SVG"
+    },
+    {
+      "id": "krillinai/opencreator",
+      "name": "krillinai/OpenCreator",
+      "repo_url": "https://github.com/krillinai/OpenCreator",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 8,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 13313,
+      "created_at": "2024-12-17T01:59:22Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Formerly KrillinAI, VideoTranslation and Dubbing Tool. Open-source AI workspace for creators, powered by Codex. Video downloading, video translation, create videos, images, voice, avatars, and edits with Agents in one place. Suitable for your Social Media like YouTube, TikTok, Instagram, etc."
+    },
+    {
+      "id": "helloianneo/ian-xiaohei-illustrations",
+      "name": "helloianneo/ian-xiaohei-illustrations",
+      "repo_url": "https://github.com/helloianneo/ian-xiaohei-illustrations",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 9,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 12589,
+      "created_at": "2026-05-27T22:47:56Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "中文小黑怪诞正文配图生成 Skill | 16:9 白底手绘 | 少量红橙蓝批注 | Codex Skill"
+    },
+    {
+      "id": "carson-katri/dream-textures",
+      "name": "carson-katri/dream-textures",
+      "repo_url": "https://github.com/carson-katri/dream-textures",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 11,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 8221,
+      "created_at": "2022-09-08T17:53:16Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "GPL-3.0",
+        "class": "copyleft",
+        "adoption_note": "copyleft许可：可商用；分发衍生作品需按同许可开源（LGPL/MPL范围较窄）。模型权重与服务条款未核查"
+      },
+      "description": "Stable Diffusion built-in to Blender"
+    },
+    {
+      "id": "leejet/stable-diffusion.cpp",
+      "name": "leejet/stable-diffusion.cpp",
+      "repo_url": "https://github.com/leejet/stable-diffusion.cpp",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 12,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 7699,
+      "created_at": "2023-08-13T07:36:51Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++"
+    },
+    {
+      "id": "vllm-project/vllm-omni",
+      "name": "vllm-project/vllm-omni",
+      "repo_url": "https://github.com/vllm-project/vllm-omni",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 13,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 7199,
+      "created_at": "2025-09-11T00:34:43Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "A framework for efficient model inference with omni-modality models"
+    },
+    {
+      "id": "wuyoscar/gpt-image2-skill",
+      "name": "wuyoscar/GPT-Image2-Skill",
+      "repo_url": "https://github.com/wuyoscar/GPT-Image2-Skill",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 14,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 5767,
+      "created_at": "2026-04-22T11:27:21Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "GPT Image 2/2.5 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing"
+    },
+    {
+      "id": "stability-ai/stableswarmui",
+      "name": "Stability-AI/StableSwarmUI",
+      "repo_url": "https://github.com/Stability-AI/StableSwarmUI",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 15,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 4940,
+      "created_at": "2023-05-12T07:37:09Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "StableSwarmUI, A Modular Stable Diffusion Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility."
+    },
+    {
+      "id": "mcmonkeyprojects/swarmui",
+      "name": "mcmonkeyprojects/SwarmUI",
+      "repo_url": "https://github.com/mcmonkeyprojects/SwarmUI",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 16,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 4672,
+      "created_at": "2024-06-21T06:24:53Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "SwarmUI (formerly StableSwarmUI), A Modular Stable Diffusion Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility."
+    },
+    {
+      "id": "cooksleep/gpt_image_playground",
+      "name": "CookSleep/gpt_image_playground",
+      "repo_url": "https://github.com/CookSleep/gpt_image_playground",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 17,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 3908,
+      "created_at": "2026-04-23T20:18:57Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "基于 OpenAI gpt-image-2.5 API 的图片生成与编辑工具"
+    },
+    {
+      "id": "hanaokayuzu/gemini-api",
+      "name": "HanaokaYuzu/Gemini-API",
+      "repo_url": "https://github.com/HanaokaYuzu/Gemini-API",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 18,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 3597,
+      "created_at": "2024-02-11T05:26:39Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "description": "✨ Reverse-engineered Python API for Google Gemini web app"
+    },
+    {
+      "id": "kane50613/takumi",
+      "name": "kane50613/takumi",
+      "repo_url": "https://github.com/kane50613/takumi",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 19,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 3112,
+      "created_at": "2025-06-01T08:19:38Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Render OG images and paged PDFs from JSX, HTML, and CSS. No headless browser. Runs on Node.js, Cloudflare Workers, browsers, and Rust."
+    },
+    {
+      "id": "arekejoker/qwen21-nsfw-pose-skill",
+      "name": "Arekejoker/qwen21-nsfw-pose-skill",
+      "repo_url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 0,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 2151,
+      "created_at": "2026-10-13T03:09:42Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw"
+    },
+    {
+      "id": "apimart-api-gateway/grok-image-api",
+      "name": "apimart-API-Gateway/grok-image-api",
+      "repo_url": "https://github.com/apimart-API-Gateway/grok-image-api",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 3,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 145,
+      "created_at": "2026-09-17T10:26:41Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Grok Image API (Grok Imagine 1.5, grok-imagine-1.5-apimart): model ids, per-image pricing, text-to-image and edit routes, moderation behaviour and runnable API examples."
+    },
+    {
+      "id": "joeseesun/qiaomu-codex-imagegen",
+      "name": "joeseesun/qiaomu-codex-imagegen",
+      "repo_url": "https://github.com/joeseesun/qiaomu-codex-imagegen",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 5,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 131,
+      "created_at": "2026-10-04T08:47:02Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "让任何 Agent 调用 Codex 内置生图（MCP + CLI + Skill），内置小红书、视频封面、Mondo 海报技巧 · Codex image generation for any agent"
+    },
+    {
+      "id": "snowsky1/universal-imagegen-agent",
+      "name": "SnowSky1/universal-imagegen-agent",
+      "repo_url": "https://github.com/SnowSky1/universal-imagegen-agent",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 6,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 121,
+      "created_at": "2026-09-24T13:46:23Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "把 Codex imagegen 的工作流与提示词库带到任意智能体；支持 npm/pnpm 一键安装、配套 skill、独立 API 与 Qwen-Image 兼容网关。"
+    },
+    {
+      "id": "gabrielelozupone/kokon",
+      "name": "GabrieleLozupone/kokon",
+      "repo_url": "https://github.com/GabrieleLozupone/kokon",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 7,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 79,
+      "created_at": "2026-10-08T20:33:25Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "description": "Edit photos by describing the change, on your own GPU. One installer, no Python, no cloud. Qwen-Image 2.1 for Windows and Mac, with an MCP server for AI agents."
+    },
+    {
+      "id": "apimarthklu96f/nano-banana-2-lite-ext-reverse-api",
+      "name": "apimarthklu96f/nano-banana-2-lite-ext-reverse-api",
+      "repo_url": "https://github.com/apimarthklu96f/nano-banana-2-lite-ext-reverse-api",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 8,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 68,
+      "created_at": "2026-09-28T16:20:05Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "reverse-engineered Nano Banana 2 Lite Ext API: 1K $0.0125. model ID `gemini-3.1-flash-lite-image-ext`, OpenAI-compatible, async task + cost in every response, $1 minimum top-up. nano-banana-2-lite-ext-reverse-api."
+    },
+    {
+      "id": "apimartore3/grok-imagine-2.0-ext-reverse-api-pt",
+      "name": "apimartore3/grok-imagine-2.0-ext-reverse-api-pt",
+      "repo_url": "https://github.com/apimartore3/grok-imagine-2.0-ext-reverse-api-pt",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 9,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 67,
+      "created_at": "2026-09-28T16:16:00Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "engenharia reversa Grok Imagine 2.0 Ext API: 1K $0.015. model ID `grok-imagine-2.0-ext`, OpenAI-compatible, async task + cost in every response, $1 minimum top-up. grok-imagine-2.0-ext-reverse-api-pt."
+    },
+    {
+      "id": "youmind-openlab/awesome-nano-banana-pro-prompts",
+      "name": "YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "repo_url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 7,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [
+        "awesome",
+        "prompts"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 13596,
+      "created_at": "2025-11-23T07:17:48Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "🍌 World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with preview images, 16 languages. Google Gemini AI image generation. Free & open source."
+    },
+    {
+      "id": "youmind-openlab/awesome-gpt-image-2",
+      "name": "YouMind-OpenLab/awesome-gpt-image-2",
+      "repo_url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 10,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [
+        "awesome",
+        "prompts"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 10105,
+      "created_at": "2026-04-16T13:57:42Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "🚀 World's largest GPT Image 2 prompt library, updated daily — 2000+ curated prompts with preview images, 16 languages. OpenAI's next-gen image model with pixel-perfect text rendering, cross-image consistency, and commercial-grade illustration. Free & open source."
+    },
+    {
+      "id": "iamyoki/qwen-image-2.1-skill",
+      "name": "iamyoki/qwen-image-2.1-skill",
+      "repo_url": "https://github.com/iamyoki/qwen-image-2.1-skill",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 1,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [
+        "prompts"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 167,
+      "created_at": "2026-09-21T10:25:00Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "🎨 Agentic skill for Qwen-Image-2.1: Rewrites and optimizes text-to-image and multi-image editing prompts using official Alibaba specifications. Compatible with skills.sh and all AI agents."
+    },
+    {
+      "id": "wildminder/awesome-qwen-image",
+      "name": "wildminder/awesome-qwen-image",
+      "repo_url": "https://github.com/wildminder/awesome-qwen-image",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 2,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [
+        "awesome"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 151,
+      "created_at": "2026-09-24T10:15:43Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": null,
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Qwen-Image 2.1. Checkpoints, quants, prompt engines, LoRAs, and tooling"
+    },
+    {
+      "id": "apimart-awesome-ai-api-proxy/nano-banana-pro-api",
+      "name": "apimart-awesome-ai-api-proxy/nano-banana-pro-api",
+      "repo_url": "https://github.com/apimart-awesome-ai-api-proxy/nano-banana-pro-api",
+      "category": "image",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "image",
+          "kind": "s2",
+          "rank": 4,
+          "raw_file": "raw/0004.json"
+        }
+      ],
+      "review_flag": [
+        "awesome"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 139,
+      "created_at": "2026-09-17T10:10:06Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Nano Banana Pro API (gemini-3-pro-image-preview): model id, per-image pricing, aspect ratios, resolution tiers, curl, Python and JavaScript examples with async task polling."
+    },
+    {
+      "id": "harry0703/moneyprinterturbo",
+      "name": "harry0703/MoneyPrinterTurbo",
+      "repo_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 0,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 131772,
+      "created_at": "2024-03-11T02:57:34Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow."
+    },
+    {
+      "id": "debpalash/voicestudio",
+      "name": "debpalash/VoiceStudio",
+      "repo_url": "https://github.com/debpalash/VoiceStudio",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 2,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 69489,
+      "created_at": "2026-04-09T21:40:26Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages."
+    },
+    {
+      "id": "rvc-boss/gpt-sovits",
+      "name": "RVC-Boss/GPT-SoVITS",
+      "repo_url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 4,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 62890,
+      "created_at": "2024-01-14T18:05:21Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning)"
+    },
+    {
+      "id": "openbmb/voxcpm",
+      "name": "OpenBMB/VoxCPM",
+      "repo_url": "https://github.com/OpenBMB/VoxCPM",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 5,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 39398,
+      "created_at": "2025-09-16T03:41:49Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning"
+    },
+    {
+      "id": "index-tts/index-tts",
+      "name": "index-tts/index-tts",
+      "repo_url": "https://github.com/index-tts/index-tts",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 6,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 24508,
+      "created_at": "2025-02-06T04:08:05Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "An Industrial-Level Controllable and Efficient Zero-Shot Text-To-Speech System"
+    },
+    {
+      "id": "jianchang512/pyvideotrans",
+      "name": "jianchang512/pyvideotrans",
+      "repo_url": "https://github.com/jianchang512/pyvideotrans",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 7,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 19405,
+      "created_at": "2023-10-02T16:13:19Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "GPL-3.0",
+        "class": "copyleft",
+        "adoption_note": "copyleft许可：可商用；分发衍生作品需按同许可开源（LGPL/MPL范围较窄）。模型权重与服务条款未核查"
+      },
+      "description": "Translate the video from one language to another and embed dubbing & subtitles."
+    },
+    {
+      "id": "leon-ai/leon",
+      "name": "leon-ai/leon",
+      "repo_url": "https://github.com/leon-ai/leon",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 8,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 17580,
+      "created_at": "2019-02-10T12:25:12Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "🧠 Leon is your open-source personal assistant."
+    },
+    {
+      "id": "k2-fsa/sherpa-onnx",
+      "name": "k2-fsa/sherpa-onnx",
+      "repo_url": "https://github.com/k2-fsa/sherpa-onnx",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 9,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 15308,
+      "created_at": "2022-09-01T05:47:33Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD using next-gen Kaldi with onnxruntime without Internet connection. Support embedded systems, Android, iOS, HarmonyOS, Raspberry Pi, RISC-V, RK NPU, Axera NPU, Ascend NPU, x86_64 servers, websocket server/client, support 12 programming languages"
+    },
+    {
+      "id": "rany2/edge-tts",
+      "name": "rany2/edge-tts",
+      "repo_url": "https://github.com/rany2/edge-tts",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 10,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 12294,
+      "created_at": "2021-05-10T18:55:14Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge"
+    },
+    {
+      "id": "espnet/espnet",
+      "name": "espnet/espnet",
+      "repo_url": "https://github.com/espnet/espnet",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 11,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 9987,
+      "created_at": "2017-12-13T00:45:11Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "End-to-End Speech Processing Toolkit"
+    },
+    {
+      "id": "blaizzy/mlx-audio",
+      "name": "Blaizzy/mlx-audio",
+      "repo_url": "https://github.com/Blaizzy/mlx-audio",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 12,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 8051,
+      "created_at": "2024-11-27T21:14:34Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon."
+    },
+    {
+      "id": "osmantic/ods",
+      "name": "Osmantic/ODS",
+      "repo_url": "https://github.com/Osmantic/ODS",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 13,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 7538,
+      "created_at": "2026-02-09T13:14:58Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box into a private AI server."
+    },
+    {
+      "id": "espeak-ng/espeak-ng",
+      "name": "espeak-ng/espeak-ng",
+      "repo_url": "https://github.com/espeak-ng/espeak-ng",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 14,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 6952,
+      "created_at": "2015-12-08T20:42:42Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "GPL-3.0",
+        "class": "copyleft",
+        "adoption_note": "copyleft许可：可商用；分发衍生作品需按同许可开源（LGPL/MPL范围较窄）。模型权重与服务条款未核查"
+      },
+      "description": "eSpeak NG is an open source speech synthesizer that supports more than hundred languages and accents."
+    },
+    {
+      "id": "argmaxinc/argmax-oss-swift",
+      "name": "argmaxinc/argmax-oss-swift",
+      "repo_url": "https://github.com/argmaxinc/argmax-oss-swift",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 15,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 6406,
+      "created_at": "2024-01-26T07:11:52Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "On-device Speech AI for Apple Silicon"
+    },
+    {
+      "id": "snakers4/silero-models",
+      "name": "snakers4/silero-models",
+      "repo_url": "https://github.com/snakers4/silero-models",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 17,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 6132,
+      "created_at": "2020-09-11T12:10:23Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Silero Models: pre-trained text-to-speech models made embarrassingly simple"
+    },
+    {
+      "id": "denizsafak/abogen",
+      "name": "denizsafak/abogen",
+      "repo_url": "https://github.com/denizsafak/abogen",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 18,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 6127,
+      "created_at": "2025-04-24T01:06:05Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Generate audiobooks from EPUBs, PDFs and text with synchronized captions."
+    },
+    {
+      "id": "dograh-hq/dograh",
+      "name": "dograh-hq/dograh",
+      "repo_url": "https://github.com/dograh-hq/dograh",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 19,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 5884,
+      "created_at": "2025-09-09T08:48:29Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "BSD-2-Clause",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Open source voice AI platform. Self-hosted alternative to Vapi and Retell. On Prem, BYOK across  Speech to Speech or LLM/STT/TTS, with a visual workflow builder, MCP native and telephony support."
+    },
+    {
+      "id": "lemomo-ai/lemo-opuscar",
+      "name": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 0,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 2501,
+      "created_at": "2026-09-26T10:10:41Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Claude Code skill for short films with no video model: 51 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98 and the new Evidence Films). By Lemomo. · Opus5.5 x 51 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南（新增「实证影像」）"
+    },
+    {
+      "id": "vincentsch/explainroo",
+      "name": "vincentsch/explainroo",
+      "repo_url": "https://github.com/vincentsch/explainroo",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 1,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 567,
+      "created_at": "2026-09-25T15:09:54Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Explainer videos and product demos made by your AI agent. Free and open source: a local voice (Kokoro), word timing (Whisper) and a canvas renderer turn a script into a narrated MP4."
+    },
+    {
+      "id": "liyupi/ai-promo-video-maker",
+      "name": "liyupi/ai-promo-video-maker",
+      "repo_url": "https://github.com/liyupi/ai-promo-video-maker",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 2,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 294,
+      "created_at": "2026-10-09T08:44:30Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具，它会自己调研产品、画出多种风格样图让你挑选、截取 4K 真实页面、按音乐节拍卡点剪辑、生成 AI 旁白并逐句转写校验、自动审图，最后交付一支 4K 商业宣传视频和可在线播放的网页版。App、网站、SaaS、开源项目、课程、AI 模型都能做，你只需确认需求、试听配乐。不用学剪辑软件，也不用花钱找外包。基于 Remotion + ElevenLabs，可直接克隆使用，也能一键安装为 Agent Skill。"
+    },
+    {
+      "id": "faviovazquez/showtime",
+      "name": "FavioVazquez/showtime",
+      "repo_url": "https://github.com/FavioVazquez/showtime",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 3,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 258,
+      "created_at": "2026-09-28T15:16:41Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "A local video studio for your coding agent. Describe a video in one sentence: your agent directs, your machine renders. Claude Code, Codex, Cursor, Devin and more. No API keys, no uploads."
+    },
+    {
+      "id": "onemoh/html-explainer",
+      "name": "OneMoh/html-explainer",
+      "repo_url": "https://github.com/OneMoh/html-explainer",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 5,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 170,
+      "created_at": "2026-09-21T04:42:31Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "把一个主题做成有配音、字幕、封面的讲解分析类视频 —— 全本地、用 HTML 写画面，稳定音画同步。 面向 AI 编程智能体的确定性 HTML → MP4 渲染流水线。"
+    },
+    {
+      "id": "nyosegawa/speech.cpp",
+      "name": "nyosegawa/speech.cpp",
+      "repo_url": "https://github.com/nyosegawa/speech.cpp",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 6,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 134,
+      "created_at": "2026-09-29T09:05:52Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Speech synthesis, speech recognition and voice activity detection for voice conversation, in C++ on ggml: Qwen3-TTS, Irodori-TTS, Qwen3-ASR, ReazonSpeech, parakeet and Silero VAD on Metal, Vulkan and the CPU, with an OpenAI-compatible server and live transcription."
+    },
+    {
+      "id": "100yenadmin/fish-audio-hermes",
+      "name": "100yenadmin/fish-audio-hermes",
+      "repo_url": "https://github.com/100yenadmin/fish-audio-hermes",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 7,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 110,
+      "created_at": "2026-10-05T05:15:59Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Official Fish Audio plugin for Hermes Agent: expressive text-to-speech, speech-to-text, voice library, cloning and voice design."
+    },
+    {
+      "id": "cuongyd196/cit-voice-studio",
+      "name": "Cuongyd196/cit-voice-studio",
+      "repo_url": "https://github.com/Cuongyd196/cit-voice-studio",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 8,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 92,
+      "created_at": "2026-09-23T09:51:52Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": null,
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "CIT Voice Stuido - Chuyển văn bản tiếng Việt thành giọng nói, chạy hoàn toàn trên máy bạn."
+    },
+    {
+      "id": "recepyagmur/englishpractice",
+      "name": "recepyagmur/EnglishPractice",
+      "repo_url": "https://github.com/recepyagmur/EnglishPractice",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 9,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 85,
+      "created_at": "2026-10-11T19:29:17Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Yerel, çevrimdışı ve taşınabilir İngilizce pratik uygulaması (Türkçe konuşanlar için): yapay zekâyla sesli/yazılı sohbet ve anında düzeltme, A1–C1 dersler ve sınavlar, Türkçe sesli öğretmen, kelime ve kalıp çalışma, YDS tarzı süreli testler. Windows ve Linux. Ollama + Gemma 4, Whisper, Kokoro, EMA Lightning."
+    },
+    {
+      "id": "assafkip/claudemy",
+      "name": "assafkip/claudemy",
+      "repo_url": "https://github.com/assafkip/claudemy",
+      "category": "speech",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "speech",
+          "kind": "s2",
+          "rank": 4,
+          "raw_file": "raw/0006.json"
+        }
+      ],
+      "review_flag": [
+        "course"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 251,
+      "created_at": "2026-10-14T01:49:12Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Claudemy: an open-source alternative to Udemy and Coursera. Give Claude a topic, it researches the web and builds a course of 2-minute audio lessons with cited sources. A free Claude Code skill."
+    },
+    {
+      "id": "calesthio/openmontage",
+      "name": "calesthio/OpenMontage",
+      "repo_url": "https://github.com/calesthio/OpenMontage",
+      "category": "video",
+      "also_in": [
+        "image",
+        "speech"
+      ],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 0,
+          "raw_file": "raw/0001.json"
+        },
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 1,
+          "raw_file": "raw/0003.json"
+        },
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 3,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "checked_no_event",
+      "note": "窗口内无正式发布、预发布或新建",
+      "stars_snapshot": 68664,
+      "created_at": "2026-03-29T15:23:22Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio."
+    },
+    {
+      "id": "apimart-api-ai-aggregator/seedance-2.0-api",
+      "name": "apimart-api-ai-Aggregator/seedance-2.0-api",
+      "repo_url": "https://github.com/apimart-api-ai-Aggregator/seedance-2.0-api",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 1,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "manually_excluded",
+      "note": "人工排除",
+      "stars_snapshot": 146,
+      "created_at": "2026-09-18T02:33:10Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Seedance 2.0 API (seedance-2.0 / seedance-2.0-mini / seedance-2.0-fast): per-second pricing by resolution, text-to-video and image-to-video examples, parameters and limits."
+    },
+    {
+      "id": "anil-matcha/open-generative-ai",
+      "name": "Anil-matcha/Open-Generative-AI",
+      "repo_url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 1,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "checked_no_event",
+      "note": "窗口内无正式发布、预发布或新建",
+      "stars_snapshot": 30495,
+      "created_at": "2023-05-09T14:12:37Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 600+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed."
+    },
+    {
+      "id": "hypit-ai/hypit",
+      "name": "hypit-ai/hypit",
+      "repo_url": "https://github.com/hypit-ai/hypit",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 2,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 22617,
+      "created_at": "2026-07-29T18:49:19Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views."
+    },
+    {
+      "id": "hbai-ltd/toonflow-app",
+      "name": "HBAI-Ltd/Toonflow-app",
+      "repo_url": "https://github.com/HBAI-Ltd/Toonflow-app",
+      "category": "video",
+      "also_in": [
+        "image"
+      ],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 3,
+          "raw_file": "raw/0001.json"
+        },
+        {
+          "category": "image",
+          "kind": "s1",
+          "rank": 5,
+          "raw_file": "raw/0003.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 17916,
+      "created_at": "2026-01-29T10:25:45Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infinite canvas, AI agents, storyboarding, image and video generation. Self-hosted and extensible, with a canvas-based approach similar to LibTV and TapNow."
+    },
+    {
+      "id": "nvlabs/sana",
+      "name": "NVlabs/Sana",
+      "repo_url": "https://github.com/NVlabs/Sana",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 4,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 9347,
+      "created_at": "2024-10-11T20:19:45Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer"
+    },
+    {
+      "id": "dramaclaw/dramaclaw",
+      "name": "dramaclaw/dramaclaw",
+      "repo_url": "https://github.com/dramaclaw/dramaclaw",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 6,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 6305,
+      "created_at": "2026-03-27T04:34:30Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可"
+    },
+    {
+      "id": "arcreel/arcreel",
+      "name": "ArcReel/ArcReel",
+      "repo_url": "https://github.com/ArcReel/ArcReel",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 7,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 5521,
+      "created_at": "2026-02-07T08:17:10Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "description": "AI Agent 驱动的开源可自部署视频工作台：将小说与剧本转为角色、场景、道具资产、分镜、视频和剪映草稿，支持跨镜头一致性、多供应商与费用追踪 | Self-hosted AI video workspace for stories, storyboards and short-form video production"
+    },
+    {
+      "id": "furkangozukara/stable-diffusion",
+      "name": "FurkanGozukara/Stable-Diffusion",
+      "repo_url": "https://github.com/FurkanGozukara/Stable-Diffusion",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 8,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 2779,
+      "created_at": "2023-05-01T18:36:11Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "GPL-3.0",
+        "class": "copyleft",
+        "adoption_note": "copyleft许可：可商用；分发衍生作品需按同许可开源（LGPL/MPL范围较窄）。模型权重与服务条款未核查"
+      },
+      "description": "FLUX, Stable Diffusion, SDXL, SD3, LoRA, Fine Tuning, DreamBooth, Training, Automatic1111, Forge WebUI, SwarmUI, DeepFake, TTS, Animation, Text To Video, Tutorials, Guides, Lectures, Courses, ComfyUI, Google Colab, RunPod, Kaggle, NoteBooks, ControlNet, TTS, Voice Cloning, AI, AI News, ML, ML News, News, Tech, Tech News, Kohya, Midjourney, RunPod"
+    },
+    {
+      "id": "vincentwei1021/anything2explainer",
+      "name": "Vincentwei1021/anything2explainer",
+      "repo_url": "https://github.com/Vincentwei1021/anything2explainer",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 9,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 2530,
+      "created_at": "2026-09-08T17:19:54Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion."
+    },
+    {
+      "id": "869413421/ai-moive-studio",
+      "name": "869413421/ai-moive-studio",
+      "repo_url": "https://github.com/869413421/ai-moive-studio",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 12,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1618,
+      "created_at": "2025-11-10T03:31:20Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "自然语言驱动的无限画布工作流 Agent，让 AI 视频创作第一次真正变成可编辑的工作流。   AICON 面向创作者，提供从剧本拆解、分镜生成、素材生成、视频合成到内容分发的一整套能力。   不是只给你一个输入框，而是让你用自然语言和无限画布一起驱动创作，把文本、图片、视频节点组织成完整链路，真正把“从灵感到   成片”放进一个系统里完成。"
+    },
+    {
+      "id": "openmoss/mova",
+      "name": "OpenMOSS/MOVA",
+      "repo_url": "https://github.com/OpenMOSS/MOVA",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 13,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1123,
+      "created_at": "2026-01-28T12:31:50Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "A foundation model that generates synchronized video and audio in a single model"
+    },
+    {
+      "id": "xixihhhh/clipforge",
+      "name": "xixihhhh/clipforge",
+      "repo_url": "https://github.com/xixihhhh/clipforge",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 15,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1006,
+      "created_at": "2026-03-23T09:55:39Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "description": "ClipForge（原『带货剪手』/ daihuo-jianshou）：开源 AI 带货短视频神器——上传一张商品图，AI 自动提炼卖点 + 写种草脚本 + 锁定商品原图不变形 + 配画面/配音/字幕，一键产出抖音小店 / 快手 / 小红书 / TikTok Shop 卖货短视频。0 成本批量出片、开源无水印、本地自部署。也支持一句话主题成片。Open-source AI e-commerce/UGC short-video generator."
+    },
+    {
+      "id": "thu-ml/causal-forcing",
+      "name": "thu-ml/Causal-Forcing",
+      "repo_url": "https://github.com/thu-ml/Causal-Forcing",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 16,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1006,
+      "created_at": "2026-02-01T09:30:13Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "[ICML 2026] Official codebase for \"Causal Forcing: Autoregressive Diffusion Distillation Done Right for High-Quality Real-Time Interactive Video Generation\" & Causal Forcing++"
+    },
+    {
+      "id": "noahgsolomon/brainrot.js",
+      "name": "noahgsolomon/brainrot.js",
+      "repo_url": "https://github.com/noahgsolomon/brainrot.js",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 17,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 958,
+      "created_at": "2024-02-10T18:10:10Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Text to video generator in the brainrot form. Learn about any topic from your favorite personalities 😼."
+    },
+    {
+      "id": "blizaine/maestro",
+      "name": "Blizaine/Maestro",
+      "repo_url": "https://github.com/Blizaine/Maestro",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 18,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 761,
+      "created_at": "2026-07-08T12:02:05Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio."
+    },
+    {
+      "id": "rylaispirit/cinematic-video-prompt-skill",
+      "name": "Rylaispirit/cinematic-video-prompt-skill",
+      "repo_url": "https://github.com/Rylaispirit/cinematic-video-prompt-skill",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 0,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 152,
+      "created_at": "2026-09-20T16:44:06Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "AI video prompt cheat sheet & Claude Skill: cinematic camera angles, camera movement, lighting, composition, color grading for Veo 3, Kling, Sora, Runway, Midjourney. 700+ terms with Vietnamese explanations."
+    },
+    {
+      "id": "apimart-api-ai-aggregator/seedance-2.5-api",
+      "name": "apimart-api-ai-Aggregator/seedance-2.5-api",
+      "repo_url": "https://github.com/apimart-api-ai-Aggregator/seedance-2.5-api",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 2,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "qualified",
+      "note": "",
+      "stars_snapshot": 136,
+      "created_at": "2026-09-18T02:40:10Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Seedance 2.5 API (seedance-2.5): per-second pricing by resolution, up to 30-second text-to-video and reference-media workflows, with cURL and Python examples and measured costs."
+    },
+    {
+      "id": "sitor-ai/frametell",
+      "name": "sitor-ai/frametell",
+      "repo_url": "https://github.com/sitor-ai/frametell",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 3,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 123,
+      "created_at": "2026-10-10T10:02:14Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "description": "Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model."
+    },
+    {
+      "id": "drowzeys/keys-wasserman-slate-ai-studio-powered-by-tensorfold-built-with-integrated-fish-audio-drama3",
+      "name": "drowzeys/keys-Wasserman-Slate-AI-Studio-powered-by-TensorFold-built-with-integrated-Fish-Audio-Drama3",
+      "repo_url": "https://github.com/drowzeys/keys-Wasserman-Slate-AI-Studio-powered-by-TensorFold-built-with-integrated-Fish-Audio-Drama3",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 4,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 103,
+      "created_at": "2026-10-04T17:40:44Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "keys-Wasserman Slate AI Studio powered by TensorFold: an AI film studio for Mac and NVIDIA DGX Spark. Plan a film like a crew (Slate workflow by Sam Wasserman), render Qwen-Image-2.1 images Turbo and MiniMax H3 / FastH3 video with sound on TensorFold."
+    },
+    {
+      "id": "miftahul-islam-efaz/motion-graphics-skill",
+      "name": "Miftahul-Islam-Efaz/Motion-graphics-skill",
+      "repo_url": "https://github.com/Miftahul-Islam-Efaz/Motion-graphics-skill",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 5,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 99,
+      "created_at": "2026-10-08T15:29:41Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "Best Motion graphics and video editing skill for Claude Code, Codex and Cursor. Plan, animate, edit, caption and sound-design complete videos, rendered locally without After Effects."
+    },
+    {
+      "id": "ejsyk3xdp3t2o/wan3.0video-wan-3.0-video-api",
+      "name": "ejsyk3xdp3t2o/wan3.0video-wan-3.0-video-api",
+      "repo_url": "https://github.com/ejsyk3xdp3t2o/wan3.0video-wan-3.0-video-api",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 6,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 93,
+      "created_at": "2026-09-24T18:03:45Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "wan-3.0-video API (wan3.0video / wan 3.0 video): 480P $0.0329; 720P $0.0658; default $0.1315. Model id, api settings, curl and Python examples over an OpenAI-compatible gateway, $1"
+    },
+    {
+      "id": "iyqhcef3ffn/hailuo2.3-hailuo-2.3-gateway",
+      "name": "iyqhcef3ffn/hailuo2.3-hailuo-2.3-gateway",
+      "repo_url": "https://github.com/iyqhcef3ffn/hailuo2.3-hailuo-2.3-gateway",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 7,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 91,
+      "created_at": "2026-09-24T18:06:02Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "hailuo-2.3 API (hailuo2.3 / hailuo 2.3): default $0.0248; 1080P $0.0424. Model id, gateway settings, curl and Python examples over an OpenAI-compatible gateway, $1 minimum top-up."
+    },
+    {
+      "id": "ok66oqyea0fi8zqv/seedance2.5-seedance-2.5-api-cn",
+      "name": "ok66oqyea0fi8zqv/seedance2.5-seedance-2.5-api-cn",
+      "repo_url": "https://github.com/ok66oqyea0fi8zqv/seedance2.5-seedance-2.5-api-cn",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 9,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 90,
+      "created_at": "2026-09-24T14:33:16Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "seedance-2.5 API 中文文档（seedance2.5）：480P 每秒 $0.0961；720P $0.216；1080P $0.3849。模型 ID、参数、curl 与 Python 示例，OpenAI 兼容接口，$1 起充。"
+    },
+    {
+      "id": "promptslab/awesome-prompt-engineering",
+      "name": "promptslab/Awesome-Prompt-Engineering",
+      "repo_url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "category": "video",
+      "also_in": [
+        "speech"
+      ],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 5,
+          "raw_file": "raw/0001.json"
+        },
+        {
+          "category": "speech",
+          "kind": "s1",
+          "rank": 16,
+          "raw_file": "raw/0005.json"
+        }
+      ],
+      "review_flag": [
+        "awesome"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 6374,
+      "created_at": "2023-02-09T18:22:52Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc "
+    },
+    {
+      "id": "alisa0808/vox-director",
+      "name": "Alisa0808/vox-director",
+      "repo_url": "https://github.com/Alisa0808/vox-director",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 10,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [
+        "paper"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 2291,
+      "created_at": "2026-07-10T15:32:05Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end on Atlas Cloud + ffmpeg. An agent skill."
+    },
+    {
+      "id": "learnprompt/awesome-seedance",
+      "name": "LearnPrompt/awesome-seedance",
+      "repo_url": "https://github.com/LearnPrompt/awesome-seedance",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 11,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [
+        "awesome"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 2085,
+      "created_at": "2026-08-26T16:23:56Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "🎬 Evidence-led Seedance 2.5 / 2.0 prompt library: 600+ cases traced to original posts, 260+ cross-model retest runs with public verdicts, 25 copy-ready templates, 50+ installable AI-video Skills. Synced daily from goodcase.ai. EN / 中文 / 日本語."
+    },
+    {
+      "id": "anil-matcha/awesome-agent-apis",
+      "name": "Anil-matcha/awesome-agent-apis",
+      "repo_url": "https://github.com/Anil-matcha/awesome-agent-apis",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 14,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [
+        "awesome"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 1056,
+      "created_at": "2023-05-06T17:27:54Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": "660+ muapi-hosted generative-media models plus community-submitted third-party API tools (SEO, enrichment, social, scraping) — one YAML file per entry, browsable by capability."
+    },
+    {
+      "id": "jianzhnie/awesome-text-to-video",
+      "name": "jianzhnie/awesome-text-to-video",
+      "repo_url": "https://github.com/jianzhnie/awesome-text-to-video",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s1",
+          "rank": 19,
+          "raw_file": "raw/0001.json"
+        }
+      ],
+      "review_flag": [
+        "awesome"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 746,
+      "created_at": "2023-03-29T06:44:46Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "Apache-2.0",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "description": " A Survey on Text-to-Video Generation/Synthesis."
+    },
+    {
+      "id": "ovdtze56q1zgksb4/kling3-kling-3-prompts",
+      "name": "ovdtze56q1zgksb4/kling3-kling-3-prompts",
+      "repo_url": "https://github.com/ovdtze56q1zgksb4/kling3-kling-3-prompts",
+      "category": "video",
+      "also_in": [],
+      "hits": [
+        {
+          "category": "video",
+          "kind": "s2",
+          "rank": 8,
+          "raw_file": "raw/0002.json"
+        }
+      ],
+      "review_flag": [
+        "prompts"
+      ],
+      "status": "not_checked",
+      "note": "超出检查名额或预算",
+      "stars_snapshot": 91,
+      "created_at": "2026-09-24T18:00:02Z",
+      "exclusion_lapsed": false,
+      "releases_truncated": false,
+      "license": {
+        "spdx_id": "NOASSERTION",
+        "class": "unknown",
+        "adoption_note": "许可待核实（GitHub未识别或未声明），不得视为可商用。模型权重与服务条款未核查"
+      },
+      "description": "kling-3 API (kling3 / kling 3): default $0.0672; pro $0.0896; sound $0.1008. Model id, prompts settings, curl and Python examples over an OpenAI-compatible gateway, $1 minimum top-"
+    }
+  ],
+  "manual_exclusions": [
+    {
+      "repo": "apimart-api-ai-Aggregator/seedance-2.0-api",
+      "scope": "repo",
+      "reason_code": "api_resale_no_open_impl",
+      "explanation": "仓库是商业API转售方的价格与调用示例页，正文含推广链接，没有可核查的开源实现",
+      "evidence_url": "https://github.com/apimart-api-ai-Aggregator/seedance-2.0-api",
+      "description_sha256": "26931f50bf73679a41ba948aeabd41082b8e3f18044f45e232d1f30466eea805",
+      "decided_in_run": "20261001T210057Z",
+      "recheck_when": "仓库简介变化时自动失效，重新进入检查",
+      "lapsed": false
+    }
+  ],
+  "projects": [
+    {
+      "id": "debpalash/voicestudio",
+      "name": "debpalash/VoiceStudio",
+      "repo_url": "https://github.com/debpalash/VoiceStudio",
+      "category": "speech",
+      "also_in": [],
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "stars_snapshot": 69489,
+      "license": {
+        "spdx_id": "AGPL-3.0",
+        "class": "network_copyleft",
+        "adoption_note": "AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查"
+      },
+      "event": {
+        "event_id": "394436097",
+        "type": "release",
+        "tag": "v0.5.6",
+        "published_at": "2026-09-23T08:53:32Z",
+        "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6",
+        "prerelease": false,
+        "source_sha256": "b6524a08a07d1f5eb5200f078b5383bf64a7cb129853bf18e0b9a809e0b19315",
+        "excerpt": "**VoiceStudio now talks to your other tools.** Answer Twilio phone calls in a saved voice, and connect Claude Code, Cursor, Codex CLI and the OpenAI Agents SDK to VoiceStudio with copyable setup that works, including in Docker, where MCP previously returned HTTP 405. Integration cards now say plainly which ones work with VoiceStudio and which are external links.\n\nThis release also lets you replace a saved clone's reference sample, clones long reference clips on OmniVoice, finishes long audiobook chapters on 8 GB GPUs, and keeps rendered chapters through a power-off or data-folder move.\n\n**Down",
+        "short_notes": false,
+        "raw_file": "data/runs/20261016T052230Z/raw/0022.json"
+      },
+      "other_events": [
+        {
+          "event_id": "393381163",
+          "type": "release",
+          "tag": "v0.5.5",
+          "published_at": "2026-09-22T00:42:28Z",
+          "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.5",
+          "prerelease": false,
+          "source_sha256": "02f62c445d1613b09238e890a0e84eedc1458bfeedb5d0c7f33bb265ea661cec",
+          "excerpt": "**Your voice, another language.** The Clone workspace now keeps your chosen output language when changing voice samples. For example, an English reference can read a French script with a multilingual engine; Auto in Clone follows the script instead of inheriting the reference profile's language.\n\nThis release also makes Electron installation easier to recover, fixes script-editor and integration-catalog glitches, and makes failure reports more useful.\n\n**Download**\n\n| Platform | Installer |\n| --- | --- |\n| Windows x64 | Installer |\n| macOS Apple Silicon | DMG |\n| macOS Intel | DMG |\n| Linux x6",
+          "short_notes": false
+        },
+        {
+          "event_id": "392547976",
+          "type": "release",
+          "tag": "v0.5.4",
+          "published_at": "2026-09-21T04:14:20Z",
+          "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.4",
+          "prerelease": false,
+          "source_sha256": "ba2ddbf171d5235218bceb6e47f140ba5cc67e83c9ced2bd3596a84562ce4252",
+          "excerpt": "**Working engines, smoother long-form audio, and useful local integrations.** CosyVoice repairs its runtime and preserves speech context with newer Transformers. Stories and audiobooks gain cleaner audio joins, better script controls, and more reliable EPUB imports. Electron setup and diagnostics make failures easier to recover from without discarding downloaded models or existing projects.\n\n**Download**\n\n| Platform | Installer |\n| --- | --- |\n| Windows x64 | Installer |\n| macOS Apple Silicon | DMG |\n| macOS Intel | DMG |\n| Linux x64 | AppImage · deb |\n\nAlready using Electron? Install over you",
+          "short_notes": false
+        },
+        {
+          "event_id": "390313742",
+          "type": "release",
+          "tag": "v0.5.3",
+          "published_at": "2026-09-17T06:17:08Z",
+          "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.3",
+          "prerelease": false,
+          "source_sha256": "8ad69ac1220d64113f1b1ab1295a648434c942323b62af8dd465535af056b235",
+          "excerpt": "**A new look. A new desktop app. Still your voices, on your machine.**\n\nVoiceStudio moves to **Electron** with v0.5.3: a redesigned workspace for voice cloning, voice design, stories, dubbing, and transcription. Electron is now the primary desktop app on Windows, macOS, and Linux. Local voice creation still runs on your own hardware, without a required account or API key.\n\n**Highlights**\n\n- A redesigned desktop with dedicated workspaces, collapsible navigation, and resizable sidebars (#1823, #2129)\n- Four-step setup with model packs and optional dictation configuration (#2129)\n- Better dubbing",
+          "short_notes": false
+        }
+      ],
+      "newer_unreviewed": [],
+      "releases_truncated": false,
+      "selection_reason": "本地语音克隆与有声书工具，本版修复长任务超时并保留断电前进度，同时开放Agent接入，可对照岗位关注的完成率",
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z",
+      "checks": {
+        "aigc_relevant": true,
+        "substantive_change": true,
+        "source_ok": true,
+        "note": "版本说明称8GB显卡长章节不再超时、断电后保留已渲染章节，新增Claude Code/Cursor/Codex等接入"
+      },
+      "capabilities": [
+        "speech"
+      ],
+      "annotation": {
+        "status": "valid",
+        "review_status": "ai_draft",
+        "reviewed_at": null,
+        "evidence": [
+          {
+            "id": "v1",
+            "quote": "Long audiobook chapters on 8 GB GPUs no longer time out while still rendering, and a timed-out chapter stops using the GPU after its current chunk (#2287)",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6",
+            "raw_file": "data/runs/20261016T052230Z/raw/0022.json",
+            "before": "…cript of the whole clip (#2281) - Speaker diarisation uses Lightning 2.6.6, which blocks code execution from a crafted checkpoint (#2296) - ",
+            "after": " — thanks @Tran-Van-Hieu! - On Windows, one reset connection no longer leaves the backend running but unreachable (#2276) — thanks @ialexbon…"
+          },
+          {
+            "id": "v2",
+            "quote": "Rendered audiobook chapters stay reusable after the data folder moves, and a power-off no longer empties the resume point or tears chapter audio (#2279)",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6",
+            "raw_file": "data/runs/20261016T052230Z/raw/0022.json",
+            "before": "…egments follow OpenAI's schema (#2290) - OpenAI-compatible routes return errors in OpenAI's format, with 400 for invalid requests (#2290) - ",
+            "after": " — thanks @castlecreati! - An audiobook chapter-cache miss now logs which input changed since the cached render (#2279) - MCP clients pointe…"
+          },
+          {
+            "id": "v3",
+            "quote": "Claude Code, Cursor, Codex CLI and the OpenAI Agents SDK connect to VoiceStudio with working setup (#2289, #2290)",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6",
+            "raw_file": "data/runs/20261016T052230Z/raw/0022.json",
+            "before": "…md). **Highlights** - Answer Twilio phone calls with a greeting in a saved voice; off by default, with a local phone-quality test (#2291) - ",
+            "after": " - Replace a saved clone's reference sample, and clone from references longer than 20 s on OmniVoice (#2282, #2281) — thanks @Cengokill! - L…"
+          },
+          {
+            "id": "v4",
+            "quote": "Replace a saved clone's reference sample, and clone from references longer than 20 s on OmniVoice (#2282, #2281)",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6",
+            "raw_file": "data/runs/20261016T052230Z/raw/0022.json",
+            "before": "…-quality test (#2291) - Claude Code, Cursor, Codex CLI and the OpenAI Agents SDK connect to VoiceStudio with working setup (#2289, #2290) - ",
+            "after": " — thanks @Cengokill! - Long audiobook chapters finish on 8 GB GPUs and survive a power-off or data-folder move (#2287, #2279) — thanks @Tra…"
+          },
+          {
+            "id": "v5",
+            "quote": "Answer Twilio phone calls with a greeting in a saved voice; off by default",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6",
+            "raw_file": "data/runs/20261016T052230Z/raw/0022.json",
+            "before": "…dates. See the [installation guide](https://github.com/debpalash/VoiceStudio/blob/v0.5.6/docs/install/troubleshooting.md). **Highlights** - ",
+            "after": ", with a local phone-quality test (#2291) - Claude Code, Cursor, Codex CLI and the OpenAI Agents SDK connect to VoiceStudio with working set…"
+          },
+          {
+            "id": "v6",
+            "quote": "Electron installers are unsigned or ad-hoc signed and are not Apple-notarized.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6",
+            "raw_file": "data/runs/20261016T052230Z/raw/0022.json",
+            "before": "…v0.5.6/docs/electron-migration.md). Tauri v0.5.3 remains the final Tauri release; its updater cannot install Electron. **Installer trust:** ",
+            "after": " Windows/macOS may show trust warnings. macOS automatic updates are unverified; use manual installer updates. See the [installation guide](h…"
+          }
+        ],
+        "purpose": "本地运行的开源配音工具：声音克隆、视频配音、转写和有声书制作。",
+        "scene": "长篇有声书",
+        "update_title": "长篇有声书：中断或断电后，已渲染章节不用重做",
+        "key_change": "v0.5.6 起，断电或数据目录迁移后，已渲染的有声书章节仍可复用，续传点不再被清空（依据 v2）。同版本修复了 8GB 显卡长章节渲染中途超时的问题，超时章节在当前片段结束后释放 GPU（依据 v1）。",
+        "useful_for": "需要连续渲染大量章节的有声书、长配音创作者；做长任务类功能的产品——可参考“留住已完成部分、只补剩余部分”的恢复设计。",
+        "key_limits": [
+          {
+            "label": "指定硬件",
+            "text": "超时修复针对 8GB 显卡上的长章节，不代表所有硬件都不再超时（v1）"
+          },
+          {
+            "label": "许可",
+            "text": "AGPL-3.0：修改后以网络服务提供需公开对应源码，只适合借鉴机制"
+          },
+          {
+            "label": "安装包",
+            "text": "未签名或仅临时签名、未经 Apple 公证（v6）"
+          },
+          {
+            "label": "未经实测",
+            "text": "未给出提速或降显存数据"
+          }
+        ],
+        "facts": [
+          {
+            "text": "8GB 显卡上长有声书章节不再在渲染中超时；超时章节在当前片段结束后释放 GPU。",
+            "evidence": [
+              "v1"
+            ]
+          },
+          {
+            "text": "数据目录迁移或断电后，已渲染章节仍可复用，续传点不再被清空。",
+            "evidence": [
+              "v2"
+            ]
+          },
+          {
+            "text": "Claude Code、Cursor、Codex CLI 和 OpenAI Agents SDK 可按给出的配置接入。",
+            "evidence": [
+              "v3"
+            ]
+          },
+          {
+            "text": "可替换已保存克隆的参考音频；OmniVoice 支持超过 20 秒的参考。",
+            "evidence": [
+              "v4"
+            ]
+          },
+          {
+            "text": "新增用保存的声音应答 Twilio 来电，默认关闭。",
+            "evidence": [
+              "v5"
+            ]
+          }
+        ],
+        "change_type": [
+          "control",
+          "deploy"
+        ],
+        "change": "版本说明称：8GB显卡上的长有声书章节不再在渲染中超时，超时章节会在当前片段结束后释放GPU；断电或数据目录迁移后保留已渲染章节；可替换已保存克隆的参考音频，OmniVoice支持超过20秒的参考；Claude Code、Cursor、Codex CLI和OpenAI Agents SDK可按给出的配置接入；新增用保存的声音应答Twilio来电（默认关闭）。",
+        "target_task": "做长篇配音或有声书的人，通常要让电脑连续渲染很多章节。麻烦在于：跑到一半超时、断电或软件退出，前面等了很久的内容可能白做。",
+        "hypothesis": "这次更新的价值主要在稳定性：长章节少超时、已完成章节能保留，创作者就少一点从头再来的等待。它不是显存优化，也没有承诺所有电脑都不再超时；是否真能减少损失，要在自己的设备和任务长度上验证。",
+        "team_value": {
+          "mode": "借鉴机制；接入代码受 AGPL 约束",
+          "step": "长任务中断后的恢复：已完成的部分不必重做。",
+          "metric": "中断后需要重新生成的时长；长任务完成率。",
+          "facts": [
+            {
+              "text": "该版本保留断电或迁移前已渲染的章节，并修复长章节超时。",
+              "evidence": [
+                "v1",
+                "v2"
+              ]
+            },
+            {
+              "text": "DreamFace 的积分用于AI生成，已使用的积分不退。",
+              "background": [
+                "b_policy"
+              ]
+            },
+            {
+              "text": "岗位写明关注完成率。",
+              "background": [
+                "b_job"
+              ]
+            }
+          ],
+          "inference": "长视频或长配音任务中断后如果只需补做剩余部分，用户等待更短；在按积分计费的产品里，重复生成也可能意味着额外消耗。",
+          "unverified": "生成失败时是否返还积分，政策页没有说明；DreamFace 是否有长任务中断问题未知。"
+        },
+        "tech": "Electron 桌面应用（Windows、macOS、Linux），AGPL-3.0。安装包未签名或仅临时签名，未经 Apple 公证。声音克隆需确认授权与合规。",
+        "experiment": "在8GB显卡的测试环境里，用同一本10章有声书对照上一版本。测试中分别模拟进程退出、任务中断和数据目录迁移：记录超时次数、完成章数、恢复后需要重渲染的时长、整本完成率。不要求在真实工作设备上硬断电。",
+        "limitations": "项目方没有给出提速或降显存数据；“已渲染章节可保留”不等于正在生成的每一秒都能恢复。安装包未签名、未经 Apple 公证。许可证为 AGPL-3.0：可以商用，但修改后通过网络提供服务，需要公开对应源码。克隆声音还要确认授权与合规。"
+      }
+    },
+    {
+      "id": "mudler/localai",
+      "name": "mudler/LocalAI",
+      "repo_url": "https://github.com/mudler/LocalAI",
+      "category": "image",
+      "also_in": [],
+      "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+      "stars_snapshot": 49564,
+      "license": {
+        "spdx_id": "MIT",
+        "class": "permissive",
+        "adoption_note": "宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查"
+      },
+      "event": {
+        "event_id": "391012857",
+        "type": "release",
+        "tag": "v4.10.0",
+        "published_at": "2026-09-17T19:46:38Z",
+        "url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+        "prerelease": false,
+        "source_sha256": "eeab41d8662c9d25675977eb8f5226e59531c004a7a636236a69a5c1cf063591",
+        "excerpt": "# 🎉 LocalAI 4.10.0 Release! 🚀\n\nLocalAI 4.10.0 is out!\n\nTwenty-eight days and 280 pull requests. The work landed on three fronts: operating a fleet, feeding it models from private sources, and fixing the backends you depend on. A fleet operations dashboard replaces the flat node list with cluster-wide health, capacity, running models, and bulk lifecycle actions. A credentials file lets one `credentials.yaml` authenticate OCI registries, galleries and direct downloads without scattering tokens across environment variables. And `local-ai benchmark` measures end-to-end latency and throughput from ",
+        "short_notes": false,
+        "raw_file": "data/runs/20261016T052230Z/raw/0016.json"
+      },
+      "other_events": [
+        {
+          "event_id": "402180932",
+          "type": "release",
+          "tag": "v4.11.0",
+          "published_at": "2026-10-02T21:56:09Z",
+          "url": "https://github.com/mudler/LocalAI/releases/tag/v4.11.0",
+          "prerelease": false,
+          "source_sha256": "f222f031da355b76a3112db6cb91b3027548ff93383b007426dd1d3ae3b1bf32",
+          "excerpt": "# 🎉 LocalAI 4.11.0 Release! 🚀\n\nLocalAI 4.11.0 is out!\n\nThis release makes LocalAI more useful for audio understanding, resilient model serving, structured decisions, and day-to-day operation. Audio scenes can now combine transcription, diarization, sound detection, and remembered speaker names. Ordered failover chains keep a public model available across local and remote targets, while new Studio and operations pages expose these capabilities without requiring distributed mode.\n\nThe release also adds first-class decision models through `/v1/systemone`, signed OCI model galleries, and Kimodo te",
+          "short_notes": false
+        }
+      ],
+      "newer_unreviewed": [
+        {
+          "event_id": "402180932",
+          "type": "release",
+          "tag": "v4.11.0",
+          "published_at": "2026-10-02T21:56:09Z",
+          "url": "https://github.com/mudler/LocalAI/releases/tag/v4.11.0",
+          "prerelease": false,
+          "source_sha256": "f222f031da355b76a3112db6cb91b3027548ff93383b007426dd1d3ae3b1bf32",
+          "excerpt": "# 🎉 LocalAI 4.11.0 Release! 🚀\n\nLocalAI 4.11.0 is out!\n\nThis release makes LocalAI more useful for audio understanding, resilient model serving, structured decisions, and day-to-day operation. Audio scenes can now combine transcription, diarization, sound detection, and remembered speaker names. Ordered failover chains keep a public model available across local and remote targets, while new Studio and operations pages expose these capabilities without requiring distributed mode.\n\nThe release also adds first-class decision models through `/v1/systemone`, signed OCI model galleries, and Kimodo te",
+          "short_notes": false
+        }
+      ],
+      "releases_truncated": false,
+      "selection_reason": "本地多模态推理引擎，本版为视频引擎加载LoRA、提供延迟与吞吐测量，关系到自部署生成服务的门槛",
+      "decided_by": "AI（Claude）核查起草，待本人确认",
+      "decided_in_run": "20261001T210300Z",
+      "checks": {
+        "aigc_relevant": true,
+        "substantive_change": true,
+        "source_ok": true,
+        "note": "版本说明列出vllm-cpp视频引擎LoRA融合（LTX2.5、MiniMax-H3）与local-ai benchmark命令"
+      },
+      "capabilities": [
+        "video"
+      ],
+      "annotation": {
+        "status": "valid",
+        "review_status": "ai_draft",
+        "reviewed_at": null,
+        "evidence": [
+          {
+            "id": "l1",
+            "quote": "`lora_adapters` and `lora_scales` are now consumed by the vllm-cpp video engine, fusing LoRA deltas into DiT weights at engine load. Works for both LTX2.5 and MiniMax-H3 through one generic path.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+            "raw_file": "data/runs/20261016T052230Z/raw/0016.json",
+            "before": "…warmup and measured runs, with table and JSON output, redirect blocking, and API-key redaction. - 🔧 **vllm-cpp LoRA fusion at load time** - ",
+            "after": " - 🌍 **Environment variables per model** - an `env:` map in model config injects variables into the backend process environment, so `CUDA_VI…"
+          },
+          {
+            "id": "l2",
+            "quote": "measures end-to-end latency and throughput against configured text models.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+            "raw_file": "data/runs/20261016T052230Z/raw/0016.json",
+            "before": "…ated K8s secret mounts take effect without restart, and full masking in logs and error messages. - 📏 **`local-ai benchmark` CLI command** - ",
+            "after": " Reports min/mean/max latency and completion tokens/sec across warmup and measured runs, with table and JSON output, redirect blocking, and …"
+          },
+          {
+            "id": "l3",
+            "quote": "The command does not measure decode-only speed or time to first token",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+            "raw_file": "data/runs/20261016T052230Z/raw/0016.json",
+            "before": "…ies)` across measured runs. It is `nil`/`N/A` if any sample omits `completion_tokens` from the response usage, or if total latency is zero. ",
+            "after": "; it is an end-to-end client benchmark covering HTTP transport, queueing, prompt processing, generation and parse. The HTTP client refuses r…"
+          },
+          {
+            "id": "l4",
+            "quote": "Adapters are always loaded; there is no per-request activation in this path.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+            "raw_file": "data/runs/20261016T052230Z/raw/0016.json",
+            "before": "… DiT weights at load. One generic path serves both LTX2.5 and MiniMax-H3, since the engine auto-detects the DiT family from the checkpoint. ",
+            "after": " Runtime prompt-activated LoRA (punica-style `<lora:name:strength>`) is out of scope and tracked separately. > 🔗 PRs: #12082 ### 🌍 Environme…"
+          },
+          {
+            "id": "l5",
+            "quote": "Four CVEs were patched",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+            "raw_file": "data/runs/20261016T052230Z/raw/0016.json",
+            "before": "…ed from content. Distributed mode gained seven stabilisation fixes across staging, liveness, virtual models and the control-plane database. ",
+            "after": ", `enable_thinking=false` is now honoured across every text backend, and Apple M5 no longer SIGSEGVs at startup. **Highlights:** - 📊 **Fleet…"
+          },
+          {
+            "id": "l6",
+            "quote": "A fleet operations dashboard replaces the flat node list with cluster-wide health, capacity, running models, and bulk lifecycle actions.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+            "raw_file": "data/runs/20261016T052230Z/raw/0016.json",
+            "before": "…equests. The work landed on three fronts: operating a fleet, feeding it models from private sources, and fixing the backends you depend on. ",
+            "after": " A credentials file lets one `credentials.yaml` authenticate OCI registries, galleries and direct downloads without scattering tokens across…"
+          },
+          {
+            "id": "l7",
+            "quote": "A credentials file lets one `credentials.yaml` authenticate OCI registries, galleries and direct downloads without scattering tokens across environment variables.",
+            "field": "source_text",
+            "field_label": "版本说明",
+            "url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+            "raw_file": "data/runs/20261016T052230Z/raw/0016.json",
+            "before": "…n. A fleet operations dashboard replaces the flat node list with cluster-wide health, capacity, running models, and bulk lifecycle actions. ",
+            "after": " And `local-ai benchmark` measures end-to-end latency and throughput from the CLI. The ds4 backend had four fixes that together make it reli…"
+          }
+        ],
+        "purpose": "开源的本地 AI 推理引擎，可在自有硬件上运行文本、图像、语音、视频等模型。",
+        "scene": "自部署视频模型",
+        "update_title": "自部署视频模型：加载时可融合 LoRA 风格插件",
+        "key_change": "v4.10.0 起，vllm-cpp 视频引擎在模型加载时即可把 LoRA 融合进权重，LTX2.5 与 MiniMax-H3 走同一路径（依据 l1）。LoRA 在加载后固定生效，本版不支持按单次请求切换（依据 l4）。",
+        "useful_for": "自部署视频生成服务、需要试验特定风格的技术团队；仅当使用 LTX2.5 或 MiniMax-H3 时相关。按请求切换风格的需求此版不覆盖。",
+        "key_limits": [
+          {
+            "label": "指定模型",
+            "text": "LoRA 融合只覆盖 LTX2.5 与 MiniMax-H3（l1）"
+          },
+          {
+            "label": "范围有限",
+            "text": "不支持按请求切换 LoRA，运行时激活不在本版（l4）"
+          },
+          {
+            "label": "测速范围",
+            "text": "benchmark 只测文本模型，得不到视频速度或首帧时间（l2、l3）"
+          },
+          {
+            "label": "未经实测",
+            "text": "LoRA 对画质和生成耗时的影响未说明"
+          }
+        ],
+        "facts": [
+          {
+            "text": "vllm-cpp 视频引擎在加载时把 LoRA 融合进模型权重，LTX2.5 与 MiniMax-H3 走同一路径。",
+            "evidence": [
+              "l1"
+            ]
+          },
+          {
+            "text": "LoRA 在加载时固定生效，不支持按单次请求切换。",
+            "evidence": [
+              "l4"
+            ]
+          },
+          {
+            "text": "新增 local-ai benchmark 命令，测量文本模型端到端延迟与吞吐；不测首个 token 时间。",
+            "evidence": [
+              "l2",
+              "l3"
+            ]
+          },
+          {
+            "text": "新增集群运维面板和统一凭据文件；修复 4 个 CVE。",
+            "evidence": [
+              "l6",
+              "l7",
+              "l5"
+            ]
+          }
+        ],
+        "change_type": [
+          "model_support",
+          "deploy"
+        ],
+        "change": "版本说明称：vllm-cpp视频引擎在加载时融合LoRA，适用于LTX2.5与MiniMax-H3；新增local-ai benchmark命令测量文本模型的端到端延迟与吞吐；新增集群运维面板、统一凭据文件；修复4个CVE。",
+        "target_task": "需要自己部署 AI 生成服务的小团队，想在本地视频模型上加入特定风格，同时了解服务的响应速度。",
+        "hypothesis": "视频模型在加载阶段就能融合 LoRA，团队可以更快试验特定风格，不必另外搭一套推理脚本。LoRA 不只能做风格，风格只是这次测试场景。能否真正减少搭建工作、会不会增加生成耗时，都还需要验证。",
+        "team_value": {
+          "mode": "仅在团队自部署视频模型时相关",
+          "step": "定制风格：把一种风格加进视频模型并上线试用。",
+          "metric": "新风格从准备到可试用的搭建时间；风格一致性评分。",
+          "facts": [
+            {
+              "text": "该版本支持视频模型加载时融合 LoRA，但不能按请求切换。",
+              "evidence": [
+                "l1",
+                "l4"
+              ]
+            },
+            {
+              "text": "DreamFace 已对外提供 API 并按 Credits 计费。",
+              "background": [
+                "b_api"
+              ]
+            }
+          ],
+          "inference": "如果团队用 LTX2.5 或 MiniMax-H3 自部署，这一改动可能缩短风格试验的搭建工作；按请求切换风格的需求仍要另行实现。",
+          "unverified": "团队是否使用这两种模型、是否自部署未知；生成耗时与画质影响未验证。"
+        },
+        "tech": "Go 项目，MIT 许可；需要 vllm-cpp 视频后端与对应模型权重；LoRA 在加载时固定，按请求激活不在本版范围内。",
+        "experiment": "同一台 GPU、同一 LocalAI v4.10.0、同一 LTX2.5 基础模型、同一组20条提示词和随机种子：A组不加载 LoRA，B组在加载时融合同一个 LoRA。记录模型加载耗时、5秒视频生成耗时、失败率，并由3名评审盲评风格一致性。不与手动搭建脚本比较，否则部署方式和推理实现都会变。",
+        "limitations": "新增 benchmark 只覆盖文本模型，不能直接得到视频生成速度或首帧等待；LoRA 对画质和速度的影响未说明；自部署能否降低成本没有验证。"
+      }
+    }
+  ],
+  "pending": [
+    {
+      "id": "harry0703/moneyprinterturbo",
+      "name": "harry0703/MoneyPrinterTurbo",
+      "repo_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "category": "speech",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "stars_snapshot": 131772,
+      "review_flag": [],
+      "event": {
+        "event_id": "402305239",
+        "type": "release",
+        "tag": "v1.3.8",
+        "published_at": "2026-10-03T03:31:16Z",
+        "url": "https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.8",
+        "prerelease": false,
+        "source_sha256": "68bb8fe817388c7d9a873b11e40433405681b12ce67403f6d382d1a77ed99dd0",
+        "excerpt": "English | 中文\n\n Highlights \n\n- Added continuous progress reporting during stock footage downloads, clip processing, and final rendering, with task logs from background helper threads visible in the WebUI.\n- Added configurable stock material and clip rendering concurrency. Stock material concurrency applies to Pexels, Pixabay, and Coverr; both settings default to **1 (serial processing)**.\n- Added VoxCPM reference-audio voice cloning and optional delivery conditioning to carry over pacing and emotion, with local Whisper transcription for editable reference transcripts.\n- Added Fluxion AI, Cheape",
+        "short_notes": false
+      },
+      "reasons": [
+        "已核查的事件 v1.3.7 不在本期窗口内"
+      ]
+    },
+    {
+      "id": "unslothai/unsloth",
+      "name": "unslothai/unsloth",
+      "repo_url": "https://github.com/unslothai/unsloth",
+      "category": "image",
+      "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
+      "stars_snapshot": 78091,
+      "review_flag": [],
+      "event": {
+        "event_id": "413830819",
+        "type": "release",
+        "tag": "v0.1.908-beta",
+        "published_at": "2026-10-15T18:50:55Z",
+        "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.908-beta",
+        "prerelease": false,
+        "source_sha256": "3fc364eb1316682ab9a28434965f5e2537f0abea171357b805de4751278bb25e",
+        "excerpt": "Run NVIDIA's new Nemotron 3.5 models and Meta's new Muse Spark Open locally in Unsloth. New: text-diffusion LLMs, DeepSpeed training and better prompt caching for coding agents.\n\n## Highlights\n\n- **NVIDIA Nemotron 3.5 Bolt**: Run on 24 GB of memory. Guide\n- **NVIDIA Nemotron 3.5 Super VL**: 120B (12B active) Guide\n- **Meta Muse Spark Open**: 816B (42.7B active) - runs on 256GB Guide\n- **Better prompt caching for coding agents**: Claude Code, Codex etc. on local GGUF models re-process far less of each prompt.\n- **Browser use**: Always allow properly works, cursor, and separate tabs for each cha",
+        "short_notes": false
+      },
+      "reasons": [
+        "v0.1.902-beta 的来源说明已变化，原核查不再适用"
+      ]
+    },
+    {
+      "id": "beatra-ai/talking-avatar-video-skill",
+      "name": "beatra-ai/talking-avatar-video-skill",
+      "repo_url": "https://github.com/beatra-ai/talking-avatar-video-skill",
+      "category": "avatar",
+      "description": "Talking avatar video agent skill for Claude Code, Codex & OpenClaw: turn one portrait and a script or voice track into an AI presenter video for explainers, lessons, and product messages. 数字人口播视频 · 照片说话",
+      "stars_snapshot": 5,
+      "review_flag": [],
+      "event": {
+        "event_id": "created:1373251455",
+        "type": "created",
+        "tag": null,
+        "published_at": "2026-09-16T15:29:41Z",
+        "url": "https://github.com/beatra-ai/talking-avatar-video-skill",
+        "prerelease": false,
+        "source_sha256": "6cc8b1e1af35f3108d486dd42d2a5dc2ced498b5d66343fb73ea987910c4ad44",
+        "excerpt": "# Talking Avatar Video Skill\n\nEnglish | 简体中文\n\nTurn one portrait and a short script into a talking avatar video, from inside Claude Code, Codex, or OpenClaw.\n\n> [!IMPORTANT]\n> Rendering needs a Beatra account and uses credits. The skill itself is free to install.\n\n| Question | Answer |\n| --- | --- |\n| **What it does** | Turn one portrait and a short script or speech track into a directed talking-avatar video for explainers, announcements, lessons, and product messages. |\n| **Requirements** | Python 3.10+ and an agent that loads `SKILL.md` |\n| **Cost** | Free to install. Each render uses credits",
+        "short_notes": false
+      },
+      "reasons": [
+        "尚无核查记录：窗口内有事件不等于值得推荐，需人工核查"
+      ]
+    },
+    {
+      "id": "timoteoaltobrando/ai-video-skill",
+      "name": "TimoteoAltobrando/ai-video-skill",
+      "repo_url": "https://github.com/TimoteoAltobrando/ai-video-skill",
+      "category": "avatar",
+      "description": "Make and edit videos with Claude Opus 5.5: a Claude Code skill for product films, ads, talking heads, explainers, montages and Reels/TikTok/Shorts, with Remotion, AI images and animation, ElevenLabs music and ffmpeg.",
+      "stars_snapshot": 4,
+      "review_flag": [],
+      "event": {
+        "event_id": "created:1406029361",
+        "type": "created",
+        "tag": null,
+        "published_at": "2026-10-05T15:58:51Z",
+        "url": "https://github.com/TimoteoAltobrando/ai-video-skill",
+        "prerelease": false,
+        "source_sha256": "a093509e4504f88e17480efe13f3ad9e430155246343c63cf0bf769b7f79801d",
+        "excerpt": "# ai-video-skill\n\n**Make and edit videos with Claude Opus 5.5.** A Claude Code skill, written and\ntested with Opus 5.5, that takes a video from the first idea, or from your own footage, to the finished files: product and launch films, ads, talking-head and founder videos, interviews, explainers and\ntutorials, event and trip montages, podcast clips, Reels/TikTok/Shorts, animated logos, music videos, and changes to a\nfinished video (a shorter cut, a vertical version, subtitles, a translation, new music).\n\nRemotion is the backbone; images come from Codex (`image_gen`), AI animation from Seedance ",
+        "short_notes": false
+      },
+      "reasons": [
+        "尚无核查记录：窗口内有事件不等于值得推荐，需人工核查"
+      ]
+    },
+    {
+      "id": "arekejoker/qwen21-nsfw-pose-skill",
+      "name": "Arekejoker/qwen21-nsfw-pose-skill",
+      "repo_url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
+      "category": "image",
+      "description": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
+      "stars_snapshot": 2151,
+      "review_flag": [],
+      "event": {
+        "event_id": "411274830",
+        "type": "release",
+        "tag": "v1.0.0",
+        "published_at": "2026-10-13T04:31:38Z",
+        "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill/releases/tag/v1.0.0",
+        "prerelease": false,
+        "source_sha256": "7f4610ad4aeff1ae99cbe9da293b8a521dd5da0641bf8eec6964e6243736b37b",
+        "excerpt": "## Highlights\n\n- Complete Qwen-Image 2.1 pose skill, author recipes, workflows, and 136-pose VNCCS setup.\n- Route-based installation guide with explicit paths and dependencies.\n- Offline package validator and GitHub Actions checks.\n- Custom GitHub social preview and repository topics.\n\nModel weights are not included; install them using `install/setup.md`.",
+        "short_notes": false
+      },
+      "reasons": [
+        "尚无核查记录：窗口内有事件不等于值得推荐，需人工核查"
+      ]
+    },
+    {
+      "id": "lemomo-ai/lemo-opuscar",
+      "name": "lemomo-ai/lemo-opuscar",
+      "repo_url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "category": "speech",
+      "description": "Claude Code skill for short films with no video model: 51 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98 and the new Evidence Films). By Lemomo. · Opus5.5 x 51 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南（新增「实证影像」）",
+      "stars_snapshot": 2501,
+      "review_flag": [],
+      "event": {
+        "event_id": "410547580",
+        "type": "release",
+        "tag": "thanks",
+        "published_at": "2026-10-12T11:48:41Z",
+        "url": "https://github.com/lemomo-ai/lemo-opuscar/releases/tag/thanks",
+        "prerelease": false,
+        "source_sha256": "36e79bfcdffa7d834188acf21584cab0a2b59a22bf6e3b31351c38e06c7dd78a",
+        "excerpt": "Three thank-you films for the stars, each made entirely in code.\n\n- **2,000 stars · Refresh** (50 s): one screen, 17 days, every name real. `stars2000.mp4` (1080p60) / `stars2000-720p.mp4`\n- **800 stars · Reverse Shot** (39 s): 800 seats, each with a stargazer's name. `stars800.mp4` / `stars800-720p.mp4`\n- **300 stars · The Lamplighter** (18 s): 300 stars, each in a different style. `stars300.mp4` / `stars300-720p.mp4`\n\n谢谢每一颗星。",
+        "short_notes": false
+      },
+      "reasons": [
+        "此前排除的是 web，本期最新事件 thanks 尚未核查"
+      ]
+    },
+    {
+      "id": "vincentsch/explainroo",
+      "name": "vincentsch/explainroo",
+      "repo_url": "https://github.com/vincentsch/explainroo",
+      "category": "speech",
+      "description": "Explainer videos and product demos made by your AI agent. Free and open source: a local voice (Kokoro), word timing (Whisper) and a canvas renderer turn a script into a narrated MP4.",
+      "stars_snapshot": 567,
+      "review_flag": [],
+      "event": {
+        "event_id": "413997177",
+        "type": "release",
+        "tag": "v0.4.0",
+        "published_at": "2026-10-15T15:53:38Z",
+        "url": "https://github.com/vincentsch/explainroo/releases/tag/v0.4.0",
+        "prerelease": false,
+        "source_sha256": "2bc4d077797340918b3adba4ba9fe8967b13a31d6750534be672927d1ecb4ed9",
+        "excerpt": "explainroo 0.4 films each scene with a camera, and adds spring motion and motion blur.\n\n**The camera**\n\n- Before anything is drawn, explainroo measures each element of a scene. The camera opens on the picture and widens when something new would not fit. Something new that already fits needs no move.\n- Now and then the camera moves in on what the voice talks about, when the viewer has time to look. Near the end of the scene it pulls back to show the whole picture.\n- While a shot holds, cards and labels are never cut in half. Shots stay clear of the captions and of the buttons on Shorts, TikTok ",
+        "short_notes": false
+      },
+      "reasons": [
+        "尚无核查记录：窗口内有事件不等于值得推荐，需人工核查"
+      ]
+    },
+    {
+      "id": "rylaispirit/cinematic-video-prompt-skill",
+      "name": "Rylaispirit/cinematic-video-prompt-skill",
+      "repo_url": "https://github.com/Rylaispirit/cinematic-video-prompt-skill",
+      "category": "video",
+      "description": "AI video prompt cheat sheet & Claude Skill: cinematic camera angles, camera movement, lighting, composition, color grading for Veo 3, Kling, Sora, Runway, Midjourney. 700+ terms with Vietnamese explanations.",
+      "stars_snapshot": 152,
+      "review_flag": [],
+      "event": {
+        "event_id": "created:1378562653",
+        "type": "created",
+        "tag": null,
+        "published_at": "2026-09-20T16:44:06Z",
+        "url": "https://github.com/Rylaispirit/cinematic-video-prompt-skill",
+        "prerelease": false,
+        "source_sha256": "e52265dcfcf021139f0d7aa2edd71b31aba6341e262c2a4bba3163a7e4bd8ca6",
+        "excerpt": "# 🎬 Cinematic Video Prompt Skill\n\n**AI video prompt cheat sheet & Claude Skill for Veo 3, Google Flow, Kling, Sora, Runway, Hailuo, Luma, Midjourney** — camera angles, camera movement, cinematic lighting, composition, color grading, mood, and a ready-to-use prompt formula.\n\n**Bộ từ điển prompt điện ảnh cho AI tạo video/ảnh** — 700+ thuật ngữ về góc máy, chuyển động camera, ánh sáng, bố cục, màu sắc, cảm xúc, có giải thích tiếng Việt và công thức ghép prompt dùng được ngay.\n\nEnglish · Tiếng Việt\n\n---\n\n## English\n\n### What is this?\n\nA **Claude Skill** (works with Claude Code, Claude Cowork and C",
+        "short_notes": false
+      },
+      "reasons": [
+        "尚无核查记录：窗口内有事件不等于值得推荐，需人工核查"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "apimart-api-gateway/grok-image-api",
+      "name": "apimart-API-Gateway/grok-image-api",
+      "repo_url": "https://github.com/apimart-API-Gateway/grok-image-api",
+      "category": "image",
+      "description": "Grok Image API (Grok Imagine 1.5, grok-imagine-1.5-apimart): model ids, per-image pricing, text-to-image and edit routes, moderation behaviour and runnable API examples.",
+      "stars_snapshot": 145,
+      "review_flag": [],
+      "event": {
+        "event_id": "created:1374266092",
+        "type": "created",
+        "tag": null,
+        "published_at": "2026-09-17T10:26:41Z",
+        "url": "https://github.com/apimart-API-Gateway/grok-image-api",
+        "prerelease": false,
+        "source_sha256": "69e532c6609465a54de6cf3daf4893202ec18dd8d0bc247dbf11ae3c7326a4b3",
+        "excerpt": "# Grok Image API (grok-imagine-1.5-apimart)\n\n> **$0.015 per image**, edits included — one OpenAI-compatible endpoint at `https://api.apimart.ai/v1`, no monthly plan required. *(observed 2026-09-17)*\n\n**Get an API key** · **Live pricing** · **Model page** · ⚡ 60-second quickstart\n\n**Why teams call Grok Imagine 1.5 (`grok-imagine-1.5-apimart`) through APIMart**\n\n- **One key, entire catalog.** The same `https://api.apimart.ai/v1` base URL and `Authorization` header reach Grok Imagine 1.5 (`grok-imagine-1.5-apimart`) and 300+ other image, video and language models — switch the `model` field, not y",
+        "short_notes": false
+      },
+      "scope": "repo",
+      "reason_code": "api_resale_no_open_impl",
+      "reason": "未通过“来源可查/开源实现”核查：README是商业API聚合方的按图计价与调用示例（含推广短链），与已排除的seedance系列同一模式，没有可核查的开源实现",
+      "evidence_url": "https://github.com/apimart-API-Gateway/grok-image-api",
+      "decided_in_run": "20261002T022921Z"
+    },
+    {
+      "id": "apimart-api-ai-aggregator/seedance-2.5-api",
+      "name": "apimart-api-ai-Aggregator/seedance-2.5-api",
+      "repo_url": "https://github.com/apimart-api-ai-Aggregator/seedance-2.5-api",
+      "category": "video",
+      "description": "Seedance 2.5 API (seedance-2.5): per-second pricing by resolution, up to 30-second text-to-video and reference-media workflows, with cURL and Python examples and measured costs.",
+      "stars_snapshot": 136,
+      "review_flag": [],
+      "event": {
+        "event_id": "created:1375282779",
+        "type": "created",
+        "tag": null,
+        "published_at": "2026-09-18T02:40:10Z",
+        "url": "https://github.com/apimart-api-ai-Aggregator/seedance-2.5-api",
+        "prerelease": false,
+        "source_sha256": "a942b48b4ed7cd20d9bfdc07f31fa173d78bd89b1c2427d5c41425a847eb8b6e",
+        "excerpt": "# Seedance 2.5 API (seedance-2.5)\n\n> **from $0.0961 per second** at 480P — one OpenAI-compatible endpoint at `https://api.apimart.ai/v1`, no monthly plan required. *(observed 2026-09-17)*\n\n**Get an API key** · **Live pricing** · **Model page** · ⚡ 60-second quickstart\n\n**Why teams call Seedance 2.5 (`seedance-2.5`) through APIMart**\n\n- **One key, entire catalog.** The same `https://api.apimart.ai/v1` base URL and `Authorization` header reach Seedance 2.5 (`seedance-2.5`) and 300+ other image, video and language models — switch the `model` field, not your client.\n- **$1 minimum, pay as you go.*",
+        "short_notes": false
+      },
+      "scope": "repo",
+      "reason_code": "api_resale_no_open_impl",
+      "reason": "未通过“来源可查/开源实现”核查：与已人工排除的seedance-2.0-api同为商业API转售示例页，含推广链接",
+      "evidence_url": "https://github.com/apimart-api-ai-Aggregator/seedance-2.5-api",
+      "decided_in_run": "20261001T210300Z"
+    }
+  ],
+  "dropped_decisions": [
+    {
+      "id": "op7418/guizang-yingzao-skill",
+      "tag": null,
+      "event_id": "created:1354705170",
+      "reason": "本期检索结果中未出现该仓库"
+    }
+  ],
+  "changes_since_previous": {
+    "previous_run_id": "20261013T071903Z",
+    "removed": [
+      {
+        "id": "harry0703/moneyprinterturbo",
+        "name": "harry0703/MoneyPrinterTurbo",
+        "tag": "v1.3.7",
+        "reason": "事件日期 2026-09-13 已早于本期窗口起点 2026-09-16"
+      }
+    ],
+    "added": [
+      "debpalash/VoiceStudio"
+    ]
+  },
+  "observations": [
+    {
+      "title": "出错后，别让前面的工作白做",
+      "kind": "跨项目信号",
+      "depends_on": [
+        [
+          "debpalash/voicestudio",
+          "394436097"
+        ],
+        [
+          "harry0703/moneyprinterturbo",
+          "387890481"
+        ],
+        [
+          "unslothai/unsloth",
+          "401027235"
+        ]
+      ],
+      "background": [],
+      "status": "needs_review",
+      "review_status": null,
+      "scope": "跨项目信号"
+    },
+    {
+      "title": "创作能力，开始能被 AI 助手直接调用",
+      "kind": "跨项目信号",
+      "depends_on": [
+        [
+          "debpalash/voicestudio",
+          "394436097"
+        ],
+        [
+          "op7418/guizang-yingzao-skill",
+          "created:1354705170"
+        ]
+      ],
+      "background": [],
+      "status": "needs_review",
+      "review_status": null,
+      "scope": "跨项目信号"
+    },
+    {
+      "title": "更快、更省显存、更稳定，不是一回事",
+      "kind": "跨项目信号",
+      "depends_on": [
+        [
+          "unslothai/unsloth",
+          "401027235"
+        ],
+        [
+          "debpalash/voicestudio",
+          "394436097"
+        ],
+        [
+          "mudler/localai",
+          "391012857"
+        ]
+      ],
+      "background": [],
+      "status": "needs_review",
+      "review_status": null,
+      "scope": "跨项目信号"
+    }
+  ],
+  "background": [
+    {
+      "id": "b_job",
+      "title": "同花顺官方校园招聘：AI Native出海产品经理（AI创新集群，杭州）",
+      "url": "https://campus.10jqka.com.cn/mobile/job/detail?id=2198",
+      "entry_url": "https://campus.10jqka.com.cn/mobile/job/list?applyAttribute=1",
+      "publisher": "同花顺（官方）",
+      "type": "official",
+      "accessed_at": "2026-10-02",
+      "supports": "岗位面向全球创作者，写明快速做MVP并在Reddit/Discord验证、关注生成等待（“用户等不了那0.8秒”）、完成率与留存。",
+      "limits": "招聘要求说明团队关注点，不能证明产品当前存在某个问题；列表页需在浏览器中加载，岗位详情页可直接阅读。"
+    },
+    {
+      "id": "b_avatar",
+      "title": "DreamFace 头像视频（Avatar Video）产品页",
+      "url": "https://www.dreamfaceapp.com/ai-tools/avatar-video",
+      "publisher": "DreamFace（官方）",
+      "type": "official",
+      "accessed_at": "2026-10-02",
+      "supports": "产品把照片、脚本或音频转成口播头像视频，提供网页、iOS、Android 入口，页面列出多种语言。",
+      "limits": "作为相关产品参照，不认定该岗位负责其全部业务；未披露内部流程、失败率或成本。"
+    },
+    {
+      "id": "b_api",
+      "title": "DreamAPI（DreamFace API）页面",
+      "url": "https://www.dreamfaceapp.com/tools/dreamface-api",
+      "publisher": "DreamFace（官方）",
+      "type": "official",
+      "accessed_at": "2026-10-02",
+      "supports": "已提供 Lip Sync、DreamAct、AI Voice 等 API，按任务复杂度消耗 Credits。",
+      "limits": "说明产品已有API和积分计费，因此“推出API”不是新建议；未披露调用量或收入。"
+    },
+    {
+      "id": "b_policy",
+      "title": "DreamFace 订阅与积分政策",
+      "url": "https://dreamfaceapp.com/subscriptionPolicy.html",
+      "publisher": "New Port LLC（页面署名，DreamFace 运营方）",
+      "type": "official",
+      "accessed_at": "2026-10-02",
+      "supports": "积分包用于AI生成功能，已使用的积分不退；生成、处理、导出等操作会消耗平台资源。",
+      "limits": "政策不说明生成失败时是否返还积分，本作品不对此作推断。"
+    },
+    {
+      "id": "b_nowcoder",
+      "title": "牛客网：同花顺 Java 开发实习（已关闭）",
+      "url": "https://www.nowcoder.com/jobs/detail/390262",
+      "publisher": "第三方招聘平台",
+      "type": "third_party",
+      "accessed_at": "2026-10-02",
+      "supports": "第三方页面把同花顺岗位与 Dreamface 的稳定性优化、架构工作联系在一起，只作为同花顺与 DreamFace 关联的辅助线索。",
+      "limits": "第三方转载、岗位已关闭；页面中的规模描述不作为事实引用，也不据此推断技术栈。"
+    }
+  ],
+  "appendix": {
+    "title": "附录：设计思路与工程化",
+    "lead": "这里说明怎样从一个宽泛的题目迭代到可持续运行的工具、为什么这样设计，以及和我过去经历的关系。正文结论不依赖本附录。",
+    "sections": [
+      {
+        "heading": "先回到题目",
+        "items": [
+          "题目要三件事：调用第三方 API 抓取近30天的 AIGC 前沿项目；借助 AI 总结成结构化简报；交付能自动运行的 Python 脚本或趋势看板。",
+          "交付形式是脚本加看板：脚本是主链路，负责抓取、核查和生成 Markdown；看板读同一份数据，并能一键导出 Markdown。",
+          "“趋势”拆成两层来做：单期内多个项目的共同变化（跨项目信号），以及期与期之间的差异（一键更新后与上一期对比）。样本只有一期时，不写成行业趋势。"
+        ]
+      },
+      {
+        "heading": "从宽泛题目到可运行的产品：四次迭代",
+        "items": [
+          "第一版按字面完成题目：调用 GitHub API 抓取近30天的项目，生成 Markdown 报告。暴露的问题是，“有发布”的仓库里混有 API 转售页和提示词合集，列表本身回答不了哪个值得看。",
+          "第二版加入核查与证据：精选要过三项核查并写明理由，解读附原文摘录，脚本校验摘录仍在原文中；没有把握的项目放进待核实区。",
+          "第三版按读者重排：标题从“仓库名 + Stars”改成“场景：具体变化”，先给结论和限制，技术细节和原文按需展开，并补上团队下一步的验证方案。",
+          "第四版做成持续运行的工具：GitHub Actions 每周二、五定时抓取，看板上的「一键更新」可手动触发，结果自动部署到 Cloudflare Pages，并与上一期对比，标出新增、新版本和移出。“趋势”由此从单期判断变成逐期累积的记录。"
+        ]
+      },
+      {
+        "heading": "关键设计判断",
+        "items": [
+          "读者决定写法。读者是同花顺 AI 创新与出海团队，他们需要知道哪个变化值得先验证，而不是一份热门仓库列表。所以每条更新用“场景：具体变化”做标题，再写适合谁、关键限制和最小验证方法。",
+          "“有发布”不等于“值得看”。脚本只判断窗口内有没有事件；进入精选要过三项核查（AIGC 相关、实质变化、来源可查）并写明理由。核查记录绑定事件和原文哈希：新一期里事件没变就继续有效，事件或原文一变就失效。没通过核查的放进待核实区，不为凑数硬留。",
+          "每个结论都能回到原文。解读里的事实都附逐字摘录，脚本会校验摘录仍在原文中，对不上就不再展示旧解读。Stars 只写抓取时的累计值，不写增长。",
+          "事实、推断、假设分开写。岗位页、DreamFace 产品页和积分政策只用来判断与团队的相关性，并标注查阅日期；推断和待验证内容单独标出，所有实验都标“未执行”。"
+        ]
+      },
+      {
+        "heading": "和常见做法的区别",
+        "items": [
+          "常见的做法是按 Stars 或热度排一张榜。本作品不写“增长最快”这类判断，因为手里只有抓取时的累计值，没有历史观测。",
+          "常见的做法是让模型直接总结抓到的内容。本作品让 AI 在制作阶段起草，脚本在运行时校验引用；运行不依赖模型，结果可以复现。",
+          "常见的做法是每次重抓、重写。本作品的核查记录跨期沿用，只有事件或原文变化时才要求重新核查，每一期的人工只花在真正变化的项目上。",
+          "常见的做法停在本地脚本。本作品有线上地址、定时任务、失败保护和变更记录，团队可以直接使用。"
+        ]
+      },
+      {
+        "heading": "商业化视角",
+        "items": [
+          "先找与目标产品机制相通的变化，再谈要不要接入代码。DreamFace 的头像视频由照片、脚本或音频生成，按积分计费，政策页写明已使用的积分不退；所以“生成前先校验配音”“中断后保留已完成部分”这类更新，直接关系到用户的等待和积分消耗。",
+          "优先实验选成本最低、能离线做的方案：只借鉴机制，不受仓库许可限制，先建立基线，再按事先定好的继续、调整、停止条件决定是否进入产品。",
+          "公开资料只用来判断方向，不推断收入、增长或内部指标；离线样片的结果也不外推为留存或付费转化。"
+        ]
+      },
+      {
+        "heading": "工程化",
+        "items": [
+          "数据源：GitHub REST API，四个 AIGC topic，每个分两次检索（近期有推送、窗口内新建），兼顾成熟项目的新版本和新项目；设请求上限，并记录截断数量、未检查项目和失败请求。",
+          "可靠性：明确的 UTC 时间窗口、跨分类去重、超时与限流处理；每个原始响应落盘并记录哈希；离线重建只读本地文件；全部失败时不覆盖旧报告，部分成功需要手动确认才替换当前期。",
+          "自动更新：GitHub Actions 每周二、五定时运行；看板上的「一键更新」通过 Cloudflare Pages Function 触发同一流程，跑完自动部署，页面与上一期对比，标出新增、新版本和移出。",
+          "测试：覆盖窗口边界、失败保护、跨期核查、关键词误伤、解读失效和上期对比，全部使用模拟数据，不联网。",
+          "AI 用在制作阶段：写代码、读原文起草解读，再由脚本校验引用。运行时不调用模型，同样的原始数据总能重建出同样的结果。"
+        ]
+      },
+      {
+        "heading": "和我过去经历的关系",
+        "pairs": [
+          {
+            "from": "迪瑞医疗战略投资部：负责约10家子公司经营分析和医疗器械行业研究，把投资分析岗位拆成约28项 SOP，用 Python 辅助处理竞品信息。",
+            "here": "“检索、核查、成文”的流程沿用同一思路：先定标准，再让脚本按标准执行，每个结论都附来源。"
+          },
+          {
+            "from": "腾讯云 CSIG 教育行业实习：做方案时从介绍产品功能，转向按客户角色、建设阶段、预算与决策链来判断；独立设计 AI 售前工作台，把案例库结构化为 JSON 知识模型，用 FastAPI、Docker、CVM 完成内网部署。",
+            "here": "看板先回答“对哪个团队、哪个环节有用”；核查记录、解读和背景资料分开存成 JSON；部署链路按能上线运行的标准来做。"
+          },
+          {
+            "from": "腾讯云实习期间跑通视频生成 POC，把多款工具的对比体验沉淀为场景选型和能力边界判断。",
+            "here": "每个项目都写“关键限制”和“最小验证”，项目方给出的数字不当作实测结果。"
+          },
+          {
+            "from": "个人项目“基于多智能体协作的求职自动化系统”：用 Python、MySQL、REST API 和 LLM API 串联流程，建立文本匹配度与逻辑连贯性的双维校验。",
+            "here": "本作品要求“解读必须能在原文中找到”，属于同一类输出校验。"
+          },
+          {
+            "from": "C51 Consulting GTM 项目：把复杂能力拆成前端体验入口和后端能力支撑，设计从低门槛体验到高客单价服务的分阶段路径。",
+            "here": "团队下一步建议先借鉴机制、做低成本的离线验证，再决定是否接入仓库，同样是先小后大。"
+          },
+          {
+            "from": "招商银行南昌中心：用 CRM 对 500+ 企业及高净值客户分层，在客户沟通中验证“客户类型 - 需求信号 - 产品组合 - 后续动作”的判断逻辑。",
+            "here": "每个项目按“场景 - 具体变化 - 适合谁 - 下一步验证”组织；项目分成正式精选、待核实、排除三层，不同层投入不同精力。"
+          },
+          {
+            "from": "腾讯全球校园招聘项目：搭建“多渠道触达 - 活动转化 - 简历投递”的结构化漏斗。",
+            "here": "“数据与方法”里的漏斗（检索候选 → 实际检查 → 窗口内有事件 → 正式精选）把每一步的筛掉数量摆出来，说明结论覆盖到哪里。"
+          }
+        ]
+      },
+      {
+        "heading": "已知限制与下一步",
+        "items": [
+          "覆盖面有限：每条检索只取 Stars 排名靠前的10或20个仓库。下一步可以接入 Hugging Face 等来源，但要先定义清楚什么算“事件”。",
+          "新进入待核实区的项目没有自动解读。可以加入可选的模型摘要，前提是必须附原文证据，并且在没有密钥时能自动降级。",
+          "解读、本期判断和团队建议目前是 AI 草稿，需要本人审阅确认。"
+        ]
+      },
+      {
+        "heading": "线上版本",
+        "items": [
+          "看板：https://aigc-signal.pages.dev （每周二、五自动更新，可一键手动更新）",
+          "代码与每次运行的记录：https://github.com/gloriatan/aigc-signal （Actions 页可查看每次抓取、测试和部署的日志）",
+          "提交的压缩包是某一期的离线快照；线上版会继续按周更新。"
+        ]
+      }
+    ]
+  },
+  "period_judgment": {
+    "title": "本期判断",
+    "kind": "跨项目信号",
+    "depends_on": [
+      [
+        "harry0703/moneyprinterturbo",
+        "387890481"
+      ],
+      [
+        "debpalash/voicestudio",
+        "394436097"
+      ],
+      [
+        "unslothai/unsloth",
+        "401027235"
+      ]
+    ],
+    "background": [],
+    "status": "needs_review",
+    "review_status": null
+  },
+  "team_plan": {
+    "priority": [
+      {
+        "title": "口播视频生成前，先校验配音",
+        "kind": "优先实验",
+        "depends_on": [
+          [
+            "harry0703/moneyprinterturbo",
+            "387890481"
+          ],
+          [
+            "debpalash/voicestudio",
+            "394436097"
+          ]
+        ],
+        "background": [
+          "b_avatar",
+          "b_policy",
+          "b_job"
+        ],
+        "status": "needs_review",
+        "review_status": null
+      }
+    ],
+    "conditional": [
+      {
+        "title": "结构化排版流程 vs 直接提示词（海报、封面类功能）",
+        "kind": "有条件实验",
+        "depends_on": [
+          [
+            "op7418/guizang-yingzao-skill",
+            "created:1354705170"
+          ]
+        ],
+        "background": [
+          "b_job"
+        ],
+        "status": "needs_review",
+        "review_status": null
+      },
+      {
+        "title": "自部署视频模型的 LoRA 风格试验",
+        "kind": "有条件实验",
+        "depends_on": [
+          [
+            "mudler/localai",
+            "391012857"
+          ]
+        ],
+        "background": [
+          "b_api"
+        ],
+        "status": "valid",
+        "review_status": "ai_draft",
+        "hypothesis": "加载时融合 LoRA 能缩短新风格的搭建时间。",
+        "primary_metric": "新风格从准备到可试用的耗时；同时记录生成耗时与失败率。",
+        "limits": "LoRA 不能按请求切换；对画质和速度的影响未说明。",
+        "condition": "只有团队在 LTX2.5 或 MiniMax-H3 上自部署视频生成时才做；否则不投入。",
+        "mode": "仅自部署时相关"
+      }
+    ],
+    "deferred": [
+      {
+        "title": "按项目方测速数字做选型或成本判断",
+        "kind": "暂缓",
+        "depends_on": [
+          [
+            "unslothai/unsloth",
+            "401027235"
+          ],
+          [
+            "mudler/localai",
+            "391012857"
+          ]
+        ],
+        "background": [],
+        "status": "needs_review",
+        "review_status": null
+      },
+      {
+        "title": "直接接入 VoiceStudio 做声音克隆",
+        "kind": "暂缓",
+        "depends_on": [
+          [
+            "debpalash/voicestudio",
+            "394436097"
+          ]
+        ],
+        "background": [],
+        "status": "valid",
+        "review_status": "ai_draft",
+        "reason": "AGPL-3.0 下以网络服务提供修改版需公开对应源码；克隆声音需要授权与合规审查；安装包未签名。可借鉴“保留已完成部分”的机制，不急于接入代码。"
+      },
+      {
+        "title": "把“推出 API”当作新建议",
+        "kind": "暂缓",
+        "depends_on": [],
+        "background": [
+          "b_api"
+        ],
+        "status": "valid",
+        "review_status": "ai_draft",
+        "reason": "DreamFace 已有 DreamAPI 并按 Credits 计费，这不是新方向。"
+      }
+    ]
+  },
+  "priority_basis": "按“与出海创作流程的相关度 × 能否离线、低成本验证”排序：前两项共同支撑末尾行动建议，故标“先看”；第 3 项只借鉴流程；第 4 项仅在自部署特定两个模型时相关；第 5 项数字为项目方数据，仅作复测线索。不按 Stars 多少排序，也不把五项归为同一趋势。",
+  "diff": {
+    "from_run": "20261013T071903Z",
+    "to_run": "20261016T052230Z",
+    "has_previous": true,
+    "projects": {
+      "debpalash/voicestudio": {
+        "status": "new",
+        "to": {
+          "event_id": "394436097",
+          "tag": "v0.5.6",
+          "type": "release",
+          "published_at": "2026-09-23T08:53:32Z"
+        }
+      },
+      "mudler/localai": {
+        "status": "same"
+      }
+    },
+    "removed": [
+      {
+        "id": "harry0703/moneyprinterturbo",
+        "name": "harry0703/MoneyPrinterTurbo",
+        "tag": "v1.3.7",
+        "published_at": "2026-09-13T12:26:39Z",
+        "reason": "事件超出30天窗口"
+      }
+    ],
+    "pending_new": [
+      "harry0703/MoneyPrinterTurbo",
+      "beatra-ai/talking-avatar-video-skill",
+      "vincentsch/explainroo"
+    ],
+    "summary": {
+      "new": 1,
+      "version": 0,
+      "removed": 1,
+      "pending_new": 3,
+      "changed": 2
+    }
+  }
+}
