@@ -1,40 +1,33 @@
 {
-  "from_run": "20261013T071903Z",
-  "to_run": "20261016T052230Z",
+  "from_run": "20261016T052230Z",
+  "to_run": "20261020T053831Z",
   "has_previous": true,
   "projects": {
     "debpalash/voicestudio": {
-      "status": "new",
-      "to": {
-        "event_id": "394436097",
-        "tag": "v0.5.6",
-        "type": "release",
-        "published_at": "2026-09-23T08:53:32Z"
-      }
-    },
-    "mudler/localai": {
       "status": "same"
     }
   },
   "removed": [
     {
-      "id": "harry0703/moneyprinterturbo",
-      "name": "harry0703/MoneyPrinterTurbo",
-      "tag": "v1.3.7",
-      "published_at": "2026-09-13T12:26:39Z",
+      "id": "mudler/localai",
+      "name": "mudler/LocalAI",
+      "tag": "v4.10.0",
+      "published_at": "2026-09-17T19:46:38Z",
       "reason": "事件超出30天窗口"
     }
   ],
   "pending_new": [
-    "harry0703/MoneyPrinterTurbo",
-    "beatra-ai/talking-avatar-video-skill",
-    "vincentsch/explainroo"
+    "mudler/LocalAI",
+    "Antoine-Thomas/hermes-skills-showcase",
+    "OpenMOSS/MOSS-Image",
+    "SnowSky1/universal-imagegen-agent",
+    "sitor-ai/frametell"
   ],
   "summary": {
-    "new": 1,
+    "new": 0,
     "version": 0,
     "removed": 1,
-    "pending_new": 3,
-    "changed": 2
+    "pending_new": 5,
+    "changed": 1
   }
 }

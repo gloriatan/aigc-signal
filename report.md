@@ -2,10 +2,10 @@
 
 > 本期判断待复核：其依据的项目解读已变化或不在本期。
 
-- 事件窗口：2026-09-16T05:22:30Z 至 2026-10-16T05:22:30Z（UTC，含起点不含尾）
-- 精选事件日期：2026-09-17 至 2026-09-23
-- 数据抓取时间：2026-10-16T05:22:30Z（期次 20261016T052230Z，状态 complete）
-- 报告生成时间：2026-10-16T05:22:56Z（联网刷新）
+- 事件窗口：2026-09-20T05:38:31Z 至 2026-10-20T05:38:31Z（UTC，含起点不含尾）
+- 精选事件日期：2026-09-23 至 2026-09-23
+- 数据抓取时间：2026-10-20T05:38:31Z（期次 20261020T053831Z，状态 complete）
+- 报告生成时间：2026-10-20T05:38:58Z（联网刷新）
 - 商业背景资料查阅日期：2026-10-02（可早于30天窗口，不属于开源事件）
 
 ## 本期更新目录
@@ -15,9 +15,8 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 | # | 任务/场景：具体变化 | 项目 | 事件 | 能力标签 |
 |---|---|---|---|---|
 | 1 | 长篇有声书：中断或断电后，已渲染章节不用重做 | debpalash/VoiceStudio | 正式发布 v0.5.6，2026-09-23 | 语音 |
-| 2 | 自部署视频模型：加载时可融合 LoRA 风格插件 | mudler/LocalAI | 正式发布 v4.10.0，2026-09-17 | 视频 |
 
-另有 8 个有事件的项目在“待核查”，未计入精选。
+另有 11 个有事件的项目在“待核查”，未计入精选。
 
 ## 项目更新
 
@@ -58,7 +57,7 @@ v0.5.6 起，断电或数据目录迁移后，已渲染的有声书章节仍可�
 - Electron 桌面应用（Windows、macOS、Linux），AGPL-3.0。安装包未签名或仅临时签名，未经 Apple 公证。声音克隆需确认授权与合规。
 - 许可：AGPL-3.0。AGPL-3.0：可商用；修改后以网络服务提供时需按AGPL公开对应源码，不等于禁止商用。模型权重与服务条款未核查
 - 限制与未知：项目方没有给出提速或降显存数据；“已渲染章节可保留”不等于正在生成的每一秒都能恢复。安装包未签名、未经 Apple 公证。许可证为 AGPL-3.0：可以商用，但修改后通过网络提供服务，需要公开对应源码。克隆声音还要确认授权与合规。
-- 窗口内其他事件：正式发布 v0.5.5，2026-09-22、正式发布 v0.5.4，2026-09-21、正式发布 v0.5.3，2026-09-17
+- 窗口内其他事件：正式发布 v0.5.5，2026-09-22、正式发布 v0.5.4，2026-09-21
 
 </details>
 
@@ -82,88 +81,16 @@ v0.5.6 起，断电或数据目录迁移后，已渲染的有声书章节仍可�
 <details>
 <summary>原始依据（6 条）</summary>
 
-- [v1] “Long audiobook chapters on 8 GB GPUs no longer time out while still rendering, and a timed-out chapter stops using the GPU after its current chunk (#2287)” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261016T052230Z/raw/0022.json`
-- [v2] “Rendered audiobook chapters stay reusable after the data folder moves, and a power-off no longer empties the resume point or tears chapter audio (#2279)” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261016T052230Z/raw/0022.json`
-- [v3] “Claude Code, Cursor, Codex CLI and the OpenAI Agents SDK connect to VoiceStudio with working setup (#2289, #2290)” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261016T052230Z/raw/0022.json`
-- [v4] “Replace a saved clone's reference sample, and clone from references longer than 20 s on OmniVoice (#2282, #2281)” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261016T052230Z/raw/0022.json`
-- [v5] “Answer Twilio phone calls with a greeting in a saved voice; off by default” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261016T052230Z/raw/0022.json`
-- [v6] “Electron installers are unsigned or ad-hoc signed and are not Apple-notarized.” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261016T052230Z/raw/0022.json`
+- [v1] “Long audiobook chapters on 8 GB GPUs no longer time out while still rendering, and a timed-out chapter stops using the GPU after its current chunk (#2287)” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261020T053831Z/raw/0022.json`
+- [v2] “Rendered audiobook chapters stay reusable after the data folder moves, and a power-off no longer empties the resume point or tears chapter audio (#2279)” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261020T053831Z/raw/0022.json`
+- [v3] “Claude Code, Cursor, Codex CLI and the OpenAI Agents SDK connect to VoiceStudio with working setup (#2289, #2290)” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261020T053831Z/raw/0022.json`
+- [v4] “Replace a saved clone's reference sample, and clone from references longer than 20 s on OmniVoice (#2282, #2281)” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261020T053831Z/raw/0022.json`
+- [v5] “Answer Twilio phone calls with a greeting in a saved voice; off by default” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261020T053831Z/raw/0022.json`
+- [v6] “Electron installers are unsigned or ad-hoc signed and are not Apple-notarized.” — 版本说明，[原文](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6)，原始响应 `data/runs/20261020T053831Z/raw/0022.json`
 
 </details>
 
 选择理由：本地语音克隆与有声书工具，本版修复长任务超时并保留断电前进度，同时开放Agent接入，可对照岗位关注的完成率（AI（Claude）核查起草，待本人确认，核查于期次 20261001T210300Z）。解读审阅状态：AI草稿，未经本人审阅。
-
-### 2. 自部署视频模型：加载时可融合 LoRA 风格插件
-
-- 项目：[mudler/LocalAI](https://github.com/mudler/LocalAI) — 开源的本地 AI 推理引擎，可在自有硬件上运行文本、图像、语音、视频等模型。
-- 事件：正式发布 v4.10.0，2026-09-17，[来源](https://github.com/mudler/LocalAI/releases/tag/v4.10.0)
-- 能力标签：视频
-
-**本次变化**
-
-v4.10.0 起，vllm-cpp 视频引擎在模型加载时即可把 LoRA 融合进权重，LTX2.5 与 MiniMax-H3 走同一路径（依据 l1）。LoRA 在加载后固定生效，本版不支持按单次请求切换（依据 l4）。
-
-**谁值得关注**
-
-自部署视频生成服务、需要试验特定风格的技术团队；仅当使用 LTX2.5 或 MiniMax-H3 时相关。按请求切换风格的需求此版不覆盖。
-
-**关键边界**
-
-- 指定模型：LoRA 融合只覆盖 LTX2.5 与 MiniMax-H3（l1）
-- 范围有限：不支持按请求切换 LoRA，运行时激活不在本版（l4）
-- 测速范围：benchmark 只测文本模型，得不到视频速度或首帧时间（l2、l3）
-- 未经实测：LoRA 对画质和生成耗时的影响未说明
-<details>
-<summary>具体改动（4 项）</summary>
-
-- vllm-cpp 视频引擎在加载时把 LoRA 融合进模型权重，LTX2.5 与 MiniMax-H3 走同一路径。（依据 l1）
-- LoRA 在加载时固定生效，不支持按单次请求切换。（依据 l4）
-- 新增 local-ai benchmark 命令，测量文本模型端到端延迟与吞吐；不测首个 token 时间。（依据 l2；依据 l3）
-- 新增集群运维面板和统一凭据文件；修复 4 个 CVE。（依据 l6；依据 l7；依据 l5）
-
-</details>
-
-<details>
-<summary>技术与采用条件</summary>
-
-- Go 项目，MIT 许可；需要 vllm-cpp 视频后端与对应模型权重；LoRA 在加载时固定，按请求激活不在本版范围内。
-- 许可：MIT。宽松许可：可商用，需保留版权与许可声明。模型权重与服务条款未核查
-- 限制与未知：新增 benchmark 只覆盖文本模型，不能直接得到视频生成速度或首帧等待；LoRA 对画质和速度的影响未说明；自部署能否降低成本没有验证。
-- 窗口内其他事件：正式发布 v4.11.0，2026-10-02
-- 窗口内有更新的事件尚未核查：正式发布 v4.11.0，2026-10-02
-
-</details>
-
-<details>
-<summary>对团队的启发</summary>
-
-- 适合的用户任务：需要自己部署 AI 生成服务的小团队，想在本地视频模型上加入特定风格，同时了解服务的响应速度。
-- 方式：仅在团队自部署视频模型时相关
-- 改善哪个步骤：定制风格：把一种风格加进视频模型并上线试用。
-- 可能影响的指标：新风格从准备到可试用的搭建时间；风格一致性评分。
-- 公开事实：该版本支持视频模型加载时融合 LoRA，但不能按请求切换。（依据 l1；依据 l4）
-- 公开事实：DreamFace 已对外提供 API 并按 Credits 计费。（背景：DreamAPI（DreamFace API）页面）
-- 分析推断：如果团队用 LTX2.5 或 MiniMax-H3 自部署，这一改动可能缩短风格试验的搭建工作；按请求切换风格的需求仍要另行实现。
-- 待验证：团队是否使用这两种模型、是否自部署未知；生成耗时与画质影响未验证。
-- 产品假设：视频模型在加载阶段就能融合 LoRA，团队可以更快试验特定风格，不必另外搭一套推理脚本。LoRA 不只能做风格，风格只是这次测试场景。能否真正减少搭建工作、会不会增加生成耗时，都还需要验证。
-- 最小验证建议（拟议，未执行）：同一台 GPU、同一 LocalAI v4.10.0、同一 LTX2.5 基础模型、同一组20条提示词和随机种子：A组不加载 LoRA，B组在加载时融合同一个 LoRA。记录模型加载耗时、5秒视频生成耗时、失败率，并由3名评审盲评风格一致性。不与手动搭建脚本比较，否则部署方式和推理实现都会变。
-
-</details>
-
-<details>
-<summary>原始依据（7 条）</summary>
-
-- [l1] “`lora_adapters` and `lora_scales` are now consumed by the vllm-cpp video engine, fusing LoRA deltas into DiT weights at engine load. Works for both LTX2.5 and MiniMax-H3 through one generic path.” — 版本说明，[原文](https://github.com/mudler/LocalAI/releases/tag/v4.10.0)，原始响应 `data/runs/20261016T052230Z/raw/0016.json`
-- [l2] “measures end-to-end latency and throughput against configured text models.” — 版本说明，[原文](https://github.com/mudler/LocalAI/releases/tag/v4.10.0)，原始响应 `data/runs/20261016T052230Z/raw/0016.json`
-- [l3] “The command does not measure decode-only speed or time to first token” — 版本说明，[原文](https://github.com/mudler/LocalAI/releases/tag/v4.10.0)，原始响应 `data/runs/20261016T052230Z/raw/0016.json`
-- [l4] “Adapters are always loaded; there is no per-request activation in this path.” — 版本说明，[原文](https://github.com/mudler/LocalAI/releases/tag/v4.10.0)，原始响应 `data/runs/20261016T052230Z/raw/0016.json`
-- [l5] “Four CVEs were patched” — 版本说明，[原文](https://github.com/mudler/LocalAI/releases/tag/v4.10.0)，原始响应 `data/runs/20261016T052230Z/raw/0016.json`
-- [l6] “A fleet operations dashboard replaces the flat node list with cluster-wide health, capacity, running models, and bulk lifecycle actions.” — 版本说明，[原文](https://github.com/mudler/LocalAI/releases/tag/v4.10.0)，原始响应 `data/runs/20261016T052230Z/raw/0016.json`
-- [l7] “A credentials file lets one `credentials.yaml` authenticate OCI registries, galleries and direct downloads without scattering tokens across environment variables.” — 版本说明，[原文](https://github.com/mudler/LocalAI/releases/tag/v4.10.0)，原始响应 `data/runs/20261016T052230Z/raw/0016.json`
-
-</details>
-
-选择理由：本地多模态推理引擎，本版为视频引擎加载LoRA、提供延迟与吞吐测量，关系到自部署生成服务的门槛（AI（Claude）核查起草，待本人确认，核查于期次 20261001T210300Z）。解读审阅状态：AI草稿，未经本人审阅。
 
 ## 跨项目信号
 
@@ -192,14 +119,9 @@ v4.10.0 起，vllm-cpp 视频引擎在模型加载时即可把 LoRA 融合进权
 
 依据已变化或不在本期，待复核。
 
-#### 有条件实验：自部署视频模型的 LoRA 风格试验
+#### 自部署视频模型的 LoRA 风格试验
 
-- 方式：仅自部署时相关
-- 假设：加载时融合 LoRA 能缩短新风格的搭建时间。
-- 主指标：新风格从准备到可试用的耗时；同时记录生成耗时与失败率。
-- 前提条件：只有团队在 LTX2.5 或 MiniMax-H3 上自部署视频生成时才做；否则不投入。
-- 限制：LoRA 不能按请求切换；对画质和速度的影响未说明。
-- 依据：mudler/LocalAI、DreamAPI（DreamFace API）页面
+依据已变化或不在本期，待复核。
 
 
 </details>
@@ -231,24 +153,25 @@ v4.10.0 起，vllm-cpp 视频引擎在模型加载时即可把 LoRA 融合进权
 窗口内有事件、但没有有效核查记录的项目。只列原文事实与来源，未做分析，也不计入精选。
 
 - [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)：正式发布 v1.3.8，2026-10-03，[来源](https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.8)。原因：已核查的事件 v1.3.7 不在本期窗口内。简介：利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
-- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.908-beta，2026-10-15，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.908-beta)。原因：v0.1.902-beta 的来源说明已变化，原核查不再适用。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.
-- [beatra-ai/talking-avatar-video-skill](https://github.com/beatra-ai/talking-avatar-video-skill)：窗口内新建仓库，2026-09-16，[来源](https://github.com/beatra-ai/talking-avatar-video-skill)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Talking avatar video agent skill for Claude Code, Codex & OpenClaw: turn one portrait and a script or voice track into an AI presenter video for explainers, lessons, and product messages. 数字人口播视频 · 照片说话
+- [mudler/LocalAI](https://github.com/mudler/LocalAI)：正式发布 v4.11.0，2026-10-02，[来源](https://github.com/mudler/LocalAI/releases/tag/v4.11.0)。原因：已核查的事件 v4.10.0 不在本期窗口内。简介：LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.
+- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.909-beta，2026-10-19，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.909-beta)。原因：v0.1.902-beta 的来源说明已变化，原核查不再适用。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.
 - [TimoteoAltobrando/ai-video-skill](https://github.com/TimoteoAltobrando/ai-video-skill)：窗口内新建仓库，2026-10-05，[来源](https://github.com/TimoteoAltobrando/ai-video-skill)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Make and edit videos with Claude Opus 5.5: a Claude Code skill for product films, ads, talking heads, explainers, montages and Reels/TikTok/Shorts, with Remotion, AI images and animation, ElevenLabs music and ffmpeg.
-- [Arekejoker/qwen21-nsfw-pose-skill](https://github.com/Arekejoker/qwen21-nsfw-pose-skill)：正式发布 v1.0.0，2026-10-13，[来源](https://github.com/Arekejoker/qwen21-nsfw-pose-skill/releases/tag/v1.0.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw
+- [Antoine-Thomas/hermes-skills-showcase](https://github.com/Antoine-Thomas/hermes-skills-showcase)：窗口内新建仓库，2026-10-10，[来源](https://github.com/Antoine-Thomas/hermes-skills-showcase)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Showcase of Hermes Agent skills for AI video automation, free-model routing and Windows optimization. Full version on Agensi.io.
+- [OpenMOSS/MOSS-Image](https://github.com/OpenMOSS/MOSS-Image)：窗口内新建仓库，2026-10-16，[来源](https://github.com/OpenMOSS/MOSS-Image)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.
+- [SnowSky1/universal-imagegen-agent](https://github.com/SnowSky1/universal-imagegen-agent)：正式发布 v0.1.2，2026-10-11，[来源](https://github.com/SnowSky1/universal-imagegen-agent/releases/tag/v0.1.2)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：把 Codex imagegen 的工作流与提示词库带到任意智能体；支持 npm/pnpm 一键安装、配套 skill、独立 API 与 Qwen-Image 兼容网关。
 - [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)：正式发布 thanks，2026-10-12，[来源](https://github.com/lemomo-ai/lemo-opuscar/releases/tag/thanks)。原因：此前排除的是 web，本期最新事件 thanks 尚未核查。简介：Claude Code skill for short films with no video model: 51 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98 and the new Evidence Films). By Lemomo. · Opus5.5 x 51 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南（新增「实证影像」）
 - [vincentsch/explainroo](https://github.com/vincentsch/explainroo)：正式发布 v0.4.0，2026-10-15，[来源](https://github.com/vincentsch/explainroo/releases/tag/v0.4.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Explainer videos and product demos made by your AI agent. Free and open source: a local voice (Kokoro), word timing (Whisper) and a canvas renderer turn a script into a narrated MP4.
+- [sitor-ai/frametell](https://github.com/sitor-ai/frametell)：正式发布 v0.7.1，2026-10-16，[来源](https://github.com/sitor-ai/frametell/releases/tag/v0.7.1)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.
 - [Rylaispirit/cinematic-video-prompt-skill](https://github.com/Rylaispirit/cinematic-video-prompt-skill)：窗口内新建仓库，2026-09-20，[来源](https://github.com/Rylaispirit/cinematic-video-prompt-skill)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：AI video prompt cheat sheet & Claude Skill: cinematic camera angles, camera movement, lighting, composition, color grading for Veo 3, Kling, Sora, Runway, Midjourney. 700+ terms with Vietnamese explanations.
 
 ## 移出与变化
 
-- 对比上一期快照 20261013T071903Z：新增 debpalash/VoiceStudio。
-- 移出 harry0703/MoneyPrinterTurbo（v1.3.7）：事件日期 2026-09-13 已早于本期窗口起点 2026-09-16
+- 对比上一期快照 20261016T052230Z：新增 无。
+- 移出 mudler/LocalAI（v4.10.0）：事件日期 2026-09-17 已早于本期窗口起点 2026-09-20
 - 已有核查记录但本期不适用：op7418/guizang-yingzao-skill created:1354705170，本期检索结果中未出现该仓库
 
 ## 排除记录
 
-- apimart-API-Gateway/grok-image-api：未通过“来源可查/开源实现”核查：README是商业API聚合方的按图计价与调用示例（含推广短链），与已排除的seedance系列同一模式，没有可核查的开源实现。适用范围：仓库整体，简介变化即失效。证据：https://github.com/apimart-API-Gateway/grok-image-api
-- apimart-api-ai-Aggregator/seedance-2.5-api：未通过“来源可查/开源实现”核查：与已人工排除的seedance-2.0-api同为商业API转售示例页，含推广链接。适用范围：仓库整体，简介变化即失效。证据：https://github.com/apimart-api-ai-Aggregator/seedance-2.5-api
 - 检查前排除 apimart-api-ai-Aggregator/seedance-2.0-api：仓库是商业API转售方的价格与调用示例页，正文含推广链接，没有可核查的开源实现（https://github.com/apimart-api-ai-Aggregator/seedance-2.0-api；生效；仓库简介变化时自动失效，重新进入检查）
 
 <details>
@@ -270,37 +193,37 @@ v4.10.0 起，vllm-cpp 视频引擎在模型加载时即可把 LoRA 融合进权
 
 | 检索分类 | 搜索 | 候选 | 窗口内有事件 | 检查后无合格事件 | 人工排除 | 未检查 | 检查失败 |
 |---|---|---|---|---|---|---|---|
-| 视频 | 成功 | 30 | 2 | 2 | 1 | 25 | 0 |
-| 图像 | 成功 | 28 | 4 | 0 | 0 | 24 | 0 |
+| 视频 | 成功 | 30 | 2 | 2 | 0 | 26 | 0 |
+| 图像 | 成功 | 27 | 4 | 0 | 0 | 23 | 0 |
 | 语音 | 成功 | 27 | 4 | 0 | 0 | 23 | 0 |
-| 数字人 | 成功 | 27 | 2 | 2 | 0 | 23 | 0 |
+| 数字人 | 成功 | 26 | 2 | 2 | 0 | 22 | 0 |
 
-检索到的候选 112 个 → 窗口内有事件 12 个 → 正式精选 2 个、待核查 8 个、经核查排除 2 个。
+检索到的候选 110 个 → 窗口内有事件 12 个 → 正式精选 1 个、待核查 11 个、经核查排除 0 个。
 
-- 检索分类“视频”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，1个有事件但待核查，1个有事件但经核查排除，另有25个未检查。按能力标签，有1个精选项目涉及视频：mudler/LocalAI。
-- 检索分类“数字人”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有23个未检查。按能力标签，本期也没有精选项目涉及数字人。
+- 检索分类“视频”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有26个未检查。按能力标签，本期也没有精选项目涉及视频。
+- 检索分类“图像”下本期无正式精选：检查4个，0个窗口内无正式发布、预发布或新建，4个有事件但待核查，另有23个未检查。按能力标签，本期也没有精选项目涉及图像。
+- 检索分类“数字人”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有22个未检查。按能力标签，本期也没有精选项目涉及数字人。
 
 ### 各项目抓取时累计 Stars（一次观测，不代表增长）
 
 | 项目 | Stars | 许可 |
 |---|---|---|
-| debpalash/VoiceStudio | 69489 | AGPL-3.0 |
-| mudler/LocalAI | 49564 | MIT |
+| debpalash/VoiceStudio | 77850 | AGPL-3.0 |
 
 ### 检索范围与截断
 
 | 分类 | 检索 | GitHub匹配总数 | 实际取回 | 是否截断 |
 |---|---|---|---|---|
-| 视频 | 近期有推送（按Stars） | 613 | 20 | 是 |
-| 视频 | 窗口内新建（按Stars） | 284 | 10 | 是 |
-| 图像 | 近期有推送（按Stars） | 2717 | 20 | 是 |
-| 图像 | 窗口内新建（按Stars） | 1548 | 10 | 是 |
-| 语音 | 近期有推送（按Stars） | 2871 | 20 | 是 |
-| 语音 | 窗口内新建（按Stars） | 1228 | 10 | 是 |
+| 视频 | 近期有推送（按Stars） | 651 | 20 | 是 |
+| 视频 | 窗口内新建（按Stars） | 296 | 10 | 是 |
+| 图像 | 近期有推送（按Stars） | 4410 | 20 | 是 |
+| 图像 | 窗口内新建（按Stars） | 3167 | 10 | 是 |
+| 语音 | 近期有推送（按Stars） | 3173 | 20 | 是 |
+| 语音 | 窗口内新建（按Stars） | 1450 | 10 | 是 |
 | 数字人 | 近期有推送（按Stars） | 77 | 20 | 是 |
 | 数字人 | 窗口内新建（按Stars） | 38 | 10 | 是 |
 
-每条检索只取Stars最高的前20或10个，排名之后的仓库没有进入候选；候选中还有 95 个因名额未检查（名单见 data/brief.json 的 candidates）。
+每条检索只取Stars最高的前20或10个，排名之后的仓库没有进入候选；候选中还有 94 个因名额未检查（名单见 data/brief.json 的 candidates）。
 - 失败或跳过的请求：0 个。
 
 ### 方法
