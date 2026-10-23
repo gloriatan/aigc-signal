@@ -1,0 +1,10 @@
+{
+ "url": "https://api.github.com/repos/liyupi/ai-promo-video-maker/releases?per_page=30",
+ "fetched_at": "2026-10-23T05:42:14Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4983",
+  "reset": "1792737727"
+ },
+ "body": []
+}

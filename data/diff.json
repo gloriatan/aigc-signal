@@ -1,33 +1,24 @@
 {
-  "from_run": "20261016T052230Z",
-  "to_run": "20261020T053831Z",
+  "from_run": "20261020T053831Z",
+  "to_run": "20261023T054147Z",
   "has_previous": true,
   "projects": {
     "debpalash/voicestudio": {
       "status": "same"
     }
   },
-  "removed": [
-    {
-      "id": "mudler/localai",
-      "name": "mudler/LocalAI",
-      "tag": "v4.10.0",
-      "published_at": "2026-09-17T19:46:38Z",
-      "reason": "事件超出30天窗口"
-    }
-  ],
+  "removed": [],
   "pending_new": [
-    "mudler/LocalAI",
-    "Antoine-Thomas/hermes-skills-showcase",
-    "OpenMOSS/MOSS-Image",
-    "SnowSky1/universal-imagegen-agent",
-    "sitor-ai/frametell"
+    "allen-Jmc/jmcai-autoshot-skill",
+    "chipfighter/context-attachment-manager",
+    "liyupi/ai-promo-video-maker",
+    "drowzeys/Imagination-Studio-by-keys-Wasserman"
   ],
   "summary": {
     "new": 0,
     "version": 0,
-    "removed": 1,
-    "pending_new": 5,
-    "changed": 1
+    "removed": 0,
+    "pending_new": 4,
+    "changed": 0
   }
 }
