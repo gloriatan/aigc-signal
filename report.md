@@ -2,10 +2,10 @@
 
 > 本期判断待复核：其依据的项目解读已变化或不在本期。
 
-- 事件窗口：2026-09-27T05:56:26Z 至 2026-10-27T05:56:26Z（UTC，含起点不含尾）
+- 事件窗口：2026-09-30T06:44:16Z 至 2026-10-30T06:44:16Z（UTC，含起点不含尾）
 - 精选事件日期：本期无
-- 数据抓取时间：2026-10-27T05:56:26Z（期次 20261027T055626Z，状态 complete）
-- 报告生成时间：2026-10-27T05:57:01Z（联网刷新）
+- 数据抓取时间：2026-10-30T06:44:16Z（期次 20261030T064416Z，状态 complete）
+- 报告生成时间：2026-10-30T06:44:47Z（联网刷新）
 - 商业背景资料查阅日期：2026-10-02（可早于30天窗口，不属于开源事件）
 
 ## 本期更新目录
@@ -80,20 +80,19 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 - [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)：正式发布 v1.3.9，2026-10-21，[来源](https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.9)。原因：已核查的事件 v1.3.7 不在本期窗口内。简介：利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
 - [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)：正式发布 v0.5.7，2026-10-26，[来源](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.7)。原因：已核查的事件 v0.5.6 不在本期窗口内。简介：VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.
 - [mudler/LocalAI](https://github.com/mudler/LocalAI)：正式发布 v4.12.1，2026-10-23，[来源](https://github.com/mudler/LocalAI/releases/tag/v4.12.1)。原因：已核查的事件 v4.10.0 不在本期窗口内。简介：LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.
-- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.911-beta，2026-10-26，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.911-beta)。原因：v0.1.902-beta 的来源说明已变化，原核查不再适用。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
+- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.912-beta，2026-10-28，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.912-beta)。原因：v0.1.902-beta 的来源说明已变化，原核查不再适用。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
 - [TimoteoAltobrando/ai-video-skill](https://github.com/TimoteoAltobrando/ai-video-skill)：窗口内新建仓库，2026-10-05，[来源](https://github.com/TimoteoAltobrando/ai-video-skill)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Make and edit videos with Claude Opus 5.5: a Claude Code skill for product films, ads, talking heads, explainers, montages and Reels/TikTok/Shorts, with Remotion, AI images and animation, ElevenLabs music and ffmpeg.
-- [allen-Jmc/jmcai-autoshot-skill](https://github.com/allen-Jmc/jmcai-autoshot-skill)：窗口内新建仓库，2026-10-20，[来源](https://github.com/allen-Jmc/jmcai-autoshot-skill)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：从一段文案到一条口播成片：本地数字人口播视频流水线（配音→数字人→包装），三阶段都有自愈闭环。基于 JMCAI Comfypet 桌面端 + Remotion，无线上 API。
+- [iart-ai/b-roll-skills](https://github.com/iart-ai/b-roll-skills)：窗口内新建仓库，2026-10-14，[来源](https://github.com/iart-ai/b-roll-skills)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Add b-roll motion graphics to a talking-head video with your AI coding agent: word-timed transcript, line-by-line plan, graphics drawn from what is said, MP4 with the original sound.
 - [OpenMOSS/MOSS-Image](https://github.com/OpenMOSS/MOSS-Image)：窗口内新建仓库，2026-10-16，[来源](https://github.com/OpenMOSS/MOSS-Image)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.
-- [GabrieleLozupone/kokon](https://github.com/GabrieleLozupone/kokon)：正式发布 v0.11.1，2026-10-26，[来源](https://github.com/GabrieleLozupone/kokon/releases/tag/v0.11.1)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Edit photos by describing the change, on your own GPU. A free, open-source alternative to Nano Banana and ChatGPT image editing: photos stay on your computer, no daily limit. One installer for Windows, Mac and Linux sets up the best open model (Qwen-Image 2.1). MCP server for AI agents.
+- [GabrieleLozupone/kokon](https://github.com/GabrieleLozupone/kokon)：正式发布 v0.11.2，2026-10-28，[来源](https://github.com/GabrieleLozupone/kokon/releases/tag/v0.11.2)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Edit photos by describing the change, on your own GPU. A free, open-source alternative to Nano Banana and ChatGPT image editing: photos stay on your computer, no daily limit. One installer for Windows, Mac and Linux sets up the best open model (Qwen-Image 2.1). MCP server for AI agents.
+- [C4rohan/Lampline](https://github.com/C4rohan/Lampline)：正式发布 v0.4.1，2026-10-28，[来源](https://github.com/C4rohan/Lampline/releases/tag/v0.4.1)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Build AI phone agents on your own computer and test every change with an AI caller. Open source, runs free with no API keys, cents per call with your own keys. Imports Dialogflow CX.
 - [liyupi/ai-promo-video-maker](https://github.com/liyupi/ai-promo-video-maker)：窗口内新建仓库，2026-10-09，[来源](https://github.com/liyupi/ai-promo-video-maker)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具，它会自己调研产品、画出多种风格样图让你挑选、截取 4K 真实页面、按音乐节拍卡点剪辑、生成 AI 旁白并逐句转写校验、自动审图，最后交付一支 4K 商业宣传视频和可在线播放的网页版。App、网站、SaaS、开源项目、课程、AI 模型都能做，你只需确认需求、试听配乐。不用学剪辑软件，也不用花钱找外包。基于 Remotion + ElevenLabs，可直接克隆使用，也能一键安装为 Agent Skill。
-- [C4rohan/Lampline](https://github.com/C4rohan/Lampline)：正式发布 v0.4.0，2026-10-22，[来源](https://github.com/C4rohan/Lampline/releases/tag/v0.4.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Build AI phone agents on your own computer and test every change with an AI caller. Open source, runs free with no API keys, cents per call with your own keys. Imports Dialogflow CX.
-- [sitor-ai/frametell](https://github.com/sitor-ai/frametell)：正式发布 v0.7.1，2026-10-16，[来源](https://github.com/sitor-ai/frametell/releases/tag/v0.7.1)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.
-- [drowzeys/Imagination-Studio-by-keys-Wasserman](https://github.com/drowzeys/Imagination-Studio-by-keys-Wasserman)：正式发布 v3.3.3，2026-10-26，[来源](https://github.com/drowzeys/Imagination-Studio-by-keys-Wasserman/releases/tag/v3.3.3)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Imagination Studio by keys+Wasserman powered by TensorFold: an AI film studio for Mac and NVIDIA DGX Spark. Plan a film like a crew (Slate workflow by Sam Wasserman), render Qwen-Image-2.1 / FLUX3-K pictures and MiniMax H3 / FastH3 video with sound on TensorFold.
+- [HeyChengC/vibe-knowledge-film](https://github.com/HeyChengC/vibe-knowledge-film)：窗口内新建仓库，2026-10-06，[来源](https://github.com/HeyChengC/vibe-knowledge-film)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：抖音爆款Vibe知识大赏知识短片skill，深度拆解爆款视频，复刻画风，导演分镜表，自动配音效，一键出片
+- [sitor-ai/frametell](https://github.com/sitor-ai/frametell)：正式发布 v0.7.4，2026-10-29，[来源](https://github.com/sitor-ai/frametell/releases/tag/v0.7.4)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.
 
 ## 移出与变化
 
-- 对比上一期快照 20261023T054147Z：新增 无。
-- 移出 debpalash/VoiceStudio（v0.5.6）：事件日期 2026-09-23 已早于本期窗口起点 2026-09-27
+- 对比上一期快照 20261027T055626Z：新增 无。
 - 已有核查记录但本期不适用：op7418/guizang-yingzao-skill created:1354705170，本期检索结果中未出现该仓库
 
 ## 排除记录
@@ -120,16 +119,16 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 | 检索分类 | 搜索 | 候选 | 窗口内有事件 | 检查后无合格事件 | 人工排除 | 未检查 | 检查失败 |
 |---|---|---|---|---|---|---|---|
 | 视频 | 成功 | 29 | 2 | 2 | 0 | 25 | 0 |
-| 图像 | 成功 | 27 | 4 | 0 | 0 | 23 | 0 |
+| 图像 | 成功 | 26 | 4 | 0 | 0 | 22 | 0 |
 | 语音 | 成功 | 27 | 4 | 0 | 0 | 23 | 0 |
-| 数字人 | 成功 | 26 | 2 | 2 | 0 | 22 | 0 |
+| 数字人 | 成功 | 28 | 2 | 2 | 0 | 24 | 0 |
 
-检索到的候选 109 个 → 窗口内有事件 12 个 → 正式精选 0 个、待核查 12 个、经核查排除 0 个。
+检索到的候选 110 个 → 窗口内有事件 12 个 → 正式精选 0 个、待核查 12 个、经核查排除 0 个。
 
 - 检索分类“视频”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有25个未检查。按能力标签，本期也没有精选项目涉及视频。
-- 检索分类“图像”下本期无正式精选：检查4个，0个窗口内无正式发布、预发布或新建，4个有事件但待核查，另有23个未检查。按能力标签，本期也没有精选项目涉及图像。
+- 检索分类“图像”下本期无正式精选：检查4个，0个窗口内无正式发布、预发布或新建，4个有事件但待核查，另有22个未检查。按能力标签，本期也没有精选项目涉及图像。
 - 检索分类“语音”下本期无正式精选：检查4个，0个窗口内无正式发布、预发布或新建，4个有事件但待核查，另有23个未检查。按能力标签，本期也没有精选项目涉及语音。
-- 检索分类“数字人”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有22个未检查。按能力标签，本期也没有精选项目涉及数字人。
+- 检索分类“数字人”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有24个未检查。按能力标签，本期也没有精选项目涉及数字人。
 
 ### 各项目抓取时累计 Stars（一次观测，不代表增长）
 
@@ -140,16 +139,16 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 
 | 分类 | 检索 | GitHub匹配总数 | 实际取回 | 是否截断 |
 |---|---|---|---|---|
-| 视频 | 近期有推送（按Stars） | 701 | 20 | 是 |
-| 视频 | 窗口内新建（按Stars） | 311 | 10 | 是 |
-| 图像 | 近期有推送（按Stars） | 4423 | 20 | 是 |
-| 图像 | 窗口内新建（按Stars） | 3061 | 10 | 是 |
-| 语音 | 近期有推送（按Stars） | 3406 | 20 | 是 |
-| 语音 | 窗口内新建（按Stars） | 1539 | 10 | 是 |
-| 数字人 | 近期有推送（按Stars） | 86 | 20 | 是 |
-| 数字人 | 窗口内新建（按Stars） | 47 | 10 | 是 |
+| 视频 | 近期有推送（按Stars） | 714 | 20 | 是 |
+| 视频 | 窗口内新建（按Stars） | 325 | 10 | 是 |
+| 图像 | 近期有推送（按Stars） | 4553 | 20 | 是 |
+| 图像 | 窗口内新建（按Stars） | 3037 | 10 | 是 |
+| 语音 | 近期有推送（按Stars） | 3529 | 20 | 是 |
+| 语音 | 窗口内新建（按Stars） | 1608 | 10 | 是 |
+| 数字人 | 近期有推送（按Stars） | 89 | 20 | 是 |
+| 数字人 | 窗口内新建（按Stars） | 48 | 10 | 是 |
 
-每条检索只取Stars最高的前20或10个，排名之后的仓库没有进入候选；候选中还有 93 个因名额未检查（名单见 data/brief.json 的 candidates）。
+每条检索只取Stars最高的前20或10个，排名之后的仓库没有进入候选；候选中还有 94 个因名额未检查（名单见 data/brief.json 的 candidates）。
 - 失败或跳过的请求：0 个。
 
 ### 方法
