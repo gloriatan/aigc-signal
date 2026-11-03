@@ -1,12 +1,12 @@
 {
-  "from_run": "20261027T055626Z",
-  "to_run": "20261030T064416Z",
+  "from_run": "20261030T064416Z",
+  "to_run": "20261103T073022Z",
   "has_previous": true,
   "projects": {},
   "removed": [],
   "pending_new": [
-    "iart-ai/b-roll-skills",
-    "HeyChengC/vibe-knowledge-film"
+    "AskEditor/ai-video-editing-skills",
+    "drowzeys/Imagination-Studio-by-keys-Wasserman"
   ],
   "summary": {
     "new": 0,
