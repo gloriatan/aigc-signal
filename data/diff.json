@@ -1,12 +1,12 @@
 {
-  "from_run": "20261030T064416Z",
-  "to_run": "20261103T073022Z",
+  "from_run": "20261103T073022Z",
+  "to_run": "20261106T073727Z",
   "has_previous": true,
   "projects": {},
   "removed": [],
   "pending_new": [
-    "AskEditor/ai-video-editing-skills",
-    "drowzeys/Imagination-Studio-by-keys-Wasserman"
+    "HeyChengC/wallstreet-explainer",
+    "andyhuo520/vibe-knowledge"
   ],
   "summary": {
     "new": 0,
