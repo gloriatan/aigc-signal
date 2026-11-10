@@ -2,10 +2,10 @@
 
 > 本期判断待复核：其依据的项目解读已变化或不在本期。
 
-- 事件窗口：2026-10-07T07:37:27Z 至 2026-11-06T07:37:27Z（UTC，含起点不含尾）
+- 事件窗口：2026-10-11T07:58:03Z 至 2026-11-10T07:58:03Z（UTC，含起点不含尾）
 - 精选事件日期：本期无
-- 数据抓取时间：2026-11-06T07:37:27Z（期次 20261106T073727Z，状态 complete）
-- 报告生成时间：2026-11-06T07:37:58Z（联网刷新）
+- 数据抓取时间：2026-11-10T07:58:03Z（期次 20261110T075803Z，状态 complete）
+- 报告生成时间：2026-11-10T07:58:36Z（联网刷新）
 - 商业背景资料查阅日期：2026-10-02（可早于30天窗口，不属于开源事件）
 
 ## 本期更新目录
@@ -77,22 +77,22 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 
 窗口内有事件、但没有有效核查记录的项目。只列原文事实与来源，未做分析，也不计入精选。
 
-- [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)：正式发布 v1.3.9，2026-10-21，[来源](https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.9)。原因：已核查的事件 v1.3.7 不在本期窗口内。简介：利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
+- [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)：正式发布 v1.3.10，2026-11-07，[来源](https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.10)。原因：已核查的事件 v1.3.7 不在本期窗口内。简介：利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
 - [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)：正式发布 v0.5.7，2026-10-26，[来源](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.7)。原因：已核查的事件 v0.5.6 不在本期窗口内。简介：VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.
 - [mudler/LocalAI](https://github.com/mudler/LocalAI)：正式发布 v4.12.1，2026-10-23，[来源](https://github.com/mudler/LocalAI/releases/tag/v4.12.1)。原因：已核查的事件 v4.10.0 不在本期窗口内。简介：LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.
-- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.915-beta，2026-11-04，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.915-beta)。原因：已核查的事件 v0.1.902-beta 不在本期窗口内。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
+- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.916-beta，2026-11-06，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.916-beta)。原因：已核查的事件 v0.1.902-beta 不在本期窗口内。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
 - [iart-ai/b-roll-skills](https://github.com/iart-ai/b-roll-skills)：窗口内新建仓库，2026-10-14，[来源](https://github.com/iart-ai/b-roll-skills)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Add b-roll motion graphics to a talking-head video with your AI coding agent: word-timed transcript, line-by-line plan, graphics drawn from what is said, MP4 with the original sound.
 - [AskEditor/ai-video-editing-skills](https://github.com/AskEditor/ai-video-editing-skills)：窗口内新建仓库，2026-10-28，[来源](https://github.com/AskEditor/ai-video-editing-skills)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：41 free AI video editing skills for Claude Code and Codex: auto captions, cut pauses and retakes, B-roll, words behind you, colour grade, music. Edit Reels, Shorts and TikTok by asking. Runs on your own computer, nothing uploaded.
 - [OpenMOSS/MOSS-Image](https://github.com/OpenMOSS/MOSS-Image)：窗口内新建仓库，2026-10-16，[来源](https://github.com/OpenMOSS/MOSS-Image)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.
-- [GabrieleLozupone/kokon](https://github.com/GabrieleLozupone/kokon)：正式发布 v0.12.0，2026-11-04，[来源](https://github.com/GabrieleLozupone/kokon/releases/tag/v0.12.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Edit photos by describing the change, on your own GPU. A free, open-source alternative to Nano Banana and ChatGPT image editing: photos stay on your computer, no daily limit. One installer for Windows, Mac and Linux sets up the best open model (Qwen-Image 2.1). MCP server for AI agents.
-- [C4rohan/Lampline](https://github.com/C4rohan/Lampline)：正式发布 v0.4.1，2026-10-28，[来源](https://github.com/C4rohan/Lampline/releases/tag/v0.4.1)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Build AI phone agents on your own computer and test every change with an AI caller. Open source, runs free with no API keys, cents per call with your own keys. Imports Dialogflow CX.
-- [liyupi/ai-promo-video-maker](https://github.com/liyupi/ai-promo-video-maker)：窗口内新建仓库，2026-10-09，[来源](https://github.com/liyupi/ai-promo-video-maker)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：一句话让 AI 帮你做产品宣传片！把产品名或网址告诉 Cursor、Claude Code、Codex 等 AI 编程工具，它会自己调研产品、画出多种风格样图让你挑选、截取 4K 真实页面、按音乐节拍卡点剪辑、生成 AI 旁白并逐句转写校验、自动审图，最后交付一支 4K 商业宣传视频和可在线播放的网页版。App、网站、SaaS、开源项目、课程、AI 模型都能做，你只需确认需求、试听配乐。不用学剪辑软件，也不用花钱找外包。基于 Remotion + ElevenLabs，可直接克隆使用，也能一键安装为 Agent Skill。
+- [stockedge/manga-generator](https://github.com/stockedge/manga-generator)：正式发布 v0.2.0，2026-10-31，[来源](https://github.com/stockedge/manga-generator/releases/tag/v0.2.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：原作から脚本・画像生成・組版・PDF出力まで進める、Codex向け漫画制作ツール
+- [zeekk0/OpenAmika](https://github.com/zeekk0/OpenAmika)：正式发布 v1.1.0，2026-11-10，[来源](https://github.com/zeekk0/OpenAmika/releases/tag/v1.1.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：OpenAmika: MekaHime's AI companion Amika, open source. Live2D avatar, real-time voice, long-term memory, OpenRouter or Ollama brain.
+- [C4rohan/Lampline](https://github.com/C4rohan/Lampline)：正式发布 v0.5.0，2026-11-09，[来源](https://github.com/C4rohan/Lampline/releases/tag/v0.5.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Build AI phone agents on your own computer and test every change with an AI caller. Open source, runs free with no API keys, cents per call with your own keys. Imports Dialogflow CX.
 - [HeyChengC/wallstreet-explainer](https://github.com/HeyChengC/wallstreet-explainer)：窗口内新建仓库，2026-10-18，[来源](https://github.com/HeyChengC/wallstreet-explainer)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：华尔街式财经/科技解读短片 skill：设计思路、风格语言，以及找片、截图、配音、渲染和混音工具。
 - [andyhuo520/vibe-knowledge](https://github.com/andyhuo520/vibe-knowledge)：正式发布 v1.0.0，2026-10-28，[来源](https://github.com/andyhuo520/vibe-knowledge/releases/tag/v1.0.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Vibe 知识大赏：一个知识点 → 一条有旁白、每句有出处的精品知识短片（Claude Code skill · 44 套风格 · 代码逐帧成片）
 
 ## 移出与变化
 
-- 对比上一期快照 20261103T073022Z：新增 无。
+- 对比上一期快照 20261106T073727Z：新增 无。
 - 已有核查记录但本期不适用：op7418/guizang-yingzao-skill created:1354705170，本期检索结果中未出现该仓库
 
 ## 排除记录
@@ -139,14 +139,14 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 
 | 分类 | 检索 | GitHub匹配总数 | 实际取回 | 是否截断 |
 |---|---|---|---|---|
-| 视频 | 近期有推送（按Stars） | 748 | 20 | 是 |
-| 视频 | 窗口内新建（按Stars） | 315 | 10 | 是 |
-| 图像 | 近期有推送（按Stars） | 4495 | 20 | 是 |
-| 图像 | 窗口内新建（按Stars） | 2906 | 10 | 是 |
-| 语音 | 近期有推送（按Stars） | 3789 | 20 | 是 |
-| 语音 | 窗口内新建（按Stars） | 1718 | 10 | 是 |
-| 数字人 | 近期有推送（按Stars） | 91 | 20 | 是 |
-| 数字人 | 窗口内新建（按Stars） | 52 | 10 | 是 |
+| 视频 | 近期有推送（按Stars） | 777 | 20 | 是 |
+| 视频 | 窗口内新建（按Stars） | 331 | 10 | 是 |
+| 图像 | 近期有推送（按Stars） | 4609 | 20 | 是 |
+| 图像 | 窗口内新建（按Stars） | 2976 | 10 | 是 |
+| 语音 | 近期有推送（按Stars） | 3935 | 20 | 是 |
+| 语音 | 窗口内新建（按Stars） | 1762 | 10 | 是 |
+| 数字人 | 近期有推送（按Stars） | 97 | 20 | 是 |
+| 数字人 | 窗口内新建（按Stars） | 58 | 10 | 是 |
 
 每条检索只取Stars最高的前20或10个，排名之后的仓库没有进入候选；候选中还有 95 个因名额未检查（名单见 data/brief.json 的 candidates）。
 - 失败或跳过的请求：0 个。

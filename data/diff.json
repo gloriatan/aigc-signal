@@ -1,12 +1,12 @@
 {
-  "from_run": "20261103T073022Z",
-  "to_run": "20261106T073727Z",
+  "from_run": "20261106T073727Z",
+  "to_run": "20261110T075803Z",
   "has_previous": true,
   "projects": {},
   "removed": [],
   "pending_new": [
-    "HeyChengC/wallstreet-explainer",
-    "andyhuo520/vibe-knowledge"
+    "stockedge/manga-generator",
+    "zeekk0/OpenAmika"
   ],
   "summary": {
     "new": 0,
