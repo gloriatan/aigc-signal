@@ -1,12 +1,12 @@
 {
-  "from_run": "20261106T073727Z",
-  "to_run": "20261110T075803Z",
+  "from_run": "20261110T075803Z",
+  "to_run": "20261113T073358Z",
   "has_previous": true,
   "projects": {},
   "removed": [],
   "pending_new": [
-    "stockedge/manga-generator",
-    "zeekk0/OpenAmika"
+    "bhavya-gx/fable-vfx",
+    "neuregex/freefield"
   ],
   "summary": {
     "new": 0,

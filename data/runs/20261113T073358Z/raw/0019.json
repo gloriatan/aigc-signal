@@ -1,0 +1,65 @@
+{
+ "url": "https://api.github.com/repos/neuregex/freefield/releases?per_page=30",
+ "fetched_at": "2026-11-13T07:34:24Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4989",
+  "reset": "1794558859"
+ },
+ "body": [
+  {
+   "url": "https://api.github.com/repos/neuregex/freefield/releases/432216008",
+   "assets_url": "https://api.github.com/repos/neuregex/freefield/releases/432216008/assets",
+   "upload_url": "https://uploads.github.com/repos/neuregex/freefield/releases/432216008/assets{?name,label}",
+   "html_url": "https://github.com/neuregex/freefield/releases/tag/v1.0",
+   "id": 432216008,
+   "author": {
+    "login": "neuregex",
+    "id": 47640766,
+    "node_id": "MDQ6VXNlcjQ3NjQwNzY2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47640766?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/neuregex",
+    "html_url": "https://github.com/neuregex",
+    "followers_url": "https://api.github.com/users/neuregex/followers",
+    "following_url": "https://api.github.com/users/neuregex/following{/other_user}",
+    "gists_url": "https://api.github.com/users/neuregex/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/neuregex/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/neuregex/subscriptions",
+    "organizations_url": "https://api.github.com/users/neuregex/orgs",
+    "repos_url": "https://api.github.com/users/neuregex/repos",
+    "events_url": "https://api.github.com/users/neuregex/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/neuregex/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "node_id": "RE_kwDOVQdkus4ZwxfI",
+   "tag_name": "v1.0",
+   "target_commitish": "main",
+   "name": "Freefield v1.0: the #OpenSourceHiggsfield submission",
+   "draft": false,
+   "immutable": false,
+   "prerelease": false,
+   "created_at": "2026-11-02T23:33:52Z",
+   "updated_at": "2026-11-03T02:37:00Z",
+   "published_at": "2026-11-03T02:37:00Z",
+   "assets": [],
+   "tarball_url": "https://api.github.com/repos/neuregex/freefield/tarball/v1.0",
+   "zipball_url": "https://api.github.com/repos/neuregex/freefield/zipball/v1.0",
+   "body": "Open-source Higgsfield on ComfyUI, open weights only.\r\n\r\n- 117 image, video, VFX and audio apps (plus 2 model-free test apps and 1 draft), covering 95 of the 129 tools and apps Higgsfield shows\r\n- Each app is one folder: an app.json manifest + a ComfyUI workflow in API format. The web UI, model downloads, VRAM map and tests are generated from them\r\n- Built on the Comfy SDK and comfy-api-proxy (Comfy API v2); runs on Modal or on your own GPU (tools/local_backend.py)\r\n- A lab ran every app on a GPU: 48 runs, 710 of 733 cases ok\r\n- Demo video: https://youtu.be/N7mv2v3Txeo\r\n\r\nFreefield is an independent open-source project. It is not affiliated with, endorsed by or sponsored by Higgsfield.",
+   "reactions": {
+    "url": "https://api.github.com/repos/neuregex/freefield/releases/432216008/reactions",
+    "total_count": 5,
+    "+1": 5,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   }
+  }
+ ]
+}
