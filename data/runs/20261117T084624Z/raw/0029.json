@@ -1,0 +1,10 @@
+{
+ "url": "https://api.github.com/repos/bhavya-gx/fable-vfx/releases?per_page=30",
+ "fetched_at": "2026-11-17T08:46:57Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4979",
+  "reset": "1794908805"
+ },
+ "body": []
+}

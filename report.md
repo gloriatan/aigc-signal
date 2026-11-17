@@ -2,10 +2,10 @@
 
 > 本期判断待复核：其依据的项目解读已变化或不在本期。
 
-- 事件窗口：2026-10-14T07:33:58Z 至 2026-11-13T07:33:58Z（UTC，含起点不含尾）
+- 事件窗口：2026-10-18T08:46:24Z 至 2026-11-17T08:46:24Z（UTC，含起点不含尾）
 - 精选事件日期：本期无
-- 数据抓取时间：2026-11-13T07:33:58Z（期次 20261113T073358Z，状态 complete）
-- 报告生成时间：2026-11-13T07:34:30Z（联网刷新）
+- 数据抓取时间：2026-11-17T08:46:24Z（期次 20261117T084624Z，状态 complete）
+- 报告生成时间：2026-11-17T08:46:58Z（联网刷新）
 - 商业背景资料查阅日期：2026-10-02（可早于30天窗口，不属于开源事件）
 
 ## 本期更新目录
@@ -80,19 +80,19 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 - [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)：正式发布 v1.3.10，2026-11-07，[来源](https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.10)。原因：已核查的事件 v1.3.7 不在本期窗口内。简介：利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
 - [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)：正式发布 v0.5.8，2026-11-12，[来源](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.8)。原因：已核查的事件 v0.5.6 不在本期窗口内。简介：VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.
 - [mudler/LocalAI](https://github.com/mudler/LocalAI)：正式发布 v4.12.1，2026-10-23，[来源](https://github.com/mudler/LocalAI/releases/tag/v4.12.1)。原因：已核查的事件 v4.10.0 不在本期窗口内。简介：LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.
-- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.917-beta，2026-11-11，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.917-beta)。原因：已核查的事件 v0.1.902-beta 不在本期窗口内。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
+- [unslothai/unsloth](https://github.com/unslothai/unsloth)：正式发布 v0.1.918-beta，2026-11-16，[来源](https://github.com/unslothai/unsloth/releases/tag/v0.1.918-beta)。原因：已核查的事件 v0.1.902-beta 不在本期窗口内。简介：Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.
 - [bhavya-gx/fable-vfx](https://github.com/bhavya-gx/fable-vfx)：窗口内新建仓库，2026-11-11，[来源](https://github.com/bhavya-gx/fable-vfx)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：How a Fable 5.2 talking-head video was made: title behind the head, ocean on a snap, 3D props on the palms, synthesised sfx. Config-driven, runs on your footage.
-- [iart-ai/b-roll-skills](https://github.com/iart-ai/b-roll-skills)：窗口内新建仓库，2026-10-14，[来源](https://github.com/iart-ai/b-roll-skills)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Add b-roll motion graphics to a talking-head video with your AI coding agent: word-timed transcript, line-by-line plan, graphics drawn from what is said, MP4 with the original sound.
-- [OpenMOSS/MOSS-Image](https://github.com/OpenMOSS/MOSS-Image)：窗口内新建仓库，2026-10-16，[来源](https://github.com/OpenMOSS/MOSS-Image)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.
+- [bhavya-gx/video-skills](https://github.com/bhavya-gx/video-skills)：正式发布 v0.2.0，2026-11-13，[来源](https://github.com/bhavya-gx/video-skills/releases/tag/v0.2.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Edit a talking-head reel in one prompt. Skills for Codex (GPT-6 Astra) and Claude Code, plus reel templates, fill-in scripts, a review loop, an edit check and a local editor.
 - [neuregex/freefield](https://github.com/neuregex/freefield)：正式发布 v1.0，2026-11-03，[来源](https://github.com/neuregex/freefield/releases/tag/v1.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Open-source Higgsfield on ComfyUI: 120 image, video, VFX and audio apps, every model open weights; runs on Modal or your own GPU
+- [MiniMax-AI/MiniMax-H3-Image](https://github.com/MiniMax-AI/MiniMax-H3-Image)：窗口内新建仓库，2026-11-09，[来源](https://github.com/MiniMax-AI/MiniMax-H3-Image)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：MiniMax-H3-Image, an open-weight model for 16-megapixel image generation and editing.
 - [zeekk0/OpenAmika](https://github.com/zeekk0/OpenAmika)：正式发布 v1.1.1，2026-11-10，[来源](https://github.com/zeekk0/OpenAmika/releases/tag/v1.1.1)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：OpenAmika: MekaHime's AI companion Amika, open source. Live2D avatar, real-time voice, long-term memory, OpenRouter or Ollama brain.
-- [C4rohan/Lampline](https://github.com/C4rohan/Lampline)：正式发布 v0.5.1，2026-11-11，[来源](https://github.com/C4rohan/Lampline/releases/tag/v0.5.1)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Build AI phone agents on your own computer and test every change with an AI caller. Open source, runs free with no API keys, cents per call with your own keys. Imports Dialogflow CX.
+- [n4ze3m/tiny-voca](https://github.com/n4ze3m/tiny-voca)：窗口内新建仓库，2026-11-14，[来源](https://github.com/n4ze3m/tiny-voca)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：A 4.5M-parameter two-voice English text-to-speech model, trained from scratch
 - [HeyChengC/wallstreet-explainer](https://github.com/HeyChengC/wallstreet-explainer)：窗口内新建仓库，2026-10-18，[来源](https://github.com/HeyChengC/wallstreet-explainer)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：华尔街式财经/科技解读短片 skill：设计思路、风格语言，以及找片、截图、配音、渲染和混音工具。
 - [andyhuo520/vibe-knowledge](https://github.com/andyhuo520/vibe-knowledge)：正式发布 v1.0.0，2026-10-28，[来源](https://github.com/andyhuo520/vibe-knowledge/releases/tag/v1.0.0)。原因：尚无核查记录：窗口内有事件不等于值得推荐，需人工核查。简介：Vibe 知识大赏：一个知识点 → 一条有旁白、每句有出处的精品知识短片（Claude Code skill · 44 套风格 · 代码逐帧成片）
 
 ## 移出与变化
 
-- 对比上一期快照 20261110T075803Z：新增 无。
+- 对比上一期快照 20261113T073358Z：新增 无。
 - 已有核查记录但本期不适用：op7418/guizang-yingzao-skill created:1354705170，本期检索结果中未出现该仓库
 
 ## 排除记录
@@ -120,15 +120,15 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 |---|---|---|---|---|---|---|---|
 | 视频 | 成功 | 30 | 2 | 2 | 0 | 26 | 0 |
 | 图像 | 成功 | 28 | 4 | 0 | 0 | 24 | 0 |
-| 语音 | 成功 | 26 | 4 | 0 | 0 | 22 | 0 |
-| 数字人 | 成功 | 28 | 2 | 2 | 0 | 24 | 0 |
+| 语音 | 成功 | 27 | 4 | 0 | 0 | 23 | 0 |
+| 数字人 | 成功 | 27 | 2 | 2 | 0 | 23 | 0 |
 
 检索到的候选 112 个 → 窗口内有事件 12 个 → 正式精选 0 个、待核查 12 个、经核查排除 0 个。
 
 - 检索分类“视频”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有26个未检查。按能力标签，本期也没有精选项目涉及视频。
 - 检索分类“图像”下本期无正式精选：检查4个，0个窗口内无正式发布、预发布或新建，4个有事件但待核查，另有24个未检查。按能力标签，本期也没有精选项目涉及图像。
-- 检索分类“语音”下本期无正式精选：检查4个，0个窗口内无正式发布、预发布或新建，4个有事件但待核查，另有22个未检查。按能力标签，本期也没有精选项目涉及语音。
-- 检索分类“数字人”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有24个未检查。按能力标签，本期也没有精选项目涉及数字人。
+- 检索分类“语音”下本期无正式精选：检查4个，0个窗口内无正式发布、预发布或新建，4个有事件但待核查，另有23个未检查。按能力标签，本期也没有精选项目涉及语音。
+- 检索分类“数字人”下本期无正式精选：检查4个，2个窗口内无正式发布、预发布或新建，2个有事件但待核查，另有23个未检查。按能力标签，本期也没有精选项目涉及数字人。
 
 ### 各项目抓取时累计 Stars（一次观测，不代表增长）
 
@@ -139,14 +139,14 @@ _按“与出海创作流程的相关度 × 能否离线、低成本验证”排
 
 | 分类 | 检索 | GitHub匹配总数 | 实际取回 | 是否截断 |
 |---|---|---|---|---|
-| 视频 | 近期有推送（按Stars） | 757 | 20 | 是 |
-| 视频 | 窗口内新建（按Stars） | 332 | 10 | 是 |
-| 图像 | 近期有推送（按Stars） | 4592 | 20 | 是 |
-| 图像 | 窗口内新建（按Stars） | 3005 | 10 | 是 |
-| 语音 | 近期有推送（按Stars） | 3993 | 20 | 是 |
-| 语音 | 窗口内新建（按Stars） | 1815 | 10 | 是 |
-| 数字人 | 近期有推送（按Stars） | 100 | 20 | 是 |
-| 数字人 | 窗口内新建（按Stars） | 60 | 10 | 是 |
+| 视频 | 近期有推送（按Stars） | 775 | 20 | 是 |
+| 视频 | 窗口内新建（按Stars） | 346 | 10 | 是 |
+| 图像 | 近期有推送（按Stars） | 2794 | 20 | 是 |
+| 图像 | 窗口内新建（按Stars） | 1191 | 10 | 是 |
+| 语音 | 近期有推送（按Stars） | 4096 | 20 | 是 |
+| 语音 | 窗口内新建（按Stars） | 1830 | 10 | 是 |
+| 数字人 | 近期有推送（按Stars） | 103 | 20 | 是 |
+| 数字人 | 窗口内新建（按Stars） | 58 | 10 | 是 |
 
 每条检索只取Stars最高的前20或10个，排名之后的仓库没有进入候选；候选中还有 96 个因名额未检查（名单见 data/brief.json 的 candidates）。
 - 失败或跳过的请求：0 个。

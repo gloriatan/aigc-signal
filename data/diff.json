@@ -1,18 +1,19 @@
 {
-  "from_run": "20261110T075803Z",
-  "to_run": "20261113T073358Z",
+  "from_run": "20261113T073358Z",
+  "to_run": "20261117T084624Z",
   "has_previous": true,
   "projects": {},
   "removed": [],
   "pending_new": [
-    "bhavya-gx/fable-vfx",
-    "neuregex/freefield"
+    "bhavya-gx/video-skills",
+    "MiniMax-AI/MiniMax-H3-Image",
+    "n4ze3m/tiny-voca"
   ],
   "summary": {
     "new": 0,
     "version": 0,
     "removed": 0,
-    "pending_new": 2,
+    "pending_new": 3,
     "changed": 0
   }
 }
