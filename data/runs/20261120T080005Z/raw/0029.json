@@ -1,0 +1,10 @@
+{
+ "url": "https://api.github.com/repos/PedroMarinhoDev/ComfyUI-LongCat-Avatar/releases?per_page=30",
+ "fetched_at": "2026-11-20T08:00:33Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4979",
+  "reset": "1795165225"
+ },
+ "body": []
+}

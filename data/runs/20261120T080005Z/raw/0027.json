@@ -1,0 +1,10 @@
+{
+ "url": "https://api.github.com/repos/antgroup/echomimic_v2/releases?per_page=30",
+ "fetched_at": "2026-11-20T08:00:32Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4981",
+  "reset": "1795165225"
+ },
+ "body": []
+}

@@ -1,13 +1,13 @@
 {
-  "from_run": "20261113T073358Z",
-  "to_run": "20261117T084624Z",
+  "from_run": "20261117T084624Z",
+  "to_run": "20261120T080005Z",
   "has_previous": true,
   "projects": {},
   "removed": [],
   "pending_new": [
-    "bhavya-gx/video-skills",
-    "MiniMax-AI/MiniMax-H3-Image",
-    "n4ze3m/tiny-voca"
+    "PedroMarinhoDev/ComfyUI-LongCat-Avatar",
+    "huawei-csl/MACaQ",
+    "threerocks/article2media"
   ],
   "summary": {
     "new": 0,

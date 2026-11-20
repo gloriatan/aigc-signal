@@ -1,0 +1,10 @@
+{
+ "url": "https://api.github.com/repos/MiniMax-AI/MiniMax-H3-Image/releases?per_page=30",
+ "fetched_at": "2026-11-20T08:00:28Z",
+ "http_status": 200,
+ "rate_limit": {
+  "remaining": "4991",
+  "reset": "1795165225"
+ },
+ "body": []
+}
